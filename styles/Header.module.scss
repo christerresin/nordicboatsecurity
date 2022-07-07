@@ -1,0 +1,367 @@
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: inherit;
+  height: 116px;
+  z-index: 100;
+  grid-row: 1;
+  grid-column: 1/13;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.primary-header {
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.primary-navigation {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#burger {
+  width: 45px;
+  height: 40px;
+  margin: 30px 36px 20px 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: #bd0000;
+  display: block;
+  border-radius: 5px;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+#bar1 {
+  transform: translateY(-4px);
+}
+
+#bar3 {
+  transform: translateY(4px);
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  height: 100%;
+
+  a {
+    margin-right: 5%;
+  }
+
+  ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 45px;
+  }
+
+  ul li {
+    position: relative;
+    list-style: none;
+  }
+
+  ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 17px 17px 8px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  ul li a:hover {
+    color: #bd0000;
+  }
+
+  .logo {
+    position: relative;
+    width: 63px;
+    height: 63px;
+    margin-left: 32px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+
+  .logo:hover {
+    color: #bd0000;
+  }
+
+  .cta {
+    margin-right: 45px;
+  }
+}
+
+#nav.sticky {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+#nav.sticky a {
+  color: #fff;
+}
+
+#nav.sticky .cta {
+  background-color: #bd0000;
+  color: #fff;
+}
+
+#nav.sticky .cta::before {
+  border: 2px solid #bd0000;
+  content: '';
+  display: block;
+  height: 140%;
+  position: absolute;
+  width: 110%;
+  top: -7px;
+  left: -9px;
+  z-index: 1;
+}
+
+#nav.sticky .cta:hover {
+  background-color: #fff;
+  color: #bd0000;
+}
+
+.cta {
+  background: #bd0000;
+  color: #fff;
+  display: inline-block;
+  padding: 6px 45px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.cta::before {
+  box-sizing: border-box;
+  border: 2px solid #bd0000;
+  content: '';
+  display: block;
+  height: 140%;
+  position: absolute;
+  width: 110%;
+  top: -7px;
+  left: -9px;
+  z-index: -1;
+}
+
+.cta:hover {
+  background-color: #fff;
+  color: #bd0000;
+}
+
+/* Breakpoint to remove contact btn and shrink menu */
+@media screen and (max-width: 1170px) {
+  #nav {
+    a {
+      margin-right: 0;
+    }
+
+    ul li a {
+      margin: 0 7px;
+      cursor: pointer;
+      padding: 8px 8px 8px 8px;
+      font-size: 14px;
+    }
+
+    .cta {
+      display: none;
+    }
+  }
+
+  .space {
+    display: inline-block;
+    min-width: 17%;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .primary-navigation {
+    gap: 2em;
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+    flex-direction: column;
+    padding: min(30vh, 10rem) 2rem;
+    background: hsl(0 0% 0% / 0.5);
+    transform: translateX(100%);
+    transition: transform 350ms ease-in-out;
+  }
+
+  .primary-navigation[data-visible='true'] {
+    transform: translateX(0%);
+  }
+
+  /* Use backdropfilter if broswer support */
+  @supports (backdrop-filter: blur(1rem)) {
+    .primary-navigation {
+      background: hsl(0 0% 100% / 0.1);
+      backdrop-filter: blur(1rem);
+    }
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background-color: transparent;
+    background-image: url('/public/icon-hamburger.svg');
+    background-repeat: no-repeat;
+    border: none;
+    width: 2rem;
+    aspect-ratio: 1;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .mobile-nav-toggle[aria-expanded='true'] {
+    background-image: url('/public/icon-close.svg');
+  }
+
+  #burger {
+    display: inline-block;
+    z-index: 2001;
+  }
+
+  #nav {
+    justify-content: space-between;
+  }
+
+  .space {
+    display: none;
+  }
+
+  #nav ul {
+    display: none;
+    padding: 0 22px;
+  }
+
+  #links.change {
+    z-index: 2001;
+    position: absolute;
+    right: 0px;
+    top: 102px;
+    display: block;
+    -webkit-animation: 0.4s ease 0s normal forwards 1 fadein;
+    animation: 0.4s ease 0s normal forwards 1 fadein;
+  }
+
+  #nav ul li {
+    padding: 12px 0;
+  }
+
+  #nav ul li a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  #nav .cta {
+    margin-right: 45px;
+  }
+
+  .bg {
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #bd0000, #bd0000);
+    border-radius: 1px;
+    transition: 0.3s ease;
+  }
+
+  .change {
+    display: block;
+  }
+
+  .change .bar {
+    background-color: white;
+  }
+
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+
+  .change #bar2 {
+    opacity: 0;
+  }
+
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+
+  .change_bg {
+    width: 230px;
+    height: 560px;
+    transform: translate(0%, -30%);
+  }
+}
+
+/* Animation for text on burgermenu */
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
