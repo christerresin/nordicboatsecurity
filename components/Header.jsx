@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from '../styles/Header.module.scss';
 
 function Header() {
@@ -6,10 +6,24 @@ function Header() {
   const burgerStyles = isChanged ? `${styles.change}` : '';
   const linksStyle = isChanged ? `${styles.change}` : '';
   const bgStyles = isChanged ? `${styles.change_bg}` : '';
+  const [top, setTop] = useState(true);
+  const isSticky = top ? '' : `${styles.sticky}`;
+
+  useEffect(() => {
+    const scrollHandler = () => {
+      window.pageYOffset > 0 ? setTop(false) : setTop(true);
+    };
+    window.addEventListener('scroll', scrollHandler);
+    scrollHandler(); // Explicit call so that the navbar gets blurred if current page offset is `window.pageYOffset > 20`
+
+    return () => {
+      window.removeEventListener('scroll', scrollHandler);
+    };
+  }, []);
 
   return (
     <header id={styles.header}>
-      <nav className={styles.nav} id={styles.nav}>
+      <nav className={`${styles.nav} ${isSticky}`} id={styles.nav}>
         <a href=''>
           <img
             className={styles.logo}

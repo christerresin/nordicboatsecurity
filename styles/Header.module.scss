@@ -191,6 +191,10 @@
   color: #bd0000;
 }
 
+.space {
+  display: none;
+}
+
 /* Breakpoint to remove contact btn and shrink menu */
 @media screen and (max-width: 1170px) {
   #nav {
