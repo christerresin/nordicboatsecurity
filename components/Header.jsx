@@ -1,14 +1,39 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Header.module.scss';
+import ActiveLink from './ActiveLink';
 
 function Header() {
   const [isChanged, setIsChanged] = useState('');
+  const [top, setTop] = useState(true);
+
   const burgerStyles = isChanged ? `${styles.change}` : '';
   const linksStyle = isChanged ? `${styles.change}` : '';
   const bgStyles = isChanged ? `${styles.change_bg}` : '';
-  const [top, setTop] = useState(true);
   const isSticky = top ? '' : `${styles.sticky}`;
+
+  const navLinks = [
+    {
+      title: 'Produkter',
+      path: '/products',
+    },
+    {
+      title: 'Tjänster',
+      path: '/services',
+    },
+    {
+      title: 'Referenser',
+      path: '/quotes',
+    },
+    {
+      title: 'Om oss',
+      path: '/about',
+    },
+    {
+      title: 'Nyheter',
+      path: '/news',
+    },
+  ];
 
   useEffect(() => {
     const scrollHandler = () => {
@@ -25,31 +50,21 @@ function Header() {
   return (
     <header id={styles.header}>
       <nav className={`${styles.nav} ${isSticky}`} id={styles.nav}>
-        <a href=''>
-          <img
-            className={styles.logo}
-            src='menu_logo.webp'
-            alt='Company Logo'
-          />
-        </a>
+        <Link href='/'>
+          <a>
+            <img
+              className={styles.logo}
+              src='menu_logo.webp'
+              alt='Company Logo'
+            />
+          </a>
+        </Link>
         <ul id={styles.links} className={linksStyle}>
-          <li>
-            <a>PRODUKTER</a>
-          </li>
-          <li>
-            <Link href='/services'>
-              <a>VÅRA TJÄNSTER</a>
-            </Link>
-          </li>
-          <li>
-            <a>REFERENSER</a>
-          </li>
-          <li>
-            <a>OM OSS</a>
-          </li>
-          <li>
-            <a>NYHETER</a>
-          </li>
+          {navLinks.map((link) => (
+            <li key={link.title}>
+              <ActiveLink href={link.path}>{link.title}</ActiveLink>
+            </li>
+          ))}
         </ul>
         <a className={styles.cta}>KONTAKTA OSS</a>
         <div

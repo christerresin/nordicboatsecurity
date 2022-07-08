@@ -91,6 +91,7 @@
     color: #fff;
     font-weight: 300;
     font-size: 16px;
+    text-transform: uppercase;
     cursor: pointer;
     padding: 8px 17px 17px 8px;
     -webkit-transition: 0.3s;
@@ -193,6 +194,10 @@
 
 .space {
   display: none;
+}
+
+.activeLink {
+  color: #bd0000;
 }
 
 /* Breakpoint to remove contact btn and shrink menu */
