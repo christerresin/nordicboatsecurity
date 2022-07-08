@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styles from '../styles/Header.module.scss';
 
@@ -36,7 +37,9 @@ function Header() {
             <a>PRODUKTER</a>
           </li>
           <li>
-            <a>VÅRA TJÄNSTER</a>
+            <Link href='/services'>
+              <a>VÅRA TJÄNSTER</a>
+            </Link>
           </li>
           <li>
             <a>REFERENSER</a>

@@ -2,16 +2,17 @@ import styles from '../styles/Top.module.scss';
 
 function Top() {
   return (
-    <section className={styles.container}>
-      <div className={styles.usp}>
-        <h2>ETT KOMPLETT SYSTEM ANPASSAT EFTER DIN BÅT</h2>
-        <div className={`${styles.divider} ${styles.red}`}></div>
+    <section className={styles.top}>
+      <div className={styles.text}>
+        <h1>Våra tjänster</h1>
         <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia facilis
+          veniam exercitationem rerum magnam nulla eius asperiores hic ad
+          voluptate, alias beatae ea quisquam voluptatum ex. Atque ad
+          consectetur illum asperiores veritatis iure alias maiores.
         </p>
       </div>
+      <div id={styles.shape}></div>
     </section>
   );
 }
