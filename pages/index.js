@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Products from '../components/Products';
+import Services from '../components/Services';
 import Top from '../components/Top';
 import styles from '../styles/Home.module.scss';
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Top />
       <Products />
+      <Services />
       <main className={styles.main}></main>
 
       <footer className={styles.footer}></footer>
