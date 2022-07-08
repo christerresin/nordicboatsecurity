@@ -50,6 +50,20 @@
   justify-content: center;
 }
 
+// FIX REVEAL FUNC
+
+// .reveal {
+//   position: relative;
+//   transform: translateY(150px);
+//   opacity: 0;
+//   transition: all 1s ease;
+// }
+
+// .reveal.active {
+//   transform: translateY(0px);
+//   opacity: 1;
+// }
+
 @media screen and (max-width: 1170px) {
   .container {
     height: 950px;

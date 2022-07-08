@@ -1,0 +1,182 @@
+.footer {
+  grid-row: 13;
+  grid-column: 2/14;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 230px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+}
+
+.logo img {
+  width: 146px;
+  height: 146px;
+}
+
+.footer_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+.footer_links ul {
+  list-style: none;
+}
+
+.footer_links li a {
+  list-style: none;
+  cursor: pointer;
+}
+
+.footer_links li a:hover {
+  color: #bd0000;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.topic {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.footer_list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+.red {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #bd0000;
+  cursor: pointer;
+}
+
+.social {
+  margin: 2rem 2.5rem 0 2.5rem;
+  display: flex;
+  width: 15%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.copyright {
+  text-align: right;
+  padding-top: 1rem;
+}
+
+.social i {
+  font-size: 36px;
+  color: #bd0000;
+}
+
+.social a {
+  text-decoration: none;
+  color: #bd0000;
+}
+
+.social a:visited {
+  text-decoration: none;
+  color: #333333;
+}
+
+@media screen and (max-width: 1170px) {
+  .footer {
+    grid-column: 2/8;
+  }
+
+  .logo {
+    width: 8%;
+  }
+
+  .logo img {
+    width: 66px;
+    height: 66px;
+  }
+
+  .footer_links {
+    width: 100%;
+  }
+
+  .footer_links ul .topic {
+    font-size: 1rem;
+  }
+
+  .footer_links li a {
+    font-size: 1rem;
+  }
+
+  .social {
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 6%;
+    margin: 0;
+    gap: 1rem;
+  }
+
+  .social i {
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .footer {
+    grid-column: 2/6;
+    height: 650px;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+
+  .container {
+    flex-direction: column;
+    height: 630px;
+  }
+
+  .logo {
+    width: 10%;
+    align-self: center;
+  }
+
+  .logo img {
+    width: 126px;
+    height: 126px;
+  }
+
+  .footer_links {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .social {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0 2rem 0;
+  }
+
+  .copyright {
+    text-align: right;
+    margin-top: 3rem;
+  }
+}
