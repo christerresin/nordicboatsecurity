@@ -1,0 +1,69 @@
+.container {
+  position: relative;
+  max-width: 476px;
+  max-height: 476px;
+}
+
+.material_symbols_outlined {
+  color: rgba(189, 0, 0, 1);
+  font-size: 48px;
+  padding: 1.5rem 0;
+}
+
+.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.container blockquote {
+  text-align: center;
+  padding: 6rem 5.5rem 3rem 0;
+}
+
+.name {
+  text-align: right;
+  font-weight: 600;
+  padding-right: 5.5rem;
+}
+
+.role,
+.company {
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: 600;
+  color: #bd0000;
+  padding-right: 5.5rem;
+}
+
+.image {
+  max-width: 476px;
+  max-height: 476px;
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    max-width: 376px;
+    max-height: 376px;
+  }
+
+  .image {
+    max-width: 376px;
+    max-height: 376px;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .container {
+    max-width: 376px;
+    max-height: 376px;
+  }
+
+  .image {
+    padding-top: 1rem;
+    max-width: 296px;
+    max-height: 296px;
+  }
+}
