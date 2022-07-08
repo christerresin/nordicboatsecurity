@@ -4,12 +4,14 @@ import styles from '../styles/Services.module.scss';
 const services = [
   {
     image: 'gps_800.jpg',
+    imgAlt: 'gps tracking',
     header: 'Övervakning i realtid över din båt',
     content:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem quod iusto suscipit veritatis similique saepe nihil!',
   },
   {
     image: 'jetski_800.jpg',
+    imgAlt: 'alarm emergency',
     header: 'Larmutryckning av vaktbolag',
     content:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem quod iusto suscipit veritatis similique saepe nihil!',
@@ -17,6 +19,7 @@ const services = [
   {
     image: 'install_800.jpg',
     header: 'Personlig installation av ditt system',
+    imgAlt: 'personal installation',
     content:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem quod iusto suscipit veritatis similique saepe nihil!',
   },
@@ -38,6 +41,7 @@ function Services() {
           <ServiceBox
             header={service.header}
             image={service.image}
+            imgAlt={service.imgAlt}
             content={service.content}
             key={service.header}
           />
