@@ -23,7 +23,7 @@ function Header() {
     },
     {
       title: 'Referenser',
-      path: '/quotes',
+      path: '/references',
     },
     {
       title: 'Om oss',
