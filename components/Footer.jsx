@@ -1,6 +1,7 @@
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Link from 'next/link';
 
 import styles from '../styles/Footer.module.scss';
 
@@ -9,7 +10,11 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <img alt='Company logo' src='footer_logo.webp' />
+          <Link href='/'>
+            <a>
+              <img alt='Company logo' src='footer_logo.webp' />
+            </a>
+          </Link>
         </div>
         <div className={styles.footer_links}>
           <div className={styles.footer_list}>
@@ -28,7 +33,9 @@ function Footer() {
                 <a>Tillbehör</a>
               </li>
             </ul>
-            <a className={styles.red}>Se alla produkter ></a>
+            <Link href='/products'>
+              <a className={styles.red}>Se alla produkter ></a>
+            </Link>
           </div>
           <div className={styles.footer_list}>
             <ul className={styles.services}>
@@ -43,7 +50,9 @@ function Footer() {
                 <a>Personlig installation</a>
               </li>
             </ul>
-            <a className={styles.red}>Läs om våra tjänster ></a>
+            <Link href='/services'>
+              <a className={styles.red}>Läs om våra tjänster ></a>
+            </Link>
           </div>
           <div className={styles.footer_list}>
             <ul className={styles.about}>
