@@ -34,7 +34,7 @@ function Footer() {
               </li>
             </ul>
             <Link href='/products'>
-              <a className={styles.red}>Se alla produkter ></a>
+              <a className={styles.red}>Se alla produkter &gt;</a>
             </Link>
           </div>
           <div className={styles.footer_list}>
@@ -51,7 +51,7 @@ function Footer() {
               </li>
             </ul>
             <Link href='/services'>
-              <a className={styles.red}>Läs om våra tjänster ></a>
+              <a className={styles.red}>Läs om våra tjänster &gt;</a>
             </Link>
           </div>
           <div className={styles.footer_list}>
