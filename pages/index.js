@@ -1,11 +1,10 @@
 import Head from 'next/head';
-import Image from 'next/image';
 
 import Bottom from '../components/Bottom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import Products from '../components/Products';
+import Produkter from '../components/Produkter';
 import References from '../components/References';
 import Services from '../components/Services';
 import Usp from '../components/Usp';
@@ -21,7 +20,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Usp />
-      <Products />
+      <Produkter />
       <Services />
       <References />
       <Bottom />

@@ -1,10 +1,10 @@
-import styles from '../styles/Products.module.scss';
+import styles from '../styles/Produkter.module.scss';
 import VideoCameraBack from '@mui/icons-material/VideoCameraBackOutlined';
 import CrisisAlert from '@mui/icons-material/CrisisAlertOutlined';
 import SatelliteAlt from '@mui/icons-material/SatelliteAltOutlined';
 import BuildCircle from '@mui/icons-material/BuildCircleOutlined';
 
-function Products() {
+function Produkter() {
   return (
     <section className={`${styles.products_container} ${styles.reveal}`}>
       <div className={styles.products_box_container}>
@@ -62,4 +62,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default Produkter;
