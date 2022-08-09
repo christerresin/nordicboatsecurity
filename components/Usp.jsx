@@ -7,9 +7,11 @@ function Usp() {
         <h2>ETT KOMPLETT SYSTEM ANPASSAT EFTER DIN BÅT</h2>
         <div className={`${styles.divider} ${styles.red}`}></div>
         <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident.
+          Nordic Boat Security är exklusiv återförsäljare i Norden för
+          amerikanska Global Ocean Security Technologies, GOST. I över 15 år har
+          GOST varit ledande inom satellitspårning, videövervakning samt
+          övervakningssensorer i marin miljö och därigenom bland annat fått den
+          amerikanska kustbevakningens erkännande!
         </p>
       </div>
     </section>

@@ -20,10 +20,11 @@ function References() {
           <h2>Täckning i hela norden</h2>
           <div className={`${styles.divider} ${styles.red}`}></div>
           <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident.
+            Våra system har täckning över hela världen! Fem geostationära
+            Inmarsat-satelliter ger täckning över 99.99% av jordens yta medan
+            det 4G/LTE-baserade systemet endast kräver ett datatrafikabonnemang!
           </p>
+          <p>Vilket system passar dig bäst?</p>
         </div>
       </div>
       <div className={styles.quotes_container}>

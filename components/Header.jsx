@@ -15,7 +15,7 @@ function Header() {
   const navLinks = [
     {
       title: 'Produkter',
-      path: '/products',
+      path: '/produkter',
     },
     {
       title: 'Tjänster',
@@ -27,7 +27,7 @@ function Header() {
     },
     {
       title: 'Om oss',
-      path: '/about',
+      path: '/omoss',
     },
     {
       title: 'Nyheter',

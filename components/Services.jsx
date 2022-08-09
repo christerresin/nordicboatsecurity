@@ -7,14 +7,14 @@ const services = [
     imgAlt: 'gps tracking',
     header: 'Övervakning i realtid över din båt',
     content:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem quod iusto suscipit veritatis similique saepe nihil!',
+      'Systemen rapporterar kontinuerligt in information och data som du när som helst kan ta del av via din dator, surfplatta eller smartphone.',
   },
   {
     image: 'jetski_800.jpg',
     imgAlt: 'alarm emergency',
     header: 'Larmutryckning av vaktbolag',
     content:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem quod iusto suscipit veritatis similique saepe nihil!',
+      'Tillsammans med det ISO-, och SSF-certifierade säkerhetsbolaget Westra Security kan vi erbjuda övervakning av din båt. Givetvis med möjlighet till väktarutryckning! Dygnet runt, året om!',
   },
   {
     image: 'install_800.jpg',
@@ -31,9 +31,10 @@ function Services() {
       <div className={styles.header}>
         <h2>Våra tjänster</h2>
         <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident.
+          Via vårt partnerbolag Westra Security kan vi erbjuda övervakning via
+          larmcentral med väktarutryckning! Westra Security kan även påkalla
+          blåljusutryckning om olyckan kan ockulärt verifieras annars skickas
+          väktare ut för kontroll!
         </p>
       </div>
       <div className={styles.box_container}>
