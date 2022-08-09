@@ -8,9 +8,8 @@ function Hero() {
         <p>
           Med marknadens mest avancerade larmsystem levererar vi trygghet och
           säkerhet till våra kunder. Våra tjänster och produkter anpassas efter
-          färja samt önskemål. Vårt mål är att trygghetssäkra din vardag,
-          oavsett var du är eller vad du gör. Båtlivet skall ge frihet, inte
-          osäkerhet.
+          båt samt önskemål. Vårt mål är att trygghetssäkra din vardag, oavsett
+          var du är eller vad du gör. Båtlivet skall ge frihet, inte osäkerhet.
         </p>
         <a className={styles.cta}>KONTAKTA OSS</a>
       </div>
