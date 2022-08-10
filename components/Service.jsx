@@ -5,7 +5,16 @@ const service = {
   imgAlt: 'gps tracking',
   header: 'Övervakning i realtid över din båt',
   left_content:
-    'Systemen rapporterar kontinuerligt in information och data som du när som helst kan ta del av via din dator, surfplatta eller smartphone.',
+    'Vet alltid att din båt är säker med vårt prisbelönta satellitspårningssystem. GOST spårar din båt från vilken enhet som helst med absolut precision som ger sinnesfrid genom position och varningar i realtid.',
+  right_content: [
+    'Satellitspårning i realtid',
+    'Geo-fence varningssystem',
+    'Fjärrstyrd till- och frånkoppling',
+    'Global täckning',
+    'Positionshistorik',
+    'Bygg & spåra flera flottor av fartyg',
+    'Åtkomst från vilken dator eller mobil enhet som helst',
+  ],
 };
 
 function Service() {
@@ -18,7 +27,14 @@ function Service() {
           src={service.image}
         ></img>
         <h3>{service.header}</h3>
-        <p>{service.left_content}</p>
+        <div className={styles.content_container}>
+          <div className={styles.left}>{service.left_content}</div>
+          <ul className={styles.right}>
+            {service.right_content.map((usp, index) => (
+              <li key={index}>{usp}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );
