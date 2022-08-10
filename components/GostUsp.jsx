@@ -1,10 +1,10 @@
-import styles from '../styles/Usp.module.scss';
+import styles from '../styles/GostUsp.module.scss';
 
-function Usp({ grid }) {
+function GostUsp({ grid }) {
   return (
     <section className={`${styles.container} ${grid}`}>
       <div className={styles.usp}>
-        <h2>ETT KOMPLETT SYSTEM ANPASSAT EFTER DIN BÅT</h2>
+        <h2>Global Ocean Security Technologies, GOST</h2>
         <div className={`${styles.divider} ${styles.red}`}></div>
         <p>
           Nordic Boat Security är exklusiv återförsäljare i Norden för
@@ -18,4 +18,4 @@ function Usp({ grid }) {
   );
 }
 
-export default Usp;
+export default GostUsp;

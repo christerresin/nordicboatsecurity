@@ -14,7 +14,7 @@ const services = [
     image: 'jetski_800.jpg',
     imgAlt: 'alarm emergency',
     header: 'Larmutryckning av vaktbolag',
-    url: '/',
+    url: '/tjanster#westra_services',
     content:
       'Tillsammans med det ISO-, och SSF-certifierade säkerhetsbolaget Westra Security kan vi erbjuda övervakning av din båt. Givetvis med möjlighet till väktarutryckning! Dygnet runt, året om!',
   },
@@ -28,9 +28,9 @@ const services = [
   },
 ];
 
-function Services() {
+function Services({ grid }) {
   return (
-    <section className={`${styles.container} ${styles.reveal}`}>
+    <section className={`${styles.container} ${styles.reveal} ${grid}`}>
       <div className={styles.header}>
         <h2>Våra tjänster</h2>
         <p>

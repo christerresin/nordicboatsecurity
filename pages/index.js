@@ -4,7 +4,7 @@ import Bottom from '../components/Bottom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
-import Produkter from '../components/Products';
+import Products from '../components/Products';
 import References from '../components/References';
 import Services from '../components/Services';
 import Usp from '../components/Usp';
@@ -18,14 +18,14 @@ export default function Home() {
       </Head>
       <Header />
       <Hero />
-      <Usp />
-      <Produkter />
-      <Services />
-      <References />
-      <Bottom />
+      <Usp grid='grid9' />
+      <Products grid='grid11' />
+      <Services grid='grid14' />
+      <References grid='grid16' />
+      <Bottom grid='grid17' />
       <main className={styles.main}></main>
 
-      <Footer />
+      <Footer grid='grid18' />
     </div>
   );
 }

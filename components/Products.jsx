@@ -4,9 +4,11 @@ import CrisisAlert from '@mui/icons-material/CrisisAlertOutlined';
 import SatelliteAlt from '@mui/icons-material/SatelliteAltOutlined';
 import GpsFixedOutlinedIcon from '@mui/icons-material/GpsFixedOutlined';
 
-function Products() {
+function Products({ grid }) {
   return (
-    <section className={`${styles.products_container} ${styles.reveal}`}>
+    <section
+      className={`${styles.products_container} ${styles.reveal} ${grid}`}
+    >
       <div className={styles.products_box_container}>
         <a href='' className={styles.product_box}>
           <span

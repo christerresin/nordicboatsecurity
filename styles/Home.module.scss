@@ -3,7 +3,7 @@
   grid-template-columns: 32px repeat(12, 1fr) 32px;
   grid-auto-rows: minmax(100px, auto);
 
-  @media screen and (max-width: 1205px) {
+  @media screen and (max-width: 1170px) {
     grid-template-columns: 32px repeat(6, 1fr) 32px;
     grid-auto-rows: minmax(100px, auto);
   }

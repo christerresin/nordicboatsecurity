@@ -2,7 +2,7 @@ import styles from '../styles/Hero.module.scss';
 
 function Hero() {
   return (
-    <section className={styles.hero}>
+    <section className={`${styles.hero}`}>
       <div className={styles.text}>
         <h1>Larmsystem som skapar trygghet</h1>
         <p>

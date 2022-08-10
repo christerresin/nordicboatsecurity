@@ -12,9 +12,9 @@ const quotes = [
   },
 ];
 
-function References() {
+function References({ grid }) {
   return (
-    <section className={`${styles.container} ${styles.reveal}`}>
+    <section className={`${styles.container} ${styles.reveal} ${grid}`}>
       <div className={styles.text}>
         <div className={styles.header}>
           <h2>Täckning i hela norden</h2>

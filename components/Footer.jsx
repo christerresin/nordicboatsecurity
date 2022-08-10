@@ -5,9 +5,9 @@ import Link from 'next/link';
 
 import styles from '../styles/Footer.module.scss';
 
-function Footer() {
+function Footer({ grid }) {
   return (
-    <footer className={styles.footer}>
+    <footer className={`${styles.footer} ${grid}`}>
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link href='/'>

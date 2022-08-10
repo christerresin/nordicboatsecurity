@@ -17,11 +17,11 @@ const service = {
   ],
 };
 
-function GostServiceBox() {
+function GostServiceBox({ grid }) {
   return (
     <section
       id='gost_services'
-      className={`${styles.container} ${styles.reveal}`}
+      className={`${styles.container} ${styles.reveal} ${grid}`}
     >
       <div className={styles.box_container}>
         <img

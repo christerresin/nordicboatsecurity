@@ -9,11 +9,11 @@ const service = {
   right_content: '',
 };
 
-function WestraServiceBox() {
+function WestraServiceBox({ grid }) {
   return (
     <section
       id='westra_services'
-      className={`${styles.container} ${styles.reveal}`}
+      className={`${styles.container} ${styles.reveal} ${grid}`}
     >
       <div className={styles.box_container}>
         <img

@@ -1,8 +1,8 @@
 import styles from '../styles/Bottom.module.scss';
 
-function Bottom() {
+function Bottom({ grid }) {
   return (
-    <section className={styles.container}>
+    <section className={`${styles.container} ${grid}`}>
       <div className={styles.text}>
         <h1>LÅT OSS GÖRA DITT BÅTLIV TRYGGARE</h1>
         <p>
