@@ -15,7 +15,6 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Nordic Boat Security</title>
-        <link rel='icon' href='/favicon.webp' />
       </Head>
       <Header />
       <Hero />

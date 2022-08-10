@@ -1,4 +1,4 @@
-import styles from '../styles/Service.module.scss';
+import styles from '../styles/GostServiceBox.module.scss';
 
 const service = {
   image: 'gps_800.jpg',
@@ -17,7 +17,7 @@ const service = {
   ],
 };
 
-function Service() {
+function GostServiceBox() {
   return (
     <section
       id='gost_services'
@@ -43,4 +43,4 @@ function Service() {
   );
 }
 
-export default Service;
+export default GostServiceBox;
