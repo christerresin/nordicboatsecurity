@@ -14,16 +14,16 @@ function Header() {
 
   const navLinks = [
     {
+      title: 'Hem',
+      path: '/',
+    },
+    {
       title: 'Produkter',
       path: '/produkter',
     },
     {
       title: 'Tjänster',
-      path: '/services',
-    },
-    {
-      title: 'Referenser',
-      path: '/references',
+      path: '/tjanster',
     },
     {
       title: 'Om oss',
@@ -66,7 +66,9 @@ function Header() {
             </li>
           ))}
         </ul>
-        <a className={styles.cta}>KONTAKTA OSS</a>
+        <a href='/kontakt' className={styles.cta}>
+          KONTAKTA OSS
+        </a>
         <div
           id={styles.burger}
           className={burgerStyles}

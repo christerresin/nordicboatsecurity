@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import Top from '../components/Top';
 import styles from '../styles/Home.module.scss';
 
-export default function produkter() {
+export default function kontakt() {
   return (
     <div className={styles.container}>
       <Head>
@@ -14,9 +14,9 @@ export default function produkter() {
       </Head>
       <Header />
       <Top
-        title='Produkter'
+        title='HÖR AV DIG TILL OSS'
         text={
-          'Nordic Boat Security är exklusiv återförsäljare i Norden för amerikanska Global Ocean Security Technologies, GOST. I över 15 år har GOST varit ledande inom satellitspårning, videövervakning samt övervakningssensorer i marin miljö och därigenom bland annat fått den amerikanska kustbevakningens erkännande!'
+          'Du är alltid välkommen att kontakta oss för rådgivning eller med frågor om våra produkter och tjänster. Vi är redo att göra ditt båtliv tryggare!'
         }
       />
       <Bottom />
