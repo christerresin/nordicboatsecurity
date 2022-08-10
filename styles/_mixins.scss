@@ -3,3 +3,14 @@
     @content;
   }
 }
+
+$border-radius: 3px;
+
+@mixin roundedCorners {
+  border-radius: $border-radius;
+}
+
+@mixin roundedTopCorners {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+}
