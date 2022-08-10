@@ -6,6 +6,7 @@ const services = [
     image: 'gps_800.jpg',
     imgAlt: 'gps tracking',
     header: 'Övervakning i realtid över din båt',
+    url: '/tjanster#gost_services',
     content:
       'Systemen rapporterar kontinuerligt in information och data som du när som helst kan ta del av via din dator, surfplatta eller smartphone.',
   },
@@ -13,12 +14,14 @@ const services = [
     image: 'jetski_800.jpg',
     imgAlt: 'alarm emergency',
     header: 'Larmutryckning av vaktbolag',
+    url: '/',
     content:
       'Tillsammans med det ISO-, och SSF-certifierade säkerhetsbolaget Westra Security kan vi erbjuda övervakning av din båt. Givetvis med möjlighet till väktarutryckning! Dygnet runt, året om!',
   },
   {
     image: 'install_800.jpg',
     header: 'Personlig installation av ditt system',
+    url: '/',
     imgAlt: 'personal installation',
     content:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem quod iusto suscipit veritatis similique saepe nihil!',
@@ -45,6 +48,7 @@ function Services() {
             imgAlt={service.imgAlt}
             content={service.content}
             key={service.header}
+            url={service.url}
           />
         ))}
       </div>

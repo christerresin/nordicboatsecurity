@@ -48,7 +48,7 @@
   .right {
     width: 50%;
     padding: 0 3rem 2.5rem 3rem;
-    font-size: 14px;
+    font-size: 1rem;
     text-align: left;
   }
 
@@ -71,6 +71,12 @@
 
   .header h2 {
     margin-top: 3rem;
+    width: 80%;
+  }
+
+  .right,
+  .left {
+    padding: 0 1rem 2.5rem 1rem;
     width: 80%;
   }
 }
@@ -107,6 +113,7 @@
 
     .right,
     .left {
+      padding: 0 0.5rem 2.5rem 0.5rem;
       width: 80%;
     }
   }

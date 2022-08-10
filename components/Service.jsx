@@ -19,7 +19,10 @@ const service = {
 
 function Service() {
   return (
-    <section className={`${styles.container} ${styles.reveal}`}>
+    <section
+      id='gost_services'
+      className={`${styles.container} ${styles.reveal}`}
+    >
       <div className={styles.box_container}>
         <img
           className={styles.img}
