@@ -66,9 +66,9 @@ function Header() {
             </li>
           ))}
         </ul>
-        <a href='/kontakt' className={styles.cta}>
-          KONTAKTA OSS
-        </a>
+        <Link href='/kontakt'>
+          <a className={styles.cta}>KONTAKTA OSS</a>
+        </Link>
         <div
           id={styles.burger}
           className={burgerStyles}

@@ -62,8 +62,14 @@
   }
 
   .image {
-    padding-top: 1rem;
+    padding-top: 2.1rem;
     max-width: 296px;
     max-height: 296px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .image {
+    padding-top: 6rem;
   }
 }

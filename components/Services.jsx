@@ -52,7 +52,7 @@ function Services({ grid }) {
           />
         ))}
       </div>
-      <a className={styles.cta}>Läs mer om våra tjänster</a>
+      <a className={styles.cta}>Om våra tjänster</a>
     </section>
   );
 }

@@ -1,7 +1,7 @@
 .container {
   position: relative;
   grid-column: 1/14;
-  min-height: 450px;
+  min-height: 250px;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 1170px) {
   .container {
-    margin-bottom: 11rem;
+    grid-column: 2/8;
   }
 
   .header h2 {
@@ -87,12 +87,12 @@
 @media screen and (max-width: 833px) {
   .container {
     grid-column: 2/6;
-    height: 1400px;
   }
 
   .header h2 {
     margin-top: 3rem;
     width: 100%;
+    font-size: 2rem;
   }
 
   .header p {

@@ -4,7 +4,7 @@ function GostUsp({ grid }) {
   return (
     <section className={`${styles.container} ${grid}`}>
       <div className={styles.usp}>
-        <h2>Global Ocean Security Technologies, GOST</h2>
+        <h2>GOST</h2>
         <div className={`${styles.divider} ${styles.red}`}></div>
         <p>
           Nordic Boat Security är exklusiv återförsäljare i Norden för
