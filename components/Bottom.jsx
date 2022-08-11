@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../styles/Bottom.module.scss';
 
 function Bottom({ grid }) {
@@ -12,7 +13,9 @@ function Bottom({ grid }) {
           oavsett var du är eller vad du gör. Båtlivet skall ge frihet, inte
           osäkerhet.
         </p>
-        <a className={styles.cta}>KONTAKTA OSS</a>
+        <Link href='/kontakt'>
+          <a className={styles.cta}>KONTAKTA OSS</a>
+        </Link>
       </div>
       <div id={styles.shape}></div>
     </section>

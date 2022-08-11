@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../styles/Products.module.scss';
 import VideoCameraBack from '@mui/icons-material/VideoCameraBackOutlined';
 import CrisisAlert from '@mui/icons-material/CrisisAlertOutlined';
@@ -60,7 +61,9 @@ function Products({ grid }) {
           </p>
         </a>
       </div>
-      <a className={styles.cta_btn_products}>Se alla produkter</a>
+      <Link href='/produkter'>
+        <a className={styles.cta_btn_products}>Se alla produkter</a>
+      </Link>
     </section>
   );
 }

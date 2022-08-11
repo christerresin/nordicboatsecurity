@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from '../styles/Hero.module.scss';
 
 function Hero() {
@@ -11,7 +12,9 @@ function Hero() {
           båt samt önskemål. Vårt mål är att trygghetssäkra din vardag, oavsett
           var du är eller vad du gör. Båtlivet skall ge frihet, inte osäkerhet.
         </p>
-        <a className={styles.cta}>KONTAKTA OSS</a>
+        <Link href='/kontakt'>
+          <a className={styles.cta}>KONTAKTA OSS</a>
+        </Link>
       </div>
       <div id={styles.shape}></div>
     </section>

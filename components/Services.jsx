@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import ServiceBox from './ServiceBox';
 import styles from '../styles/Services.module.scss';
 
@@ -52,7 +53,9 @@ function Services({ grid }) {
           />
         ))}
       </div>
-      <a className={styles.cta}>Om våra tjänster</a>
+      <Link href='/tjanster'>
+        <a className={styles.cta}>Om våra tjänster</a>
+      </Link>
     </section>
   );
 }
