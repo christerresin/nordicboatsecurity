@@ -21,7 +21,7 @@ function Footer({ grid }) {
             <ul className={styles.products}>
               <li className={styles.topic}>Produkter</li>
               <li>
-                <a>Satellitspårning</a>
+                <a>Spårning</a>
               </li>
               <li>
                 <a>Sensorer och övervakning</a>
@@ -30,10 +30,10 @@ function Footer({ grid }) {
                 <a>Video i realtid</a>
               </li>
               <li>
-                <a>Tillbehör</a>
+                <a>Geo-fence</a>
               </li>
             </ul>
-            <Link href='/products'>
+            <Link href='/produkter'>
               <a className={styles.red}>Se alla produkter &gt;</a>
             </Link>
           </div>
@@ -41,16 +41,22 @@ function Footer({ grid }) {
             <ul className={styles.services}>
               <li className={styles.topic}>Tjänster</li>
               <li>
-                <a>Övervakning i realtid</a>
+                <Link href='/tjanster#gost_services'>
+                  <a>Övervakning i realtid</a>
+                </Link>
               </li>
               <li>
-                <a>Larmutryckningar</a>
+                <Link href='/tjanster#westra_services'>
+                  <a>Larmutryckningar</a>
+                </Link>
               </li>
               <li>
-                <a>Personlig installation</a>
+                <Link href='/tjanster#nbs_services'>
+                  <a>Personlig installation</a>
+                </Link>
               </li>
             </ul>
-            <Link href='/services'>
+            <Link href='/tjanster'>
               <a className={styles.red}>Läs om våra tjänster &gt;</a>
             </Link>
           </div>
@@ -58,7 +64,9 @@ function Footer({ grid }) {
             <ul className={styles.about}>
               <li className={styles.topic}>Om Nordic Boat Security</li>
               <li>
-                <a>Om Oss</a>
+                <Link href='/omoss'>
+                  <a>Om Oss</a>
+                </Link>
               </li>
               <li>
                 <a>Integritetspolicy</a>

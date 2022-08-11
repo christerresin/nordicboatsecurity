@@ -37,6 +37,12 @@
 .footer_links li a {
   list-style: none;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.footer_links li a:visited {
+  color: #333333;
+  text-decoration: none;
 }
 
 .footer_links li a:hover {
