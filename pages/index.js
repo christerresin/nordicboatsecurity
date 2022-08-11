@@ -22,10 +22,10 @@ export default function Home() {
       <Products grid='grid11' />
       <Services grid='grid14' />
       <References grid='grid16' />
-      <Bottom grid='grid17' />
+      <Bottom grid='grid18' />
       <main className={styles.main}></main>
 
-      <Footer grid='grid18' />
+      <Footer grid='grid19' />
     </div>
   );
 }

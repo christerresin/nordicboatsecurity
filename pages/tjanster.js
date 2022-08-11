@@ -8,6 +8,7 @@ import styles from '../styles/Home.module.scss';
 import WestraServiceBox from '../components/WestraServiceBox';
 import Usp from '../components/Usp';
 import GostUsp from '../components/GostUsp';
+import WestraUsp from '../components/WestraUsp';
 
 export default function services() {
   return (
@@ -25,10 +26,11 @@ export default function services() {
       />
       <GostUsp grid='grid7' />
       <GostServiceBox grid='grid8' />
-      <WestraServiceBox grid='grid10' />
-      <Usp grid='grid11' />
-      <Bottom />
-      <Footer />
+      <WestraUsp grid='grid10' />
+      <WestraServiceBox grid='grid11' />
+      <Usp grid='grid13' />
+      <Bottom grid='grid15' />
+      <Footer grid='grid16' />
     </div>
   );
 }

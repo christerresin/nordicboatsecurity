@@ -3,7 +3,7 @@
 .container {
   position: relative;
   grid-column: 1/14;
-  min-height: 400px;
+  min-height: 300px;
   margin-bottom: 2rem;
   text-align: center;
   display: flex;
@@ -64,10 +64,6 @@
 }
 
 @media screen and (max-width: 1170px) {
-  .container {
-    margin-bottom: 11rem;
-  }
-
   .header h2 {
     margin-top: 3rem;
     width: 80%;
