@@ -9,6 +9,7 @@ import WestraServiceBox from '../components/WestraServiceBox';
 import Usp from '../components/Usp';
 import GostUsp from '../components/GostUsp';
 import WestraUsp from '../components/WestraUsp';
+import NbsServiceBox from '../components/NbsServiceBox';
 
 export default function services() {
   return (
@@ -29,8 +30,9 @@ export default function services() {
       <WestraUsp grid='grid10' />
       <WestraServiceBox grid='grid11' />
       <Usp grid='grid13' />
-      <Bottom grid='grid15' />
-      <Footer grid='grid16' />
+      <NbsServiceBox grid='grid15' />
+      <Bottom grid='grid17' />
+      <Footer grid='grid18' />
     </div>
   );
 }

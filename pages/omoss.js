@@ -19,8 +19,8 @@ export default function omoss() {
           'Du är alltid välkommen att kontakta oss för rådgivning eller med frågor om våra produkter och tjänster. Vi är redo att göra ditt båtliv tryggare!'
         }
       />
-      <Bottom />
-      <Footer />
+      <Bottom grid='grid11' />
+      <Footer grid='grid12' />
     </div>
   );
 }

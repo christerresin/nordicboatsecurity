@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import Top from '../components/Top';
 import styles from '../styles/Home.module.scss';
 
-export default function news() {
+export default function nyheter() {
   return (
     <div className={styles.container}>
       <Head>
@@ -19,8 +19,8 @@ export default function news() {
           'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia facilis veniam exercitationem rerum magnam nulla eius asperiores hic ad voluptate, alias beatae ea quisquam voluptatum ex. Atque ad consectetur illum asperiores veritatis iure alias maiores.'
         }
       />
-      <Bottom />
-      <Footer />
+      <Bottom grid='grid11' />
+      <Footer grid='grid12' />
     </div>
   );
 }

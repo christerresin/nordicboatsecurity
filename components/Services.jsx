@@ -21,7 +21,7 @@ const services = [
   {
     image: 'install_800.jpg',
     header: 'Personlig installation av ditt system',
-    url: '/',
+    url: '/tjanster#nbs_services',
     imgAlt: 'personal installation',
     content:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem quod iusto suscipit veritatis similique saepe nihil!',
