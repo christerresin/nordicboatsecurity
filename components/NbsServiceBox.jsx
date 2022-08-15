@@ -3,10 +3,11 @@ import styles from '../styles/NbsServiceBox.module.scss';
 const service = {
   image: 'install_800.jpg',
   imgAlt: 'båtinteriör',
-  header: 'Personlig installation och anpassning av ditt system för din båt',
+  header: 'Personlig installation av ditt system',
   left_content:
-    'Consequat ac felis donec et odio pellentesque diam volutpat. Sit amet nisl suscipit adipiscing bibendum est. Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Iaculis urna id volutpat lacus laoreet. Cursus turpis massa tincidunt dui ut ornare lectus. Cursus eget nunc scelerisque viverra mauris in aliquam.',
-  right_content: '',
+    'Vill du inte montera och installera systemet själv? I så fall kan vi erbjuda personlig installation av ditt system, tillsammans med dig diskuterar vi möjliga placeringar av systemets sensorer och styrenheter på båten. Vi gör en uppskattning av tidsåtgången och erbjuder ett fast totalpris, i installationen ingår utbildning av systemet och dess funktioner.',
+  left_content_addon:
+    'För uppkoppling mot Westra Securitys larmcentral krävs att systemet är installerat och funktionen verifierad av en av Nordic Boat Security auktoriserad installatör.',
 };
 
 function NbsServiceBox({ grid }) {
@@ -23,7 +24,10 @@ function NbsServiceBox({ grid }) {
         ></img>
         <h3>{service.header}</h3>
         <div className={styles.content_container}>
-          <div className={styles.left}>{service.left_content}</div>
+          <div className={styles.left}>
+            {service.left_content}
+            <p>{service.left_content_addon}</p>
+          </div>
           <div className={styles.right}>
             <img
               className={styles.logo}
