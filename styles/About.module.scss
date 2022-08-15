@@ -1,11 +1,11 @@
 .container {
   position: relative;
-  grid-column: 4/12;
+  grid-column: 5/11;
   min-height: 250px;
   margin-bottom: 2rem;
 
   p {
-    margin: 2rem 0 2rem 0;
+    margin-bottom: 1rem;
   }
 }
 
@@ -31,7 +31,7 @@
   }
 
   .logo_image {
-    height: 4.5rem;
+    height: 5.5rem;
     aspect-ratio: 1;
   }
 }
@@ -44,7 +44,7 @@
   max-width: 10rem;
   border: 1px solid;
   border-radius: 1px;
-  margin: 1.5rem auto 1.5rem auto;
+  margin: 2.5rem auto 3.5rem auto;
 }
 
 @media screen and (max-width: 1170px) {
@@ -53,7 +53,7 @@
   }
 
   .logo_image {
-    height: 3.5rem;
+    height: 4.5rem;
     aspect-ratio: 1;
   }
 }
@@ -83,7 +83,8 @@
   }
 
   .logo_image {
-    height: 2.5rem;
+    height: 3.5rem;
     aspect-ratio: 1;
+    margin-bottom: 1.2rem;
   }
 }
