@@ -20,18 +20,23 @@
   flex-direction: row;
 
   .content {
-    width: 74%;
+    width: 70%;
   }
 
   .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 24%;
+    width: 30%;
   }
 
   .logo_image {
-    height: 5.5rem;
+    height: 9rem;
+    aspect-ratio: 1;
+  }
+
+  .westra_logo_image {
+    height: 6rem;
     aspect-ratio: 1;
   }
 }
@@ -53,6 +58,11 @@
   }
 
   .logo_image {
+    height: 8rem;
+    aspect-ratio: 1;
+  }
+
+  .westra_logo_image {
     height: 4.5rem;
     aspect-ratio: 1;
   }
@@ -85,6 +95,11 @@
   .logo_image {
     height: 3.5rem;
     aspect-ratio: 1;
-    margin-bottom: 1.2rem;
+  }
+
+  .westra_logo_image {
+    height: 4.5rem;
+    aspect-ratio: 1;
+    margin-bottom: 2rem;
   }
 }

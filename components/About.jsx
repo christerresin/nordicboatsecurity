@@ -31,8 +31,8 @@ function About({ grid }) {
         <div className={styles.logo}>
           <img
             className={styles.logo_image}
-            alt='westra security logo'
-            src='/Westra_Security_Logo400px.jpg'
+            alt='gost logo'
+            src='/GOST_logo.png'
           ></img>
         </div>
         <div className={styles.content}>
@@ -61,7 +61,7 @@ function About({ grid }) {
         </div>
         <div className={styles.logo}>
           <img
-            className={styles.logo_image}
+            className={styles.westra_logo_image}
             alt='westra security logo'
             src='/Westra_Security_Logo400px.jpg'
           ></img>
