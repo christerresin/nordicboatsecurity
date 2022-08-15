@@ -5,7 +5,7 @@ const service = {
   imgAlt: 'vattenskoter',
   header: 'LARMUTRYCKNING MED VAKTBOLAG',
   left_content:
-    'Consequat ac felis donec et odio pellentesque diam volutpat. Sit amet nisl suscipit adipiscing bibendum est. Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Iaculis urna id volutpat lacus laoreet. Cursus turpis massa tincidunt dui ut ornare lectus. Cursus eget nunc scelerisque viverra mauris in aliquam.',
+    'Önskar du ytterligare ett lager av säkerhet till din båt? Då kan vi tillsammans med våran partner Westra Security erbjuda professionell övervakning av din båt dygnet runt, året om. Via Westra Securitys larmcentral har personalen kontakt med larmsystemet i båten, om någon sensor eller bevakningskamera aktiveras så ser larmcentralen det omgående. Beroende på situation kan väktare skickas ut eller blåljuspersonal kontaktas. (För tillkallelse av blåljuspersonal krävs visuell verifiering via kamera)',
   right_content: '',
 };
 
