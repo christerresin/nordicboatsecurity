@@ -3,9 +3,9 @@ import styles from '../styles/GostServiceBox.module.scss';
 const service = {
   image: 'gps_800.jpg',
   imgAlt: 'gps tracking',
-  header: 'Övervakning i realtid över din båt',
+  header: 'Övervakning i realtid',
   left_content:
-    'Vet alltid att din båt är säker med vårt prisbelönta satellitspårningssystem. GOST spårar din båt från vilken enhet som helst med absolut precision som ger sinnesfrid genom position och varningar i realtid.',
+    'Med webbapplikationen GOST Spectre får du full kontroll över din båt, sensorerna i larmsystemet skickar kontinuerligt information som du när som helst kan ta del av från din dator, smartphone eller surfplatta. Via Spectre kan du bland annat fjärrstyra larmets till- och frånkoppling, sätta upp ett geofence-område som larmar om båten åker ut från eller in i (exempelvis förbudszoner) samt spåra båtens position i realtid.',
   right_content: [
     'Satellitspårning i realtid',
     'Geo-fence varningssystem',
