@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import About from '../components/About';
 import Bottom from '../components/Bottom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -19,8 +20,9 @@ export default function omoss() {
           'Du är alltid välkommen att kontakta oss för rådgivning eller med frågor om våra produkter och tjänster. Vi är redo att göra ditt båtliv tryggare!'
         }
       />
-      <Bottom grid='grid11' />
-      <Footer grid='grid12' />
+      <About grid='grid7' />
+      <Bottom grid='grid9' />
+      <Footer grid='grid10' />
     </div>
   );
 }

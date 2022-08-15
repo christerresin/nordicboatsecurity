@@ -6,7 +6,7 @@ const services = [
   {
     image: 'gps_800.jpg',
     imgAlt: 'gps tracking',
-    header: 'Övervakning i realtid över din båt',
+    header: 'Övervakning i realtid',
     url: '/tjanster#gost_services',
     content:
       'Systemen rapporterar kontinuerligt in information och data som du när som helst kan ta del av via din dator, surfplatta eller smartphone.',
@@ -25,7 +25,7 @@ const services = [
     url: '/tjanster#nbs_services',
     imgAlt: 'personal installation',
     content:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit exercitationem quod iusto suscipit veritatis similique saepe nihil!',
+      'Vill du inte montera och installera systemet själv? I så fall kan vi erbjuda personlig installation av ditt system, tillsammans med dig diskuterar vi möjliga placeringar av systemets sensorer och styrenheter på båten.',
   },
 ];
 
