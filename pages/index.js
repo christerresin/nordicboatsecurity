@@ -14,6 +14,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
+        <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <meta
+          name='description'
+          content='Med marknadens mest avancerade larmsystem är vårt mål är att trygghetssäkra din vardag, oavsett
+          var du är eller vad du gör. Båtlivet skall ge frihet, inte osäkerhet.'
+        />
         <title>Nordic Boat Security</title>
       </Head>
       <Header />
