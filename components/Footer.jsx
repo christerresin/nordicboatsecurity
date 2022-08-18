@@ -12,7 +12,7 @@ function Footer({ grid }) {
         <div className={styles.logo}>
           <Link href='/'>
             <a>
-              <img alt='Company logo' src='footer_logo.webp' />
+              <img alt='Company logo' src='/footer_logo.webp' />
             </a>
           </Link>
         </div>

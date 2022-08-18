@@ -54,7 +54,7 @@ function Header() {
           <a>
             <img
               className={styles.logo}
-              src='menu_logo.webp'
+              src='/menu_logo.webp'
               alt='Company Logo'
             />
           </a>

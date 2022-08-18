@@ -1,4 +1,12 @@
+import Head from 'next/head';
+
+import Bottom from '../../components/Bottom';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
+import ProductInfomation from '../../components/ProductInfomation';
+import Top from '../../components/Top';
 import { productList } from '../../productList';
+import styles from '../../styles/Home.module.scss';
 
 export const getStaticPaths = async () => {
   const paths = productList.map((product) => ({
@@ -16,27 +24,44 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = ({ params: { slug } }) => {
-  console.log(slug);
   const data = productList.find((product) => product.productName === slug);
-  console.log(data);
 
+  const header = data.header;
   const title = data.title;
-  const content = data.content;
+  const description = data.description;
+  const usps = data.usps;
+  const images = data.images;
+  const specifications = data.specifications;
 
   return {
     props: {
       title: title,
-      content: content,
+      description: description,
+      usps: usps,
+      images: images,
+      header: header,
+      specifications: specifications,
     },
   };
 };
 
-const Produkt = ({ title, content }) => {
+const Produkt = (props) => {
   return (
-    <div>
-      <h1>Produktsida</h1>
-      <h3>{title}</h3>
-      <p>{content}</p>
+    <div className={styles.container}>
+      <Head>
+        <title>Nordic Boat Security</title>
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+      <Header />
+      <Top
+        title={props.header}
+        text={
+          'Du är alltid välkommen att kontakta oss för rådgivning eller med frågor om våra produkter och tjänster. Vi är redo att göra ditt båtliv tryggare!'
+        }
+      />
+      <ProductInfomation grid='grid7' props={props} />
+      <Bottom grid='grid9' />
+      <Footer grid='grid10' />
     </div>
   );
 };

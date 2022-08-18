@@ -1,7 +1,7 @@
 import styles from '../styles/GostServiceBox.module.scss';
 
 const service = {
-  image: 'gps_800.jpg',
+  image: '/gps_800.jpg',
   imgAlt: 'gps tracking',
   header: 'Övervakning i realtid',
   left_content:

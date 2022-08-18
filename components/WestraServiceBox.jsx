@@ -1,7 +1,7 @@
 import styles from '../styles/WestraServiceBox.module.scss';
 
 const service = {
-  image: 'jetski_800.jpg',
+  image: '/jetski_800.jpg',
   imgAlt: 'vattenskoter',
   header: 'LARMUTRYCKNING MED VAKTBOLAG',
   left_content:

@@ -1,7 +1,7 @@
 import styles from '../styles/NbsServiceBox.module.scss';
 
 const service = {
-  image: 'install_800.jpg',
+  image: '/install_800.jpg',
   imgAlt: 'båtinteriör',
   header: 'Personlig installation av ditt system',
   left_content:
