@@ -6,7 +6,7 @@ import { videosList } from '../videosList';
 function ProductsList({ grid, header }) {
   return (
     <>
-      <div className={`${styles.container} ${grid}`}>
+      <div id='video' className={`${styles.container} ${grid}`}>
         <h2>{header}</h2>
         <div className={`${styles.divider} ${styles.red}`}></div>
         <div className={styles.boxes_container}>
