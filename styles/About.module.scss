@@ -16,12 +16,12 @@
   font-weight: 300;
 }
 
+.content {
+  width: 70%;
+}
+
 .split {
   flex-direction: row;
-
-  .content {
-    width: 70%;
-  }
 
   .logo {
     display: flex;
@@ -81,7 +81,7 @@
   }
 
   .content {
-    width: 100%;
+    width: 85%;
   }
 
   .logo {
