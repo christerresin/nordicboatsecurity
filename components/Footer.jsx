@@ -21,16 +21,24 @@ function Footer({ grid }) {
             <ul className={styles.products}>
               <li className={styles.topic}>Produkter</li>
               <li>
-                <a>Spårning</a>
+                <Link href='/nyhter'>
+                  <a>Spårning</a>
+                </Link>
               </li>
               <li>
-                <a>Sensorer och övervakning</a>
+                <Link href='/produkter#sensorer'>
+                  <a>Sensorer och övervakning</a>
+                </Link>
               </li>
               <li>
-                <a>Video i realtid</a>
+                <Link href='/produkter#video'>
+                  <a>Video i realtid</a>
+                </Link>
               </li>
               <li>
-                <a>Geo-fence</a>
+                <Link href='/produkter'>
+                  <a>Geo-fence</a>
+                </Link>
               </li>
             </ul>
             <Link href='/produkter'>
