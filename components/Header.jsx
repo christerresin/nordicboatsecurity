@@ -53,7 +53,7 @@ function Header() {
         <Link href='/'>
           <a>
             <img
-              className={styles.logo}
+              className={`${styles.logo} ${isSticky}`}
               src='/menu_logo.webp'
               alt='Company Logo'
             />
