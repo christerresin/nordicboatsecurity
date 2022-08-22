@@ -68,6 +68,11 @@ function Footer({ grid }) {
                   <a>Om Oss</a>
                 </Link>
               </li>
+              <li>
+                <Link href='/kontakt'>
+                  <a>Kontakta oss</a>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

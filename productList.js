@@ -1,6 +1,8 @@
 export const productList = [
   {
     productName: 'gost-universal-control-unit',
+    category: 'controller',
+    flag: ['small', 'medium', 'large'],
     header: 'Universal Control Unit',
     title: 'GOST Universal Control Unit',
     description:
