@@ -21,7 +21,7 @@ function Footer({ grid }) {
             <ul className={styles.products}>
               <li className={styles.topic}>Produkter</li>
               <li>
-                <Link href='/nyhter'>
+                <Link href='/nyheter'>
                   <a>Spårning</a>
                 </Link>
               </li>
