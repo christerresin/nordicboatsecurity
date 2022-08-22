@@ -1,14 +1,15 @@
-import styles from '../styles/Sensors.module.scss';
-import { sensorsList } from '../sensorsList';
+import styles from '../styles/ProductsList.module.scss';
 import ProductBox from './ProductBox';
 
-function Sensors({ grid }) {
+import { sensorsList } from '../sensorsList';
+
+function SensorsList({ grid, header }) {
   return (
     <>
       <div className={`${styles.container} ${grid}`}>
-        <h2>Sensorer</h2>
+        <h2>{header}</h2>
         <div className={`${styles.divider} ${styles.red}`}></div>
-        <div className={styles.sensors_container}>
+        <div className={styles.boxes_container}>
           {sensorsList.map((sensor) => (
             <ProductBox key={sensor.header} product={sensor} />
           ))}
@@ -18,4 +19,4 @@ function Sensors({ grid }) {
   );
 }
 
-export default Sensors;
+export default SensorsList;

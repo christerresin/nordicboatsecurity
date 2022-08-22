@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-.sensors_container {
+.boxes_container {
   display: inline-grid;
   width: 100%;
   grid-template-columns: repeat(3, 26%);
@@ -31,7 +31,7 @@
     grid-column: 2/8;
   }
 
-  .sensors_container {
+  .boxes_container {
     grid-template-columns: repeat(2, 35%);
     gap: 2%;
     justify-content: center;
@@ -42,7 +42,7 @@
   .container {
     grid-column: 2/6;
   }
-  .sensors_container {
+  .boxes_container {
     grid-template-columns: repeat(1, 70%);
     gap: 1%;
   }
