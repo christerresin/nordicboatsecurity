@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Products from '../components/Products';
 import References from '../components/References';
+import NewsUsp from '../components/NewsUsp';
 import Services from '../components/Services';
 import Usp from '../components/Usp';
 import styles from '../styles/Home.module.scss';
@@ -28,7 +29,7 @@ export default function Home() {
       <Usp grid='grid9' />
       <Products grid='grid11' />
       <Services grid='grid14' />
-      <References grid='grid16' />
+      <NewsUsp grid='grid16' />
       <Bottom grid='grid18' />
       <main className={styles.main}></main>
 
