@@ -49,21 +49,17 @@
 }
 
 @media screen and (max-width: 1170px) {
-  .products_box_container {
-    flex-wrap: wrap;
-    width: 73%;
-    margin: 3rem auto 0 auto;
-  }
-
   .product_box {
     margin: 1rem 1rem 1.5rem 1rem;
   }
 }
 
 @media screen and (max-width: 833px) {
-  .products_box_container {
-    flex-wrap: wrap;
-    width: 73%;
-    margin: 0 auto 0 auto;
+  .product_box {
+    min-height: 27rem;
+
+    h3 {
+      font-size: 1.2rem;
+    }
   }
 }

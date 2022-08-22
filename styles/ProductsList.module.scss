@@ -41,9 +41,13 @@
 @media screen and (max-width: 833px) {
   .container {
     grid-column: 2/6;
+
+    h2 {
+      font-size: 2rem;
+    }
   }
   .boxes_container {
-    grid-template-columns: repeat(1, 70%);
+    grid-template-columns: repeat(1, 90%);
     gap: 1%;
   }
 }

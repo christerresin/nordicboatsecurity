@@ -28,9 +28,9 @@ export default function produkter() {
         }
       />
       <SensorsList header='Sensorer' grid='grid7' />
-      <ProductsList header='Videoövervakning' grid='grid10' />
-      <Bottom grid='grid14' />
-      <Footer grid='grid15' />
+      <ProductsList header='Video' grid='grid11' />
+      <Bottom grid='grid15' />
+      <Footer grid='grid16' />
     </div>
   );
 }
