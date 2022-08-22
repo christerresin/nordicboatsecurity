@@ -259,8 +259,11 @@
     transform: translateX(0%);
   }
 
-  .logo {
-    width: 7.5rem;
+  #nav {
+    .logo {
+      margin-left: 28px;
+      width: 7rem;
+    }
   }
 
   /* Use backdropfilter if broswer support */
