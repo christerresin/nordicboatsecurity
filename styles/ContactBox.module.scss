@@ -30,9 +30,20 @@
   color: #bd0000;
 }
 
+.phone {
+  display: flex;
+  align-items: center;
+}
+
 .email {
   color: #333333;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 0.3rem;
 }
 
 @media screen and (max-width: 1170px) {
@@ -45,5 +56,13 @@
   .container {
     grid-column: 2/6;
     text-align: center;
+  }
+
+  .phone {
+    justify-content: center;
+  }
+
+  .email {
+    justify-content: center;
   }
 }
