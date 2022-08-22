@@ -14,7 +14,7 @@ const services = [
   {
     image: '/jetski_800.jpg',
     imgAlt: 'alarm emergency',
-    header: 'Larmutryckning av vaktbolag',
+    header: 'Larmutryckning med vaktbolag',
     url: '/tjanster#westra_services',
     content:
       'Tillsammans med det ISO-, och SSF-certifierade säkerhetsbolaget Westra Security kan vi erbjuda övervakning av din båt. Givetvis med möjlighet till väktarutryckning! Dygnet runt, året om!',
