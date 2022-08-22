@@ -68,9 +68,6 @@ function Footer({ grid }) {
                   <a>Om Oss</a>
                 </Link>
               </li>
-              <li>
-                <a>Integritetspolicy</a>
-              </li>
             </ul>
           </div>
         </div>

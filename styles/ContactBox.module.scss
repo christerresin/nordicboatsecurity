@@ -1,0 +1,49 @@
+.container {
+  grid-column: 5/11;
+  position: relative;
+  min-width: 20rem;
+  min-height: 10rem;
+
+  a:link {
+    color: #333333;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #333333;
+  }
+
+  a:hover {
+    cursor: pointer;
+  }
+}
+
+.name {
+  font-weight: 600;
+}
+
+.role,
+.company {
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+  color: #bd0000;
+}
+
+.email {
+  color: #333333;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    grid-column: 3/7;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .container {
+    grid-column: 2/6;
+    text-align: center;
+  }
+}

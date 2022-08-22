@@ -17,7 +17,7 @@ export default function omoss() {
       <Top
         title='Om oss'
         text={
-          'Du är alltid välkommen att kontakta oss för rådgivning eller med frågor om våra produkter och tjänster. Vi är redo att göra ditt båtliv tryggare!'
+          'Vi erbjuder marknadsledande, modulära säkerhets- och övervakningslösningar som passar just din båt och dina behov. Vill du veta mer redan nu?'
         }
       />
       <About grid='grid7' />
