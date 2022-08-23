@@ -36,6 +36,7 @@ export const sensorsList = [
   },
   {
     header: 'Röksensor',
-    description: '',
+    description:
+      'Trådlös röksensor och brandvarnare. Fungerar även som fristående enhet.',
   },
 ];
