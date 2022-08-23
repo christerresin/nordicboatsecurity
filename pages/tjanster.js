@@ -25,12 +25,7 @@ export default function services() {
         <title>Nordic Boat Security - Tjänster</title>
       </Head>
       <Header />
-      <Top
-        title='Våra tjänster'
-        text={
-          'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia facilis veniam exercitationem rerum magnam nulla eius asperiores hic ad voluptate, alias beatae ea quisquam voluptatum ex. Atque ad consectetur illum asperiores veritatis iure alias maiores.'
-        }
-      />
+      <Top title='Våra tjänster' text={''} />
       <GostUsp grid='grid7' />
       <GostServiceBox grid='grid8' />
       <WestraUsp grid='grid10' />
