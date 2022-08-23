@@ -2,12 +2,12 @@ export const videosList = [
   {
     header: 'GOST Miniball',
     description:
-      'Analog kamera, 1080 HP, vidvinkellins, IR-lampor för övervakning i mörker...',
+      'Övervakningskamera med 2.8mm vidvinkellins och som mäter 61mm i diameter, något större än en golfboll.',
   },
   {
     header: 'Gost Miniball Extreme',
     description:
-      'LIte bättre... Analog kamera, 1080 HP, vidvinkellins, IR-lampor för övervakning i mörker...',
+      'Övervakningskamera gjort av rostfritt stål med 2.8mm vidvinkellins. Kan monteras diskret och har en automatisk dag/natt-funktion, fullfärg vid dagsljus, monokrom vid kväll och natt.',
   },
   {
     header: 'GOST Watch HD XVR',
