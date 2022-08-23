@@ -25,7 +25,12 @@ export default function services() {
         <title>Nordic Boat Security - Tjänster</title>
       </Head>
       <Header />
-      <Top title='Våra tjänster' text={''} />
+      <Top
+        title='Tjänster'
+        text={
+          'Våra tjänster erbjuder dig möjligheten att välja flera olika lager av skydd och säkerhet, allt från alarm och sensorinformation till övervakning och väktarutryckning. Vad behöver du för din båt?'
+        }
+      />
       <GostUsp grid='grid7' />
       <GostServiceBox grid='grid8' />
       <WestraUsp grid='grid10' />
