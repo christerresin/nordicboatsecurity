@@ -8,7 +8,7 @@ export const contactList = [
   {
     name: 'Henrik Josefsson',
     role: 'COO',
-    phone: '073 - 282 23 52',
+    phone: '073 - 828 23 52',
     email: 'henrik.josefsson@nordicboatsecurity.se',
   },
 ];
