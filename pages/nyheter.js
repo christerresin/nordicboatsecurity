@@ -20,7 +20,12 @@ export default function nyheter() {
         <title>Nordic Boat Security - Nyheter</title>
       </Head>
       <Header />
-      <Top title='Nyheter' text={''} />
+      <Top
+        title='Nyheter'
+        text={
+          'Vi arbetar för en tryggare och säkrare vardag för båtlivet. Här hittar du senaste nytt från oss och våra samarbetspartner.'
+        }
+      />
       <NewsUsp grid='grid7' />
       <Bottom grid='grid11' />
       <Footer grid='grid12' />
