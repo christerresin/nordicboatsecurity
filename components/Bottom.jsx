@@ -9,7 +9,7 @@ function Bottom({ grid }) {
         <p>
           Med marknadens mest avancerade larmsystem levererar vi trygghet och
           säkerhet till våra kunder. Våra tjänster och produkter anpassas efter
-          färja samt önskemål. Vårt mål är att trygghetssäkra din vardag,
+          er båt samt önskemål. Vårt mål är att trygghetssäkra din vardag,
           oavsett var du är eller vad du gör. Båtlivet skall ge frihet, inte
           osäkerhet.
         </p>
