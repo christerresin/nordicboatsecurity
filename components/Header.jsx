@@ -45,7 +45,7 @@ function Header() {
     return () => {
       window.removeEventListener('scroll', scrollHandler);
     };
-  }, []);
+  });
 
   return (
     <header id={styles.header}>
