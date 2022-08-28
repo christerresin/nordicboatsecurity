@@ -316,7 +316,7 @@
   }
 
   .bg {
-    top: 0;
+    top: -20px;
     right: 0;
     position: absolute;
     z-index: 1;
@@ -352,7 +352,6 @@
     width: 205px;
     height: 560px;
     transform: translate(0%, -30%);
-    transition: 0.3s;
   }
 }
 
