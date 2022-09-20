@@ -31,7 +31,7 @@ function Consent() {
     <div className={`${styles.concent_container} ${consent ? 'hidden' : ''}`}>
       <div className={styles.concent_box}>
         <div className={styles.concent_text_container}>
-          <h3>Välkommen till NBS</h3>
+          <h4>Välkommen till Nordic Boat Security</h4>
           <p>
             Vi använder data för att analysera trafik på vår webbplats och dela
             information om användningen till våra analyspartners. Du kan läsa
