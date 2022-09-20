@@ -31,8 +31,6 @@ export default function Home() {
       <Services grid='grid14' />
       <NewsUsp grid='grid16' />
       <Bottom grid='grid18' />
-      <main className={styles.main}></main>
-
       <Footer grid='grid19' />
     </div>
   );
