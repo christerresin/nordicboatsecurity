@@ -3,7 +3,6 @@
 .concent_container {
   position: fixed;
   display: flex;
-  justify-content: center;
   align-items: center;
   top: 0;
   right: 0;
@@ -12,13 +11,14 @@
   z-index: 99999;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .concent_box {
   position: sticky;
   background-color: #ffffff;
-  top: 25vh;
+  top: 70vh;
+  left: 4px;
   max-width: 500px;
   min-height: 382px;
   @include roundedCorners;
@@ -61,7 +61,12 @@
 }
 
 @media screen and (max-width: 833px) {
+  .concent_container {
+    justify-content: center;
+  }
+
   .concent_box {
     margin: 1rem 1rem 1rem 1rem;
+    top: 20vh;
   }
 }
