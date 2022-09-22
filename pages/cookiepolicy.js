@@ -3,8 +3,25 @@ import Bottom from '../components/Bottom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Top from '../components/Top';
+import CookieInfo from '../components/CookieInfo';
 
 import styles from '../styles/Home.module.scss';
+import CookieInfoList from '../components/CookieInfoList';
+
+const cookieInformation = [
+  {
+    grid: 'grid7',
+    header: 'Vad är Cookies?',
+    content:
+      'Cookies är textfiler som placeras på din dator för att samla in standardinformation internetlogg och information om besökarnas beteende. När du besöker våra webbplatser kan vi samla in information från dig automatiskt via cookies eller liknande teknik.',
+  },
+  {
+    grid: 'grid8',
+    header: 'Hur använder vi cookies?',
+    content:
+      'Nordic Boat Security använder cookies för att förbättra din upplevelse på vår webbplats samt förstå hur du använder vår hemsida.',
+  },
+];
 
 export default function cookiepolicy() {
   return (
@@ -17,18 +34,26 @@ export default function cookiepolicy() {
           content='Med marknadens mest avancerade larmsystem är vårt mål är att trygghetssäkra din vardag, oavsett
       var du är eller vad du gör. Båtlivet skall ge frihet, inte osäkerhet.'
         />
-        <title>Nordic Boat Security - Om oss</title>
+        <title>Nordic Boat Security - Cookiepolicy</title>
       </Head>
       <Header />
       <Top
-        title='Om oss'
+        title='Cookiepolicy'
         text={
-          'Vi erbjuder marknadsledande, modulära säkerhets- och övervakningslösningar som passar just din båt och dina behov.'
+          'Denna cookiepolicy kommer att förklara hur vår organisation använder cookies när du använder vår webbplats.'
         }
       />
-
-      <Bottom grid='grid11' />
-      <Footer grid='grid12' />
+      {cookieInformation.map((info) => (
+        <CookieInfo
+          key={info.grid}
+          grid={info.grid}
+          header={info.header}
+          content={info.content}
+        />
+      ))}
+      <CookieInfoList grid='grid12' />
+      <Bottom grid='grid17' />
+      <Footer grid='grid18' />
     </div>
   );
 }
