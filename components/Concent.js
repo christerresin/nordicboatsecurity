@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { setCookie, hasCookie } from 'cookies-next';
 
 import styles from '../styles/Concent.module.scss';
+import Link from 'next/link';
 
 function Consent() {
   const [consent, setConsent] = useState(true);
@@ -51,7 +52,11 @@ function Consent() {
             Vi använder data för att analysera trafik på vår webbplats och dela
             information om användningen till våra analyspartners. Du kan läsa
             mer och ändra dina val på vår sida om datahantering och cookies. Läs
-            mer på vår sida om datahantering och cookies.
+            mer på vår sida om{' '}
+            <Link href='/cookiepolicy'>
+              <a>datahantering och cookies</a>
+            </Link>
+            .
           </p>
         </div>
         <div className={styles.concent_button_container}>
