@@ -19,6 +19,11 @@ function Consent() {
     console.log('accepting cookies');
   };
 
+  const closeP = () => {
+    setConsent(true);
+    console.log('closing');
+  };
+
   const denyCookie = () => {
     setConsent(true);
     setCookie('localConsent', 'false', { maxAge: 60 * 60 * 24 * 365 });
@@ -30,6 +35,16 @@ function Consent() {
   return (
     <div className={`${styles.concent_container} ${consent ? 'hidden' : ''}`}>
       <div className={styles.concent_box}>
+        <div className={styles.close_button_container}>
+          <button
+            className={styles.close_button}
+            onClick={(e) => {
+              closeP();
+            }}
+          >
+            X
+          </button>
+        </div>
         <div className={styles.concent_text_container}>
           <h4>Välkommen till Nordic Boat Security</h4>
           <p>
