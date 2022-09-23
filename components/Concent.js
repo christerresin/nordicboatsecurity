@@ -34,7 +34,10 @@ function Consent() {
     return null;
   }
   return (
-    <div className={`${styles.concent_container} ${consent ? 'hidden' : ''}`}>
+    <div
+      id='concent_box'
+      className={`${styles.concent_container} ${consent ? 'hidden' : ''}`}
+    >
       <div className={styles.concent_box}>
         <div className={styles.close_button_container}>
           <button

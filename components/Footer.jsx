@@ -81,6 +81,11 @@ function Footer({ grid }) {
                   <a>Kontakta oss</a>
                 </Link>
               </li>
+              <li>
+                <Link href='/cookiepolicy'>
+                  <a>Cookiepolicy</a>
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
