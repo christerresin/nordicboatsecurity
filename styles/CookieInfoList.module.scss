@@ -1,7 +1,7 @@
 .container {
   position: relative;
   grid-column: 4/12;
-  min-height: 12rem;
+  min-height: 48rem;
 }
 
 .usp {
@@ -21,6 +21,14 @@
 
   p {
     margin: 1rem 0 1rem 0;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    padding-top: 1.5rem;
   }
 }
 
@@ -42,8 +50,7 @@
 @media screen and (max-width: 1170px) {
   .container {
     grid-column: 1/8;
-    min-height: 10rem;
-    margin-bottom: 0;
+    margin: 1rem 0 0 0;
   }
 
   .usp h2 {
@@ -54,13 +61,12 @@
 
 @media screen and (max-width: 833px) {
   .container {
-    min-height: 13rem;
+    min-height: 56rem;
     grid-column: 2/6;
-    margin-bottom: 1rem;
   }
 
   .usp {
-    width: 100%;
+    width: 80%;
 
     h2 {
       width: 100%;
@@ -71,10 +77,50 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 692px) {
   .container {
-    min-height: 20rem;
+    min-height: 64rem;
     grid-column: 2/6;
-    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 572px) {
+  .container {
+    min-height: 72rem;
+    grid-column: 2/6;
+    margin-top: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 492px) {
+  .container {
+    min-height: 82rem;
+    grid-column: 2/6;
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .container {
+    min-height: 90rem;
+    grid-column: 2/6;
+    margin-top: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 398px) {
+  .container {
+    min-height: 99rem;
+    grid-column: 2/6;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    min-height: 116rem;
+    grid-column: 2/6;
+    margin-top: 4rem;
   }
 }
