@@ -10,10 +10,14 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <Script
-          strategy='afterInteractive'
-          src={`https://www.googletagmanager.com/gtag/js?id=GTM-P7Q45JF`}
-        />
+        <noscript>
+          <iframe
+            src='https://www.googletagmanager.com/ns.html?id=GTM-P7Q45JF'
+            height='0'
+            width='0'
+            style={{ display: 'none', visibility: 'hidden' }}
+          ></iframe>
+        </noscript>
       </body>
     </Html>
   );
