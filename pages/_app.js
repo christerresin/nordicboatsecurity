@@ -11,12 +11,12 @@ function MyApp({ Component, pageProps, ...appProps }) {
     return (
       <>
         <Script
-          strategy='afterInteractive'
+          strategy='lazyOnload'
           src={`https://www.googletagmanager.com/gtag/js?id=GTM-P7Q45JF`}
         />
         <Script
           id='gtag'
-          strategy='afterInteractive'
+          strategy='lazyOnload'
           dangerouslySetInnerHTML={{
             __html: `
           window.dataLayer = window.dataLayer || [];
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps, ...appProps }) {
         {consent === true && (
           <Script
             id='consupd'
-            strategy='afterInteractive'
+            strategy='lazyOnload'
             dangerouslySetInnerHTML={{
               __html: `
               gtag('consent', 'update', {
