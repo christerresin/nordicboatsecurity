@@ -11,6 +11,10 @@ function MyApp({ Component, pageProps, ...appProps }) {
     return (
       <>
         <Script
+          strategy='afterInteractive'
+          src={`https://www.googletagmanager.com/gtag/js?id=GTM-P7Q45JF`}
+        />
+        <Script
           id='gtag'
           strategy='afterInteractive'
           dangerouslySetInnerHTML={{
