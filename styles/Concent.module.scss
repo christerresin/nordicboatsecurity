@@ -15,10 +15,10 @@
 }
 
 .concent_box {
-  position: sticky;
+  position: relative;
   background-color: #ffffff;
-  top: 70vh;
-  left: 4px;
+  top: 32vh;
+  left: 16px;
   max-width: 500px;
   min-height: 382px;
   @include roundedCorners;
