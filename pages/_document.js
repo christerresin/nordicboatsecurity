@@ -12,7 +12,7 @@ export default function Document() {
         <NextScript />
         <noscript>
           <iframe
-            src='https://www.googletagmanager.com/ns.html?id=GTM-P7Q45JF'
+            src={`https://www.googletagmanager.com/ns.html?id=${process.env.NEXT_PUBLIC_GOOGLE}`}
             height='0'
             width='0'
             style={{ display: 'none', visibility: 'hidden' }}
