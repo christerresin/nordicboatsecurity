@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps, ...appProps }) {
       <>
         <Script
           strategy='afterInteractive'
-          src={`https://www.googletagmanager.com/gtag/js?id=GTM-P7Q45JF`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE}`}
         />
 
         {consent === true && (
