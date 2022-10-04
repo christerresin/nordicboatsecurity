@@ -60,7 +60,7 @@ function Footer({ grid }) {
               </li>
               <li>
                 <Link href='/tjanster#nbs_services'>
-                  <a>Personlig installation</a>
+                  <a>Rådgivning</a>
                 </Link>
               </li>
             </ul>

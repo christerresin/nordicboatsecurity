@@ -3,9 +3,9 @@ import styles from '../styles/NbsServiceBox.module.scss';
 const service = {
   image: '/install_800.jpg',
   imgAlt: 'båtinteriör',
-  header: 'Personlig installation av ditt system',
+  header: 'Rådgivning',
   left_content:
-    'Vill du inte montera och installera systemet själv? I så fall kan vi erbjuda personlig installation av ditt system, tillsammans med dig diskuterar vi möjliga placeringar av systemets sensorer och styrenheter på båten. Vi gör en uppskattning av tidsåtgången och erbjuder ett fast totalpris, i installationen ingår utbildning av systemet och dess funktioner.',
+    'Du är alltid välkommen att kontakta oss för rådgivning eller med frågor om våra produkter och tjänster. Vi är redo att göra ditt båtliv tryggare!',
   left_content_addon:
     'För uppkoppling mot Westra Securitys larmcentral krävs att systemet är installerat och funktionen verifierad antingen av Nordic Boat Security eller en av Nordic Boat Security auktoriserad installatör',
 };

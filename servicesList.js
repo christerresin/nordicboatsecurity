@@ -17,10 +17,10 @@ export const servicesList = [
   },
   {
     image: '/install_800.jpg',
-    header: 'Personlig installation av ditt system',
+    header: 'Rådgivning',
     url: '/tjanster#nbs_services',
     imgAlt: 'personal installation',
     content:
-      'Vill du inte montera och installera systemet själv? I så fall kan vi erbjuda personlig installation av ditt system, tillsammans med dig diskuterar vi möjliga placeringar av systemets sensorer och styrenheter på båten.',
+      'Du är alltid välkommen att kontakta oss för rådgivning eller med frågor om våra produkter och tjänster. Vi är redo att göra ditt båtliv tryggare!',
   },
 ];
