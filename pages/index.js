@@ -10,7 +10,6 @@ import NewsUsp from '../components/NewsUsp';
 import Services from '../components/Services';
 import Usp from '../components/Usp';
 import styles from '../styles/Home.module.scss';
-import GoogleAnalytics from '../components/GoogleAnalytics';
 
 export default function Home() {
   return (
@@ -23,7 +22,6 @@ export default function Home() {
           content='Med marknadens mest avancerade larmsystem är vårt mål är att trygghetssäkra din vardag, oavsett
           var du är eller vad du gör. Båtlivet skall ge frihet, inte osäkerhet.'
         />
-        <GoogleAnalytics />
         <title>Nordic Boat Security</title>
       </Head>
       <Header />
