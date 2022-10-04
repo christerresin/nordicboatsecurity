@@ -7,7 +7,7 @@ const service = {
   left_content:
     'Du är alltid välkommen att kontakta oss för rådgivning eller med frågor om våra produkter och tjänster. Vi är redo att göra ditt båtliv tryggare!',
   left_content_addon:
-    'För uppkoppling mot Westra Securitys larmcentral krävs att systemet är installerat och funktionen verifierad antingen av Nordic Boat Security eller en av Nordic Boat Security auktoriserad installatör',
+    'För uppkoppling mot Westra Securitys larmcentral krävs att systemet är installerat och funktionen verifierad antingen av Nordic Boat Security eller en av Nordic Boat Security auktoriserad installatör.',
 };
 
 function NbsServiceBox({ grid }) {
