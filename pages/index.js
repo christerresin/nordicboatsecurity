@@ -10,6 +10,7 @@ import NewsUsp from '../components/NewsUsp';
 import Services from '../components/Services';
 import Usp from '../components/Usp';
 import styles from '../styles/Home.module.scss';
+import News from '../components/News';
 
 export default function Home() {
   return (
@@ -26,12 +27,13 @@ export default function Home() {
       </Head>
       <Header />
       <Hero />
-      <Usp grid='grid9' />
-      <Products grid='grid11' />
-      <Services grid='grid14' />
-      <NewsUsp grid='grid16' />
-      <Bottom grid='grid18' />
-      <Footer grid='grid19' />
+      <News grid='grid9' />
+      <Usp grid='grid10' />
+      <Products grid='grid12' />
+      <Services grid='grid15' />
+      <NewsUsp grid='grid17' />
+      <Bottom grid='grid19' />
+      <Footer grid='grid20' />
     </div>
   );
 }
