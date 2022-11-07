@@ -1,36 +1,56 @@
 export const productList = [
   {
-    productName: 'gost-universal-control-unit',
-    category: 'controller',
-    flag: ['small', 'medium', 'large'],
+    productName: 'universal-control-unit',
     header: 'Universal Control Unit',
-    title: 'GOST Universal Control Unit',
     description:
-      'Mauris vitae ultricies leo integer malesuada nunc vel risus commodo. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Integer eget aliquet nibh praesent tristique. In vitae turpis massa sed elementum tempus egestas sed sed. Curabitur gravida arcu ac tortor dignissim. Lectus arcu bibendum at varius vel pharetra vel. Morbi blandit cursus risus at ultrices. Etiam erat velit scelerisque in dictum. Sagittis eu volutpat odio facilisis mauris. ',
+      'GOST Universal Control Unit (UCU) är systemets styrenhet och grundstomme. Här finns möjlighet att koppla upp till 32 trådlösa sensorer. Inne i lådan finns en LCD-display för programmering av systemet samt en 4G-modul och en IP-modul för kommunikation. Styrenheten övervakar båtens batteri och larmar om strömmen blir låg. Styrenheten har eget inbyggt backup-batteri och är byggd i en vattentät låda.',
     usps: [
       {
-        header: 'This is a USP header',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+        title: 'Intern eller extern kommunikation',
+        content:
+          'Systemet har inbyggd SIM-kortsmodul med plats för två SIM-kort, men kan även kopplas upp till båtens egna router eller satellitantenn.',
       },
       {
-        header: 'This is a USP header nr.2',
-        text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+        title: 'Information i realtid',
+        content:
+          'Styrenheten håller dig uppdaterad i realtid, antingen via app eller SMS!',
+      },
+      {
+        title: 'Backupbatteri',
+        content:
+          'Systemet har ett inbyggt backupbatteri som aktiveras och larmar om strömförsörjningen bryts.',
+      },
+      {
+        title: 'Fjärrstyrd av- och på-larmning!',
+        content:
+          'Med den medföljande fjärrkontrollen kan du enkelt larma av och på ditt system.',
+      },
+      {
+        title: 'Paketet inkluderar',
+        content:
+          'Varje Universal Control Unit levereras med en mini-siren, en dörrkontakt med förlängningssensor samt en fjärrkontroll för av- och på-larmning.',
+      },
+      {
+        title: 'NavTracker och Touchscreen',
+        content:
+          'Som tillval finns möjlighet att välja den satellitbaserade GOST NavTracker samt TouchScreen för placering på annan plats i båten för enkel åtkomst till systemet.',
       },
     ],
-    images: [
-      '/placeholder_product_image.jpg',
-      '/placeholder_product_image.jpg',
-      '/placeholder_dimensions_image.jpg',
-    ],
     specifications: [
-      'Art.Nr:GOST-UCU-S',
-      'Size (LxWxH):30,2 x 23,1 x 11,0 cm',
-      'Spänning:12V DC',
-      'Intern DC-lågspänningssensor:Ja',
-      'Backup batteri:Ja',
-      'Drifttid backup batteri:ca 5 timmar',
-      'Nätverts port / IP modul:Ja',
-      'Intern 4G/LTE modul:Ja',
+      {
+        title: 'Mått (LxBxH)',
+        content: '30,2 x 23,1 x 11,0 cm',
+      },
+      {
+        title: 'Spänning',
+        content:
+          '9-32V DC, kopplas till båtens batteri eller extern strömkälla för ytterligare redundans.',
+      },
+      {
+        title: 'Backupbatteri',
+        content: 'Fem timmar',
+      },
     ],
+    images: [],
   },
 ];

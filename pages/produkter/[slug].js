@@ -27,7 +27,6 @@ export const getStaticProps = ({ params: { slug } }) => {
   const data = productList.find((product) => product.productName === slug);
 
   const header = data.header;
-  const title = data.title;
   const description = data.description;
   const usps = data.usps;
   const images = data.images;
@@ -35,7 +34,7 @@ export const getStaticProps = ({ params: { slug } }) => {
 
   return {
     props: {
-      title: title,
+      header: header,
       description: description,
       usps: usps,
       images: images,
