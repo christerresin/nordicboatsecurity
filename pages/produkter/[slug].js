@@ -3,7 +3,9 @@ import Head from 'next/head';
 import Bottom from '../../components/Bottom';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import Usp from '../../components/Usp';
 import ProductInfomation from '../../components/ProductInfomation';
+import ProductSpecifications from '../../components/ProductSpecifications';
 import Top from '../../components/Top';
 import { productList } from '../../productList';
 import styles from '../../styles/Home.module.scss';
@@ -58,7 +60,9 @@ const Produkt = (props) => {
           'Du är alltid välkommen att kontakta oss för rådgivning eller med frågor om våra produkter och tjänster. Vi är redo att göra ditt båtliv tryggare!'
         }
       />
-      <ProductInfomation grid='grid7' props={props} />
+      <ProductInfomation grid='grid6' props={props} />
+      <Usp grid='grid7' />
+      <ProductSpecifications grid='grid8' props={props} />
       <Bottom grid='grid9' />
       <Footer grid='grid10' />
     </div>

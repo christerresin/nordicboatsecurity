@@ -51,6 +51,6 @@ export const productList = [
         content: 'Fem timmar',
       },
     ],
-    images: [],
+    images: ['/UCU1_transp.png'],
   },
 ];

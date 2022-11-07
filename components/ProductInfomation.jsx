@@ -3,29 +3,23 @@ import styles from '../styles/ProductInformation.module.scss';
 function ProductInfomation({ grid, props }) {
   return (
     <section className={`${styles.container} ${grid}`}>
-      <div>
-        <h3>{props.header}</h3>
-        <div className={`${styles.divider} ${styles.red}`}></div>
-        <p>{props.description}</p>
-      </div>
-      <div className={styles.usp_container}>
-        {props.usps.map((usp) => (
-          <div key={usp.title}>
-            <h3>{usp.title}</h3>
-            <div className={`${styles.divider} ${styles.red}`}></div>
-            <p>{usp.content}</p>
+      <div className={styles.information}>
+        <div className={styles.image_container}>
+          <img className={styles.image} src={props.images[0]}></img>
+        </div>
+        <div className={styles.text}>
+          <h2>{props.header}</h2>
+          <p>{props.description}</p>
+          <div className={`${styles.divider} ${styles.red}`}></div>
+          <div className={styles.usp_container}>
+            {props.usps.slice(0, 4).map((usp) => (
+              <div key={usp.title}>
+                <h4>{usp.title}</h4>
+                <p>{usp.content}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-      <div>
-        <div className={`${styles.divider} ${styles.red}`}></div>
-        <ul className={styles.specificationsList}>
-          {props.specifications.map((item) => (
-            <li key={item}>
-              <p>{item.title}</p>
-            </li>
-          ))}
-        </ul>
+        </div>
       </div>
     </section>
   );
