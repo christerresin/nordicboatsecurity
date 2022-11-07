@@ -1,3 +1,5 @@
+@import 'breakpoints';
+
 .container {
   position: relative;
   grid-column: 4/12;
@@ -183,11 +185,15 @@
     width: 85%;
   }
 
-  .information h2 {
+  .header {
     width: 100%;
     margin: 0;
     font-size: 2rem;
     line-height: 3rem;
+    text-align: center;
+  }
+
+  .description {
     text-align: center;
   }
 
@@ -240,10 +246,17 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@include xs_media {
   .container {
     grid-column: 1/7;
-    min-height: 135vh;
+    min-height: 145vh;
+    margin-top: 0;
+  }
+
+  .text {
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 }
 

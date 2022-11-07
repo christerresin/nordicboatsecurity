@@ -3,6 +3,7 @@ export const sensorsList = [
     header: 'Nivåvakt',
     description:
       'En vattennivåvakt reagerar omgående om vattennivån stiger över mätaren och larmar direkt!',
+    url: '/produkter/vattensensor',
   },
   {
     header: 'Ström',
@@ -18,6 +19,7 @@ export const sensorsList = [
     header: 'Dörr och lucka',
     description:
       'Sensor med magnet för dörrar och luckor. Finns även i utökad version för längre räckvidd.',
+    url: '/produkter/dorr_och_lucka',
   },
   {
     header: 'Rörelsedetektorer',

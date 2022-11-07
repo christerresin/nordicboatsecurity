@@ -36,6 +36,18 @@
   cursor: pointer;
 }
 
+.product_box:active {
+  color: #333333;
+}
+
+.product_box:visited {
+  color: #333333;
+}
+
+.product_box:link {
+  color: #333333;
+}
+
 .material_symbols_outlined {
   color: rgba(189, 0, 0, 1);
   font-size: 48px;

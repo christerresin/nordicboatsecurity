@@ -8,8 +8,8 @@ function ProductInfomation({ grid, props }) {
           <img className={styles.image} src={props.images[0]}></img>
         </div>
         <div className={styles.text}>
-          <h2>{props.header}</h2>
-          <p>{props.description}</p>
+          <h2 className={styles.header}>{props.header}</h2>
+          <p className={styles.description}>{props.description}</p>
           <div className={`${styles.divider} ${styles.red}`}></div>
           <div className={styles.usp_container}>
             {props.usps.slice(0, 4).map((usp) => (

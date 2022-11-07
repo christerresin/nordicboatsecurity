@@ -51,6 +51,65 @@ export const productList = [
         content: 'Fem timmar',
       },
     ],
-    images: ['/UCU1_transp.png'],
+    images: ['/ucu1_900.png'],
+  },
+  {
+    productName: 'vattensensor',
+    header: 'Vattensensor',
+    description:
+      'GOST High Water Sensor känner av om vattennivån ökar i båten och är ditt första försvar för att undvika att båten sjunker. En av de vanligaste orsakerna till att en båt förstörs är just att den sjunker, därför befinner sig vattensensorn i övervakningsläge dygnet runt även om du inte har aktiverat larmet!',
+    usps: [
+      {
+        title: 'Aktiv dygnet runt',
+        content: 'Vattensensorn står i övervakningsläge dygnets alla timmar!',
+      },
+    ],
+    specifications: [
+      {
+        title: 'Mått (LxBxH)',
+        content: '13,9 x 6,3 x 7,3 cm',
+      },
+      {
+        title: 'Strömkälla',
+        content: '2x AAA-batterier',
+      },
+    ],
+    images: ['/hws2_900.png'],
+  },
+  {
+    productName: 'dorr_och_lucka',
+    header: 'Dörrkontakt',
+    description: 'Utlöser larmet vid inbrott',
+    usps: [
+      {
+        title: 'Kopplas till siren',
+        content:
+          'Kan kopplas till en siren (medföljer till Universal Control Unit) som vid inbrott aktiveras omgående och ljuder i 125dB!',
+      },
+      {
+        title: 'Förlängningssensor',
+        content:
+          'Dörrkontakten går att utöka med en förlängningssensor vid större avstånd (säljes separat)',
+      },
+      {
+        title: 'Ingår i Universal Control Unit',
+        content: 'En dörrkontakt medföljer varje Universal Control Unit!',
+      },
+    ],
+    specifications: [
+      {
+        title: 'Mått (LxBxH)',
+        content: 'Sändare: 11,2 x 3,2 x 2,5 cm. Magnet: 4,4 x 1,3 x 1,6 cm.',
+      },
+      {
+        title: 'Strömkälla',
+        content: '2x AAA-batterier',
+      },
+      {
+        title: 'Batteriets livslängd',
+        content: 'Ca. 1 år',
+      },
+    ],
+    images: ['/placeholder_sensor_900.png'],
   },
 ];
