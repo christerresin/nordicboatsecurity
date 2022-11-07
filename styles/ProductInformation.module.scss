@@ -1,7 +1,7 @@
 .container {
   position: relative;
   grid-column: 4/12;
-  min-height: 50rem;
+  min-height: 62rem;
   margin-top: 2vh;
 }
 
@@ -149,7 +149,7 @@
 @media screen and (max-width: 1170px) {
   .container {
     grid-column: 2/8;
-    min-height: 106vh;
+    min-height: 117vh;
     margin-bottom: 25vh;
     margin-top: 0;
   }
@@ -174,7 +174,7 @@
 @media screen and (max-width: 833px) {
   .container {
     grid-column: 2/6;
-    min-height: 74vh;
+    min-height: 90vh;
     margin-top: 5rem;
   }
 
@@ -207,10 +207,10 @@
   }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 640px) {
   .container {
     grid-column: 1/7;
-    min-height: 90vh;
+    min-height: 105vh;
   }
 
   .usp_container {
@@ -224,7 +224,7 @@
 @media screen and (max-width: 480px) {
   .container {
     grid-column: 1/7;
-    min-height: 100vh;
+    min-height: 115vh;
   }
 
   .usp_container {
