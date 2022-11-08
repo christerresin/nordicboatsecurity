@@ -1,4 +1,4 @@
-import styles from '../styles/ProductsList.module.scss';
+import styles from '../styles/SensorsList.module.scss';
 import ProductBox from './ProductBox';
 
 import { sensorsList } from '../sensorsList';

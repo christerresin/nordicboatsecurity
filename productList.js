@@ -112,4 +112,204 @@ export const productList = [
     ],
     images: ['/placeholder_sensor_900.png'],
   },
+  {
+    productName: 'mini-siren',
+    header: 'Mini-siren',
+    description:
+      'Denna kompakta siren kan gömmas i stort sett överallt på båten, sin storlek till trots så ljuder den i hela 125dB!',
+    usps: [
+      {
+        title: 'Kraftfull siren',
+        content: 'Med en ljudstyrka på 125dB hörs denna siren långväga!',
+      },
+      {
+        title: 'Maximal uppmärksamhet',
+        content:
+          'Kan kombineras med blixtljus för maximal uppmärksamhet på båten vid inbrott (säljes separat)',
+      },
+      {
+        title: 'Ingår i Universal Control Unit',
+        content: 'En siren medföljer varje Universal Control Unit!',
+      },
+    ],
+    specifications: [
+      {
+        title: 'Mått (LxBxH)',
+        content: '7,62 x 7,62 x 7,62 cm',
+      },
+      {
+        title: 'Ljudstyrka',
+        content: '125dB',
+      },
+    ],
+    images: ['/mini_siren_900.jpg'],
+  },
+  {
+    productName: 'rorelsedetektor',
+    header: 'Rörelsedetektor',
+    description:
+      'Vattentät trådlös rörelsedetektor med ”anti-masking”-funktion.',
+    usps: [
+      {
+        title: 'Anti-masking',
+        content:
+          'Rörelsedetektorn har en inbyggd infraröd sensor som känner av rörelser även om detektorn sprayas med färg eller blockeras fysiskt.',
+      },
+      {
+        title: 'Djurvänlig',
+        content:
+          'Detektorn särskiljer mellan människor och mindre djur, såsom fåglar och husdjur, för att undvika falsklarm.',
+      },
+    ],
+    specifications: [
+      {
+        title: 'Mått (LxBxH)',
+        content: '12,3 x 4,2 x 6,3 cm',
+      },
+      {
+        title: 'Strömkälla',
+        content: '2x AA-batterier',
+      },
+      {
+        title: 'Batteritid',
+        content: 'Ca. 1 år',
+      },
+    ],
+    images: ['/placeholder_sensor_900.png'],
+  },
+  {
+    productName: 'satellitantenn',
+    header: 'Satellitantenn',
+    description:
+      'Inmarsat Data Pro satellitantenn för spårning av din båt oavsett var på jorden du eller din båt befinner sig!',
+    usps: [
+      {
+        title: 'Geo-Fence',
+        content:
+          'Sätt enkelt upp ett virtuellt inhägnat staket runt din båt, om båten lämnar detta hägn aktiveras larmet och du informeras omgående!',
+      },
+      {
+        title: 'Spårning i realtid!',
+        content: 'Du får realtidsuppdatering om båtens hastighet och riktning!',
+      },
+      {
+        title: 'Inbyggt backup-batteri',
+        content:
+          'Antennen har inbyggt batteri för backup om båtens batterier tar slut.',
+      },
+      {
+        title: 'Geostationära satelliter',
+        content:
+          'Inmarsats geostationära satelliter täcker nästan hela jordens yta! (förutom vid nord- och sydpolerna)',
+      },
+    ],
+    specifications: [
+      {
+        title: 'Mått (LxBxH)',
+        content: '12,6 x 12,6 x 4,9 cm',
+      },
+      {
+        title: 'Antennkabel',
+        content: '9m/30ft (24m/80ft kabel finns som tillval)',
+      },
+    ],
+    images: ['/idp_900.jpg'],
+  },
+  {
+    productName: 'fotocellsdetektor',
+    header: 'Fotocells- detektor',
+    description:
+      'Denna mycket lilla fotocellsdetektor av sändare/mottagare-typ (Thru-beam) monteras med fördel vid dörrar eller vid förarplatsen (på öppen båt), bryts strålen av en förbipasserande så aktiveras larmet omgående!',
+    usps: [
+      {
+        title: 'Sändare/mottagare',
+        content:
+          'Då denna detektor består av en sändare och en mottagare (så kallad thru-beam) så är den ej känslig för starkt solljus eller mörker!',
+      },
+    ],
+    specifications: [
+      {
+        title: 'Strömkälla',
+        content: '12V DC',
+      },
+    ],
+    images: ['/infrared_900.jpg'],
+  },
+  {
+    productName: 'blixtljus',
+    header: 'Blixtljus',
+    description:
+      'Litet och vattentåligt blixtljus med LED-lampor som påkallar uppmärksamhet vid inbrott!',
+    usps: [
+      {
+        title: 'Varierande blixtmönster',
+        content:
+          'Blixtljuset har 25 olika slumpmässigt varierande blixtmönster som desorienterar inkräktaren.',
+      },
+      {
+        title: 'Skapar uppmärksamhet',
+        content:
+          'Blixtljuset i kombination med mini-sirenen är en stark kombination för att påkalla maximal uppmärksamhet till båten!',
+      },
+    ],
+    specifications: [
+      {
+        title: 'Strömkälla',
+        content:
+          'Kopplas direkt till Universal Control Unit eller via ett separat relä',
+      },
+    ],
+    images: ['/strobe_533.jpg'],
+  },
+  {
+    productName: 'kapellsensor',
+    header: 'Kapellsensor',
+    description:
+      'Kapellsensorn fungerar som ett vanligt kapellfäste men underdelen har en kontinuerlig matning och aktiverar larmet om kretsen bryts.',
+    usps: [],
+    specifications: [],
+    images: [],
+  },
+  {
+    productName: 'fjarrkontroll',
+    header: 'Fjärrkontroll',
+    description:
+      'Aktivera och avaktivera larmsystemet med denna kompakta och vattentäta fjärrkontroll! Kan programmeras för att utföra upp till sex olika typer av aktiverar, exempelvis enbart aktivera skalskyddet eller rörelsesensorerna på akterdäck.',
+    usps: [
+      {
+        title: 'Ingår i Universal Control Unit',
+        content:
+          'En fjärrkontroll medföljer varje Universal Control Unit! (Fler kontroller kan köpas till)',
+      },
+    ],
+    specifications: [
+      {
+        title: 'Mått (LxBxH)',
+        content: '7,2 x 3,9 x 1,1 cm',
+      },
+      {
+        title: 'Batteri',
+        content: 'Cr2032',
+      },
+    ],
+    images: [],
+  },
+  {
+    productName: 'dragsensor',
+    header: 'Dragsensor',
+    description:
+      'Dragsensorn är en vajer med kontinuerlig matning vilket innebär att om den rycks ur sitt fäste eller kapas med en bultsax så aktiveras larmsystemet omedelbart! Denna dragsensor passar perfekt för montering till utombordsmotorn, tenderbåt eller mellan båten och bryggan.',
+    usps: [],
+    specifications: [
+      {
+        title: 'Vajerlängd',
+        content: '7,6 m',
+      },
+      {
+        title: 'Strömkälla',
+        content: '2x AAA-batterier',
+      },
+    ],
+    images: ['/pull_sensor_900.jpg'],
+  },
 ];

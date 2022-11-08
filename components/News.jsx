@@ -5,7 +5,7 @@ function News({ grid }) {
     <section className={`${styles.container} ${grid}`}>
       <div className={styles.usp}>
         <div className={styles.text}>
-          <h2>Våra produkter fortsätter vinna priser!</h2>
+          <h2>Våra produkter fortsätter att vinna priser!</h2>
           <h4>
             Gost® wins fifth NMEA product of excellence award in remote vessel
             monitoring category.

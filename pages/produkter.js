@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Bottom from '../components/Bottom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import HeaderGrid from '../components/HeaderGrid';
 import ProductsList from '../components/ProductsList';
 import SensorsList from '../components/SensorsList';
 import Top from '../components/Top';
@@ -27,10 +28,11 @@ export default function produkter() {
           'Nordic Boat Security är exklusiv återförsäljare i Norden för amerikanska Global Ocean Security Technologies, GOST. I över 15 år har GOST varit ledande inom satellitspårning, videövervakning samt övervakningssensorer i marin miljö och därigenom bland annat fått den amerikanska kustbevakningens erkännande!'
         }
       />
-      <SensorsList header='Sensorer' grid='grid7' />
-      <ProductsList header='Video' grid='grid11' />
-      <Bottom grid='grid15' />
-      <Footer grid='grid16' />
+      <HeaderGrid grid='grid1' />
+      <SensorsList header='Sensorer' grid='grid2' />
+      <ProductsList header='Video' grid='grid3' />
+      <Bottom grid='grid4' />
+      <Footer grid='grid5' />
     </div>
   );
 }

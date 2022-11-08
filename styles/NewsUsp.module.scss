@@ -1,8 +1,10 @@
+@import 'mixins';
+
 .container {
   position: relative;
   grid-column: 4/12;
-  min-height: 20rem;
-  margin-bottom: 2rem;
+  min-height: 22rem;
+  margin-bottom: $space-margin;
 }
 
 .usp {
@@ -46,7 +48,6 @@
 @media screen and (max-width: 833px) {
   .container {
     grid-column: 2/6;
-    margin-top: 1rem;
   }
 
   .usp h2 {

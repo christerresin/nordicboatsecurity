@@ -1,0 +1,19 @@
+.container {
+  grid-column: 5/11;
+  position: relative;
+  min-height: 22rem;
+  margin-top: 580px;
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    grid-column: 3/7;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .container {
+    grid-column: 2/6;
+    text-align: center;
+  }
+}

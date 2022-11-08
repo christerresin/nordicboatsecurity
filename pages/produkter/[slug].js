@@ -7,6 +7,7 @@ import Usp from '../../components/Usp';
 import ProductInfomation from '../../components/ProductInfomation';
 import ProductSpecifications from '../../components/ProductSpecifications';
 import Top from '../../components/Top';
+import HeaderGrid from '../../components/HeaderGrid';
 import { productList } from '../../productList';
 import styles from '../../styles/Home.module.scss';
 
@@ -60,11 +61,12 @@ const Produkt = (props) => {
           'Du är alltid välkommen att kontakta oss för rådgivning eller med frågor om våra produkter och tjänster. Vi är redo att göra ditt båtliv tryggare!'
         }
       />
-      <ProductInfomation grid='grid6' props={props} />
-      <Usp grid='grid7' />
-      <ProductSpecifications grid='grid8' props={props} />
-      <Bottom grid='grid9' />
-      <Footer grid='grid10' />
+      <HeaderGrid grid='grid1' />
+      <ProductInfomation grid='grid2' props={props} />
+      <Usp grid='grid3' />
+      <ProductSpecifications grid='grid4' props={props} />
+      <Bottom grid='grid5' />
+      <Footer grid='grid6' />
     </div>
   );
 };

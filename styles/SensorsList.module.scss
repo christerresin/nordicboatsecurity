@@ -2,8 +2,9 @@
 
 .container {
   grid-column: 3/13;
-  margin-bottom: 7vh;
   text-align: center;
+  min-height: 22rem;
+  margin-bottom: 27vh;
 }
 
 .boxes_container {
@@ -26,7 +27,7 @@
   margin: 2.5rem auto 3.5rem auto;
 }
 
-@media screen and (max-width: 1170px) {
+@include desktop {
   .container {
     grid-column: 2/8;
   }
@@ -38,9 +39,11 @@
   }
 }
 
-@media screen and (max-width: 833px) {
+@include tablet {
   .container {
     grid-column: 2/6;
+    min-height: 22rem;
+    margin-bottom: 37vh;
 
     h2 {
       font-size: 2rem;

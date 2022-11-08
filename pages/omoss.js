@@ -8,6 +8,7 @@ import Top from '../components/Top';
 
 import styles from '../styles/Home.module.scss';
 import { contactList } from '../contactList';
+import HeaderGrid from '../components/HeaderGrid';
 
 export default function omoss() {
   return (
@@ -29,12 +30,13 @@ export default function omoss() {
           'Vi erbjuder marknadsledande, modulära säkerhets- och övervakningslösningar som passar just din båt och dina behov.'
         }
       />
-      <About grid='grid7' />
+      <HeaderGrid grid='grid1' />
+      <About grid='grid2' />
       {contactList.map((contact, index) => (
-        <ContactBox key={index} grid={'grid' + (9 + index)} contact={contact} />
+        <ContactBox key={index} grid={'grid' + (3 + index)} contact={contact} />
       ))}
-      <Bottom grid='grid11' />
-      <Footer grid='grid12' />
+      <Bottom grid='grid5' />
+      <Footer grid='grid6' />
     </div>
   );
 }

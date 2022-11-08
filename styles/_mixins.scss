@@ -1,10 +1,43 @@
-@mixin tablet() {
-  @media screen and (max-width: 1170px) {
+$breakpoints: (
+  'xs': 390px,
+  'sm': 480px,
+  'md': 833px,
+  'lg': 1170px,
+  'xl': 1440px,
+);
+
+@mixin widescreen {
+  @media screen and (max-width: map-get($breakpoints, 'xl')) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (max-width: map-get($breakpoints, 'lg')) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: map-get($breakpoints, 'md')) {
+    @content;
+  }
+}
+
+@mixin smallscreen {
+  @media screen and (max-width: map-get($breakpoints, 'sm')) {
+    @content;
+  }
+}
+
+@mixin smartphone {
+  @media screen and (max-width: map-get($breakpoints, 'xs')) {
     @content;
   }
 }
 
 $border-radius: 3px;
+$space-margin: 7vh;
 
 @mixin roundedCorners {
   border-radius: $border-radius;

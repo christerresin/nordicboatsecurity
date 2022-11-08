@@ -1,8 +1,9 @@
+@import 'mixins';
+
 .container {
   position: relative;
   grid-column: 4/12;
-  min-height: 20rem;
-  margin-bottom: 2rem;
+  min-height: 18rem;
 }
 
 .usp {
@@ -32,7 +33,7 @@
   margin: 1.5rem 0 1.5rem 0;
 }
 
-@media screen and (max-width: 1170px) {
+@include desktop {
   .container {
     grid-column: 1/8;
   }
@@ -43,10 +44,9 @@
   }
 }
 
-@media screen and (max-width: 833px) {
+@include tablet {
   .container {
     grid-column: 2/6;
-    margin-top: 1rem;
   }
 
   .usp h2 {
@@ -54,5 +54,11 @@
     margin: 0;
     font-size: 2rem;
     line-height: 3rem;
+  }
+}
+
+@include smallscreen {
+  .container {
+    margin-bottom: $space-margin;
   }
 }
