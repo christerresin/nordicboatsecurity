@@ -55,7 +55,7 @@ export const productList = [
   },
   {
     productName: 'vattensensor',
-    header: 'Vattensensor',
+    header: 'Vatten- sensor',
     description:
       'GOST High Water Sensor känner av om vattennivån ökar i båten och är ditt första försvar för att undvika att båten sjunker. En av de vanligaste orsakerna till att en båt förstörs är just att den sjunker, därför befinner sig vattensensorn i övervakningsläge dygnet runt även om du inte har aktiverat larmet!',
     usps: [
@@ -146,7 +146,7 @@ export const productList = [
   },
   {
     productName: 'rorelsedetektor',
-    header: 'Rörelsedetektor',
+    header: 'Rörelse- detektor',
     description:
       'Vattentät trådlös rörelsedetektor med ”anti-masking”-funktion.',
     usps: [
@@ -179,7 +179,7 @@ export const productList = [
   },
   {
     productName: 'satellitantenn',
-    header: 'Satellitantenn',
+    header: 'Satellit- antenn',
     description:
       'Inmarsat Data Pro satellitantenn för spårning av din båt oavsett var på jorden du eller din båt befinner sig!',
     usps: [
@@ -263,7 +263,7 @@ export const productList = [
   },
   {
     productName: 'kapellsensor',
-    header: 'Kapellsensor',
+    header: 'Kapell- sensor',
     description:
       'Kapellsensorn fungerar som ett vanligt kapellfäste men underdelen har en kontinuerlig matning och aktiverar larmet om kretsen bryts.',
     usps: [],
