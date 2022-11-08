@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Top from '../components/Top';
 import ContactContainer from '../components/ContactContainer';
 import styles from '../styles/Home.module.scss';
+import HeaderGrid from '../components/HeaderGrid';
 
 export default function kontakt() {
   return (
@@ -26,6 +27,7 @@ export default function kontakt() {
           'Du är alltid välkommen att kontakta oss för rådgivning eller med frågor om våra produkter och tjänster. Vi är redo att göra ditt båtliv tryggare!'
         }
       />
+      <HeaderGrid grid='grid1' />
       <ContactContainer grid='grid7'></ContactContainer>
       <Bottom grid='grid11' />
       <Footer grid='grid12' />
