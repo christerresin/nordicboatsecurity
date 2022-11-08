@@ -55,7 +55,7 @@ export const productList = [
   },
   {
     productName: 'vattensensor',
-    header: 'Vatten- sensor',
+    header: 'Vatten',
     description:
       'GOST High Water Sensor känner av om vattennivån ökar i båten och är ditt första försvar för att undvika att båten sjunker. En av de vanligaste orsakerna till att en båt förstörs är just att den sjunker, därför befinner sig vattensensorn i övervakningsläge dygnet runt även om du inte har aktiverat larmet!',
     usps: [
@@ -78,7 +78,7 @@ export const productList = [
   },
   {
     productName: 'dorr_och_lucka',
-    header: 'Dörrkontakt',
+    header: 'Dörr och lucka',
     description: 'Utlöser larmet vid inbrott',
     usps: [
       {
@@ -146,7 +146,7 @@ export const productList = [
   },
   {
     productName: 'rorelsedetektor',
-    header: 'Rörelse- detektor',
+    header: 'Rörelse',
     description:
       'Vattentät trådlös rörelsedetektor med ”anti-masking”-funktion.',
     usps: [
@@ -179,7 +179,7 @@ export const productList = [
   },
   {
     productName: 'satellitantenn',
-    header: 'Satellit- antenn',
+    header: 'Antenn',
     description:
       'Inmarsat Data Pro satellitantenn för spårning av din båt oavsett var på jorden du eller din båt befinner sig!',
     usps: [
@@ -217,7 +217,7 @@ export const productList = [
   },
   {
     productName: 'fotocellsdetektor',
-    header: 'Fotocells- detektor',
+    header: 'Fotocell',
     description:
       'Denna mycket lilla fotocellsdetektor av sändare/mottagare-typ (Thru-beam) monteras med fördel vid dörrar eller vid förarplatsen (på öppen båt), bryts strålen av en förbipasserande så aktiveras larmet omgående!',
     usps: [
@@ -263,7 +263,7 @@ export const productList = [
   },
   {
     productName: 'kapellsensor',
-    header: 'Kapell- sensor',
+    header: 'Kapell',
     description:
       'Kapellsensorn fungerar som ett vanligt kapellfäste men underdelen har en kontinuerlig matning och aktiverar larmet om kretsen bryts.',
     usps: [],
@@ -296,7 +296,7 @@ export const productList = [
   },
   {
     productName: 'dragsensor',
-    header: 'Dragsensor',
+    header: 'Drag',
     description:
       'Dragsensorn är en vajer med kontinuerlig matning vilket innebär att om den rycks ur sitt fäste eller kapas med en bultsax så aktiveras larmsystemet omedelbart! Denna dragsensor passar perfekt för montering till utombordsmotorn, tenderbåt eller mellan båten och bryggan.',
     usps: [],
