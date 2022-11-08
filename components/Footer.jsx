@@ -90,17 +90,29 @@ function Footer({ grid }) {
           </div>
         </div>
         <div className={styles.social}>
-          <a href=''>
+          <a
+            target='_blank'
+            href='https://www.instagram.com/nordicboatsecurity/'
+            rel='noopener noreferrer'
+          >
             <i>
               <InstagramIcon sx={{ fontSize: '36px' }} />
             </i>
           </a>
-          <a href=''>
+          <a
+            target='_blank'
+            href='https://www.facebook.com/profile.php?id=100077903275556'
+            rel='noopener noreferrer'
+          >
             <i>
               <FacebookIcon sx={{ fontSize: '36px' }} />
             </i>
           </a>
-          <a href=''>
+          <a
+            target='_blank'
+            href='https://www.linkedin.com/company/nordic-boat-security-ab/'
+            rel='noopener noreferrer'
+          >
             <i>
               <LinkedInIcon sx={{ fontSize: '36px' }} />
             </i>
