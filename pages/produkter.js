@@ -8,6 +8,9 @@ import SensorsList from '../components/SensorsList';
 import Top from '../components/Top';
 import styles from '../styles/Home.module.scss';
 
+import { videosList } from '../videosList';
+import { unitsList } from '../unitsList';
+
 export default function produkter() {
   return (
     <div className={styles.container}>
@@ -30,9 +33,22 @@ export default function produkter() {
       />
       <HeaderGrid grid='grid1' />
       <SensorsList header='Sensorer' grid='grid2' />
-      <ProductsList header='Video' grid='grid3' />
-      <Bottom grid='grid4' />
-      <Footer grid='grid5' />
+      <ProductsList
+        header='Video'
+        grid='grid3'
+        productsList={videosList}
+        id='video'
+        icon='Video'
+      />
+      <ProductsList
+        header='Övrigt'
+        grid='grid4'
+        productsList={unitsList}
+        id='build'
+        icon='CrisisAlert'
+      />
+      <Bottom grid='grid5' />
+      <Footer grid='grid6' />
     </div>
   );
 }

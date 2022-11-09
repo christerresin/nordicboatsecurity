@@ -244,6 +244,7 @@ export const productList = [
   },
   {
     productName: 'blixtljus',
+    category: 'Övrigt',
     header: 'Blixtljus',
     description:
       'Litet och vattentåligt blixtljus med LED-lampor som påkallar uppmärksamhet vid inbrott!',
@@ -280,6 +281,7 @@ export const productList = [
   },
   {
     productName: 'fjarrkontroll',
+    category: 'Övrigt',
     header: 'Fjärrkontroll',
     description:
       'Aktivera och avaktivera larmsystemet med denna kompakta och vattentäta fjärrkontroll! Kan programmeras för att utföra upp till sex olika typer av aktiverar, exempelvis enbart aktivera skalskyddet eller rörelsesensorerna på akterdäck.',
