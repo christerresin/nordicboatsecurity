@@ -12,12 +12,18 @@
 
 @include desktop {
   .container {
-    height: 820px;
+    height: 620px;
   }
 }
 
 @include tablet {
   .container {
-    height: 920px;
+    height: 700px;
+  }
+}
+
+@include smallscreen {
+  .container {
+    height: 620px;
   }
 }

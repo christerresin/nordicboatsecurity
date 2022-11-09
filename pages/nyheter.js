@@ -3,6 +3,7 @@ import Bottom from '../components/Bottom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import HeaderGrid from '../components/HeaderGrid';
+import News from '../components/News';
 import NewsUsp from '../components/NewsUsp';
 import Top from '../components/Top';
 import styles from '../styles/Home.module.scss';
@@ -28,9 +29,10 @@ export default function nyheter() {
         }
       />
       <HeaderGrid grid='grid1' />
-      <NewsUsp grid='grid2' />
-      <Bottom grid='grid3' />
-      <Footer grid='grid4' />
+      <News grid='grid2' />
+      <NewsUsp grid='grid3' />
+      <Bottom grid='grid4' />
+      <Footer grid='grid5' />
     </div>
   );
 }
