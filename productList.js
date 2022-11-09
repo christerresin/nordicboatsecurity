@@ -1,6 +1,7 @@
 export const productList = [
   {
     productName: 'universal-control-unit',
+    category: 'Enhet',
     header: 'Universal Control Unit',
     description:
       'GOST Universal Control Unit (UCU) är systemets styrenhet och grundstomme. Här finns möjlighet att koppla upp till 32 trådlösa sensorer. Inne i lådan finns en LCD-display för programmering av systemet samt en 4G-modul och en IP-modul för kommunikation. Styrenheten övervakar båtens batteri och larmar om strömmen blir låg. Styrenheten har eget inbyggt backup-batteri och är byggd i en vattentät låda.',
@@ -55,6 +56,7 @@ export const productList = [
   },
   {
     productName: 'vattensensor',
+    category: 'Sensor',
     header: 'Vatten',
     description:
       'GOST High Water Sensor känner av om vattennivån ökar i båten och är ditt första försvar för att undvika att båten sjunker. En av de vanligaste orsakerna till att en båt förstörs är just att den sjunker, därför befinner sig vattensensorn i övervakningsläge dygnet runt även om du inte har aktiverat larmet!',
@@ -78,6 +80,7 @@ export const productList = [
   },
   {
     productName: 'dorr_och_lucka',
+    category: 'Sensor',
     header: 'Dörr och lucka',
     description: 'Utlöser larmet vid inbrott',
     usps: [
@@ -114,6 +117,7 @@ export const productList = [
   },
   {
     productName: 'mini-siren',
+    category: 'Övrigt',
     header: 'Mini-siren',
     description:
       'Denna kompakta siren kan gömmas i stort sett överallt på båten, sin storlek till trots så ljuder den i hela 125dB!',
@@ -146,6 +150,7 @@ export const productList = [
   },
   {
     productName: 'rorelsedetektor',
+    category: 'Sensor',
     header: 'Rörelse',
     description:
       'Vattentät trådlös rörelsedetektor med ”anti-masking”-funktion.',
@@ -179,6 +184,7 @@ export const productList = [
   },
   {
     productName: 'satellitantenn',
+    category: 'Övrigt',
     header: 'Antenn',
     description:
       'Inmarsat Data Pro satellitantenn för spårning av din båt oavsett var på jorden du eller din båt befinner sig!',
@@ -217,6 +223,7 @@ export const productList = [
   },
   {
     productName: 'fotocellsdetektor',
+    category: 'Sensor',
     header: 'Fotocell',
     description:
       'Denna mycket lilla fotocellsdetektor av sändare/mottagare-typ (Thru-beam) monteras med fördel vid dörrar eller vid förarplatsen (på öppen båt), bryts strålen av en förbipasserande så aktiveras larmet omgående!',
@@ -263,6 +270,7 @@ export const productList = [
   },
   {
     productName: 'kapellsensor',
+    category: 'Sensor',
     header: 'Kapell',
     description:
       'Kapellsensorn fungerar som ett vanligt kapellfäste men underdelen har en kontinuerlig matning och aktiverar larmet om kretsen bryts.',
@@ -296,6 +304,7 @@ export const productList = [
   },
   {
     productName: 'dragsensor',
+    category: 'Sensor',
     header: 'Drag',
     description:
       'Dragsensorn är en vajer med kontinuerlig matning vilket innebär att om den rycks ur sitt fäste eller kapas med en bultsax så aktiveras larmsystemet omedelbart! Denna dragsensor passar perfekt för montering till utombordsmotorn, tenderbåt eller mellan båten och bryggan.',

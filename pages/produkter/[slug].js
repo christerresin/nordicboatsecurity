@@ -34,6 +34,7 @@ export const getStaticProps = ({ params: { slug } }) => {
   const usps = data.usps;
   const images = data.images;
   const specifications = data.specifications;
+  const category = data.category;
 
   return {
     props: {
@@ -43,6 +44,7 @@ export const getStaticProps = ({ params: { slug } }) => {
       images: images,
       header: header,
       specifications: specifications,
+      category: category,
     },
   };
 };

@@ -8,6 +8,7 @@ function ProductInfomation({ grid, props }) {
           <img className={styles.image} src={props.images[0]}></img>
         </div>
         <div className={styles.text}>
+          <span>{props.category}</span>
           <h2 className={styles.header}>{props.header}</h2>
           <p className={styles.description}>{props.description}</p>
           <div className={`${styles.divider} ${styles.red}`}></div>

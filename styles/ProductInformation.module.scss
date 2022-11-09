@@ -25,9 +25,14 @@
   padding-right: 2rem;
   text-align: left;
 
-  h2 {
+  span {
+    font-weight: 900;
+  }
+
+  .header {
     width: 100%;
     font-size: 2rem;
+    margin-top: 6px;
   }
 
   p {
