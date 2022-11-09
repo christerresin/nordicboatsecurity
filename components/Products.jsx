@@ -11,7 +11,7 @@ function Products({ grid }) {
       className={`${styles.products_container} ${styles.reveal} ${grid}`}
     >
       <div className={styles.products_box_container}>
-        <Link href='/nyheter'>
+        <Link href='/produkter'>
           <a href='' className={styles.product_box}>
             <span
               className={`${styles.material_symbols_outlined} ${styles.md_48}`}
