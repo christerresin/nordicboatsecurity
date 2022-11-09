@@ -18,10 +18,9 @@ function Products({ grid }) {
             >
               <SatelliteAlt sx={{ fontSize: '76px' }} />
             </span>
-            <h3>SPÅRNING VIA SATELLIT ELLER 4G</h3>
+            <h3>SPÅRNING VIA SATELLIT</h3>
             <p className={styles.product_box_text}>
-              Vi erbjuder system med satellit-, eller 4G/LTE-kommunikation som
-              grund. Du väljer själv!
+              Vi erbjuder system med satellitkommunikation som grund.
             </p>
           </a>
         </Link>
