@@ -128,3 +128,9 @@
     width: 100%;
   }
 }
+
+@include smartphone {
+  .products_container {
+    margin-bottom: 10vh;
+  }
+}
