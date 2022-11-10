@@ -4,6 +4,8 @@ $breakpoints: (
   'md': 833px,
   'lg': 1170px,
   'xl': 1440px,
+  'iphone': 375px,
+  'iphonepro': 428px,
 );
 
 @mixin widescreen {
