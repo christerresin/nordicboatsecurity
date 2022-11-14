@@ -34,7 +34,7 @@ export default function produkter() {
       />
       <HeaderGrid grid='grid1' />
       <ProductsList
-        header='Huvudenheter'
+        header='Styrenhet'
         grid='grid2'
         productsList={unitsList}
         id='video'
