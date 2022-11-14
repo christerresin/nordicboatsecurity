@@ -10,6 +10,7 @@ import styles from '../styles/Home.module.scss';
 
 import { videosList } from '../videosList';
 import { unitsList } from '../unitsList';
+import { accessoriesList } from '../accessoriesList';
 
 export default function produkter() {
   return (
@@ -32,23 +33,30 @@ export default function produkter() {
         }
       />
       <HeaderGrid grid='grid1' />
-      <SensorsList header='Sensorer' grid='grid2' />
+      <ProductsList
+        header='Huvudenheter'
+        grid='grid2'
+        productsList={unitsList}
+        id='video'
+        icon='CrisisAlert'
+      />
+      <SensorsList header='Sensorer' grid='grid3' />
       <ProductsList
         header='Video'
-        grid='grid3'
+        grid='grid4'
         productsList={videosList}
         id='video'
         icon='Video'
       />
       <ProductsList
-        header='Övrigt'
-        grid='grid4'
-        productsList={unitsList}
+        header='Tillbehör'
+        grid='grid5'
+        productsList={accessoriesList}
         id='build'
         icon='CrisisAlert'
       />
-      <Bottom grid='grid5' />
-      <Footer grid='grid6' />
+      <Bottom grid='grid6' />
+      <Footer grid='grid7' />
     </div>
   );
 }
