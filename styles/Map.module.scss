@@ -1,0 +1,50 @@
+@import 'mixins';
+
+.container {
+  position: relative;
+  grid-column: 3/13;
+  min-height: 15rem;
+  margin-bottom: 12vh;
+}
+
+.map_container {
+  margin: 0 auto 0 auto;
+  width: 50vw;
+  height: 50vh;
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    grid-column: 2/8;
+    margin-bottom: 12vh;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .container {
+    grid-column: 2/6;
+    margin-bottom: 10vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    grid-column: 1/7;
+    margin-bottom: 12vh;
+  }
+}
+
+@include smartphone {
+  .container {
+    min-height: 45vh;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
