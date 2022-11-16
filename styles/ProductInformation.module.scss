@@ -1,25 +1,61 @@
+@import 'mixins';
+
 .container {
   position: relative;
-  grid-column: 5/11;
-  min-height: 250px;
-  margin-bottom: 2rem;
+  grid-column: 4/12;
+  min-height: 20vh;
+  margin-top: 1vh;
+  margin-bottom: 17vh;
+}
+
+.information {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.text {
+  width: 100%;
+  padding-right: 2rem;
+  text-align: left;
+
+  span {
+    font-weight: 900;
+  }
+
+  .header {
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 6px;
+  }
 
   p {
-    margin-bottom: 1rem;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
   }
 }
 
-.box {
+.image_container {
   display: flex;
-  flex-direction: column;
-  font-size: 1rem;
-  font-weight: 300;
-}
+  justify-content: center;
+  align-items: flex-start;
+  height: 40vh;
+  width: 100%;
+  padding-right: 2rem;
+  animation: fadeIn 1s;
 
-.split {
-  flex-direction: row;
-
-  .content {
+  .image {
     width: 70%;
   }
 }
@@ -29,88 +65,191 @@
 }
 
 .divider {
-  max-width: 6rem;
+  margin: 1rem auto 3rem auto;
+  width: 80%;
   border: 1px solid;
   border-radius: 1px;
-  margin: 1.5rem 1rem 1.5rem 0;
 }
 
-// Using grid to force new row if more then 2 USPs
 .usp_container {
-  display: inline-grid;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  padding-top: 5rem;
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-flow: row;
+  column-gap: 2rem;
 }
 
-.images_container {
-  display: inline-grid;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding-top: 5rem;
-
-  .image {
-    width: 100%;
-    aspect-ratio: 1;
+@media screen and (max-width: 1440px) {
+  .container {
+    position: relative;
+    grid-column: 3/13;
   }
-}
 
-.specificationsList {
-  list-style-type: none;
-  width: 80%;
-
-  li {
+  .information {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  .text {
+    width: 100%;
+    padding-right: 2rem;
     text-align: left;
 
+    h2 {
+      width: 100%;
+      font-size: 2rem;
+    }
+
     p {
-      width: 50%;
-      margin: 0;
+      width: 100%;
+      padding-top: 0.5rem;
+      padding-bottom: 2rem;
+    }
+
+    h4 {
       font-size: 1rem;
     }
+  }
 
-    p:first-of-type {
-      font-weight: 800;
-      margin-right: 1rem;
+  .image_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60vh;
+    width: 100%;
+    padding-right: 7vw;
+    animation: fadeIn 1s;
+
+    .image {
+      width: 100%;
+    }
+  }
+
+  .red {
+    color: #bd0000;
+  }
+
+  .divider {
+    margin: 1rem auto 3rem auto;
+    width: 80%;
+    border: 1px solid;
+    border-radius: 1px;
+  }
+
+  .usp_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-flow: row;
+    column-gap: 2rem;
+  }
+}
+
+@include desktop {
+  .container {
+    grid-column: 2/8;
+  }
+
+  .information {
+    width: 85%;
+  }
+
+  .information h2 {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .image_container {
+    .image {
+      width: 85%;
     }
   }
 }
 
-@media screen and (max-width: 1170px) {
-  .container {
-    grid-column: 3/7;
-  }
-}
-
-@media screen and (max-width: 833px) {
+@include tablet {
   .container {
     grid-column: 2/6;
+    min-height: 80vh;
+    margin-top: 1vh;
+  }
+
+  .information {
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .header {
+    width: 100%;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 3rem;
     text-align: center;
   }
 
-  .box {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .description {
+    text-align: center;
   }
 
-  .content {
-    width: 100%;
+  .description {
+    text-align: center;
   }
 
-  .logo {
-    width: 100%;
+  .image_container {
+    width: 70%;
+    height: 100%;
+    margin: 2rem auto 2rem auto;
+    padding: 0;
   }
 
-  .flip {
-    flex-direction: column-reverse;
+  .text {
+    padding: 0;
+  }
+}
+
+@include smallscreen {
+  .container {
+    grid-column: 1/7;
+    min-height: 45vh;
+  }
+
+  .usp_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-flow: row;
+  }
+
+  .information {
+    width: 80%;
+  }
+}
+
+@include smartphone {
+  .container {
+    grid-column: 1/7;
+    min-height: 20vh;
+    margin-bottom: 7vh;
+  }
+
+  .text {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

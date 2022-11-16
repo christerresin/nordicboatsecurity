@@ -1,8 +1,10 @@
+@import 'mixins';
+
 .container {
   position: relative;
   grid-column: 3/13;
   min-height: 250px;
-  margin-bottom: 1rem;
+  margin-bottom: 7vh;
   text-align: center;
 }
 
@@ -79,7 +81,6 @@
     position: relative;
     grid-column: 1/14;
     min-height: 250px;
-    margin-bottom: 1rem;
     text-align: center;
   }
 
@@ -193,5 +194,18 @@
     align-items: center;
     margin-bottom: 4rem;
     gap: 1.5rem;
+  }
+}
+
+@include smartphone {
+  .container {
+    margin-top: 0;
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding-top: 8rem;
   }
 }

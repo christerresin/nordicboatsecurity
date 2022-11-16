@@ -10,6 +10,7 @@ import Usp from '../components/Usp';
 import GostUsp from '../components/GostUsp';
 import WestraUsp from '../components/WestraUsp';
 import NbsServiceBox from '../components/NbsServiceBox';
+import HeaderGrid from '../components/HeaderGrid';
 
 export default function services() {
   return (
@@ -31,14 +32,15 @@ export default function services() {
           'Våra tjänster erbjuder dig möjligheten att välja flera olika lager av skydd och säkerhet, allt från alarm och sensorinformation till övervakning och väktarutryckning. Vad behöver du för din båt?'
         }
       />
-      <GostUsp grid='grid7' />
-      <GostServiceBox grid='grid8' />
-      <WestraUsp grid='grid10' />
-      <WestraServiceBox grid='grid11' />
-      <Usp grid='grid13' />
-      <NbsServiceBox grid='grid15' />
-      <Bottom grid='grid17' />
-      <Footer grid='grid18' />
+      <HeaderGrid grid='grid1' />
+      <GostUsp grid='grid2' />
+      <GostServiceBox grid='grid3' />
+      <WestraUsp grid='grid4' />
+      <WestraServiceBox grid='grid5' />
+      <Usp grid='grid6' />
+      <NbsServiceBox grid='grid7' />
+      <Bottom grid='grid8' />
+      <Footer grid='grid9' />
     </div>
   );
 }

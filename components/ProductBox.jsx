@@ -7,7 +7,7 @@ function ProductBox({ product, icon }) {
   return (
     <>
       <div className={styles.container}>
-        <div href='' className={styles.product_box}>
+        <a href={product.url} className={styles.product_box}>
           <span
             className={`${styles.material_symbols_outlined} ${styles.md_48}`}
           >
@@ -19,7 +19,7 @@ function ProductBox({ product, icon }) {
           </span>
           <h3>{product.header}</h3>
           <p className={styles.product_box_text}>{product.description}</p>
-        </div>
+        </a>
       </div>
     </>
   );

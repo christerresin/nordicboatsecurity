@@ -1,0 +1,56 @@
+@import 'mixins';
+
+.container {
+  grid-column: 3/13;
+  text-align: center;
+  min-height: 22rem;
+  margin-bottom: 27vh;
+}
+
+.boxes_container {
+  display: inline-grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 26%);
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+}
+
+.red {
+  color: #bd0000;
+}
+
+.divider {
+  max-width: 10rem;
+  border: 1px solid;
+  border-radius: 1px;
+  margin: 2.5rem auto 3.5rem auto;
+}
+
+@include desktop {
+  .container {
+    grid-column: 2/8;
+  }
+
+  .boxes_container {
+    grid-template-columns: repeat(2, 35%);
+    gap: 2%;
+    justify-content: center;
+  }
+}
+
+@include tablet {
+  .container {
+    grid-column: 2/6;
+    min-height: 22rem;
+    margin-bottom: 37vh;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .boxes_container {
+    grid-template-columns: repeat(1, 90%);
+    gap: 1%;
+  }
+}

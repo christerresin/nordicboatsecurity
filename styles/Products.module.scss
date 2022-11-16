@@ -6,8 +6,9 @@
 
 .products_container {
   position: relative;
-  grid-column: 1/14;
-  margin-bottom: 2rem;
+  grid-column: 2/14;
+  margin-bottom: 14vh;
+  margin-top: 8vh;
   text-align: center;
 }
 
@@ -113,5 +114,23 @@
     flex-wrap: wrap;
     width: 73%;
     margin: 0 auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .products_container {
+    grid-column: 1/7;
+    margin-bottom: 5vh;
+    min-height: 240vh;
+  }
+
+  .products_box_container {
+    width: 100%;
+  }
+}
+
+@include smartphone {
+  .products_container {
+    margin-bottom: 1rem;
   }
 }

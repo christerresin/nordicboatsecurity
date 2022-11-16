@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Bottom from '../components/Bottom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import HeaderGrid from '../components/HeaderGrid';
+import News from '../components/News';
 import NewsUsp from '../components/NewsUsp';
 import Top from '../components/Top';
 import styles from '../styles/Home.module.scss';
@@ -26,9 +28,11 @@ export default function nyheter() {
           'Vi arbetar för en tryggare och säkrare vardag för båtlivet. Här hittar du senaste nytt från oss och våra samarbetspartner.'
         }
       />
-      <NewsUsp grid='grid7' />
-      <Bottom grid='grid11' />
-      <Footer grid='grid12' />
+      <HeaderGrid grid='grid1' />
+      <News grid='grid2' />
+      <NewsUsp grid='grid3' />
+      <Bottom grid='grid4' />
+      <Footer grid='grid5' />
     </div>
   );
 }

@@ -11,17 +11,16 @@ function Products({ grid }) {
       className={`${styles.products_container} ${styles.reveal} ${grid}`}
     >
       <div className={styles.products_box_container}>
-        <Link href='/nyheter'>
+        <Link href='/produkter'>
           <a href='' className={styles.product_box}>
             <span
               className={`${styles.material_symbols_outlined} ${styles.md_48}`}
             >
               <SatelliteAlt sx={{ fontSize: '76px' }} />
             </span>
-            <h3>SPÅRNING VIA SATELLIT ELLER 4G</h3>
+            <h3>SPÅRNING VIA SATELLIT</h3>
             <p className={styles.product_box_text}>
-              Vi erbjuder system med satellit-, eller 4G/LTE-kommunikation som
-              grund. Du väljer själv!
+              Vi erbjuder system med satellitkommunikation som grund.
             </p>
           </a>
         </Link>

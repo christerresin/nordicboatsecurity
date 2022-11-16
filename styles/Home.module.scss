@@ -1,15 +1,15 @@
 .container {
   display: grid;
   grid-template-columns: 32px repeat(12, 1fr) 32px;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(min-content, max-content);
 
   @media screen and (max-width: 1170px) {
     grid-template-columns: 32px repeat(6, 1fr) 32px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(min-content, max-content);
   }
 
   @media screen and (max-width: 833px) {
     grid-template-columns: 32px repeat(4, 1fr) 32px;
-    grid-auto-rows: minmax(100px, auto);
+    grid-auto-rows: minmax(min-content, max-content);
   }
 }

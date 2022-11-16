@@ -3,8 +3,11 @@ import Head from 'next/head';
 import Bottom from '../../components/Bottom';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
+import Usp from '../../components/Usp';
 import ProductInfomation from '../../components/ProductInfomation';
+import ProductSpecifications from '../../components/ProductSpecifications';
 import Top from '../../components/Top';
+import HeaderGrid from '../../components/HeaderGrid';
 import { productList } from '../../productList';
 import styles from '../../styles/Home.module.scss';
 
@@ -27,20 +30,21 @@ export const getStaticProps = ({ params: { slug } }) => {
   const data = productList.find((product) => product.productName === slug);
 
   const header = data.header;
-  const title = data.title;
   const description = data.description;
   const usps = data.usps;
   const images = data.images;
   const specifications = data.specifications;
+  const category = data.category;
 
   return {
     props: {
-      title: title,
+      header: header,
       description: description,
       usps: usps,
       images: images,
       header: header,
       specifications: specifications,
+      category: category,
     },
   };
 };
@@ -59,9 +63,12 @@ const Produkt = (props) => {
           'Du är alltid välkommen att kontakta oss för rådgivning eller med frågor om våra produkter och tjänster. Vi är redo att göra ditt båtliv tryggare!'
         }
       />
-      <ProductInfomation grid='grid7' props={props} />
-      <Bottom grid='grid9' />
-      <Footer grid='grid10' />
+      <HeaderGrid grid='grid1' />
+      <ProductInfomation grid='grid2' props={props} />
+      <Usp grid='grid3' />
+      <ProductSpecifications grid='grid4' props={props} />
+      <Bottom grid='grid5' />
+      <Footer grid='grid6' />
     </div>
   );
 };

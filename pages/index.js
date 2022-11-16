@@ -11,6 +11,7 @@ import Services from '../components/Services';
 import Usp from '../components/Usp';
 import styles from '../styles/Home.module.scss';
 import News from '../components/News';
+import IndexGrid from '../components/IndexGrid';
 
 export default function Home() {
   return (
@@ -27,13 +28,14 @@ export default function Home() {
       </Head>
       <Header />
       <Hero />
-      <News grid='grid9' />
-      <Usp grid='grid10' />
-      <Products grid='grid12' />
-      <Services grid='grid15' />
-      <NewsUsp grid='grid17' />
-      <Bottom grid='grid19' />
-      <Footer grid='grid20' />
+      <IndexGrid grid='grid1' />
+      <News grid='grid2' />
+      <Usp grid='grid3' />
+      <Products grid='grid4' />
+      <Services grid='grid5' />
+      <NewsUsp grid='grid6' />
+      <Bottom grid='grid7' />
+      <Footer grid='grid8' />
     </div>
   );
 }
