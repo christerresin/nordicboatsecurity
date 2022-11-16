@@ -33,9 +33,6 @@ function Map({ grid }) {
   const handleSelect = async (value) => {
     const results = await geocodeByAddress(value);
     const ll = await getLatLng(results[0]);
-    console.log(ll);
-    setAddress(value);
-    setCoordinates(ll);
     setCenter(ll);
   };
 
@@ -79,7 +76,7 @@ function Map({ grid }) {
             <div>
               <input
                 {...getInputProps({
-                  placeholder: 'Search Places ...',
+                  placeholder: 'Adress... ',
                   className: 'location-search-input',
                 })}
               />
