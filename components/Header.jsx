@@ -22,6 +22,10 @@ function Header() {
       path: '/produkter',
     },
     {
+      title: 'Återförsäljare',
+      path: '/aterforsaljare',
+    },
+    {
       title: 'Tjänster',
       path: '/tjanster',
     },
