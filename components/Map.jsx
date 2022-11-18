@@ -25,7 +25,7 @@ function Map({ grid }) {
   const [center, setCenter] = useState({ lat: 65.58456, lng: 22.14785 });
   const [address, setAddress] = useState('');
   const [coordinates, setCoordinates] = useState({ lat: null, lng: null });
-  const googleLibraries = ['places'];
+  const [libraries] = useState(['places']);
   const searchOptions = {
     componentRestrictions: { country: ['se'] },
   };
@@ -50,8 +50,8 @@ function Map({ grid }) {
   };
 
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_MAPS,
-    libraries: googleLibraries,
+    googleMapsApiKey: 'AIzaSyDrnJbRwhGaIMB56FB0SwwvXYJrz6V4qN8',
+    libraries: libraries,
   });
 
   const googleMapsOptions = {
