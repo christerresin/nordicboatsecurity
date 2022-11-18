@@ -22,10 +22,8 @@ export default function aterforsaljare() {
       </Head>
       <Header />
       <Top
-        title='Återförsäljare'
-        text={
-          'Vi arbetar för en tryggare och säkrare vardag för båtlivet. Här hittar du senaste nytt från oss och våra samarbetspartner.'
-        }
+        title='Här finns vi'
+        text={'Hitta en av våra återförsäljare nära dig'}
       />
       <HeaderGrid grid='grid1' />
       <Map grid='grid2' />

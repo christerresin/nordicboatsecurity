@@ -1,10 +1,90 @@
 @import 'mixins';
 
+$primary: #bd0000;
+$secondary: #333333;
+$red: #bd0000;
+$gray: #333333;
+
 .container {
   position: relative;
   grid-column: 3/13;
   min-height: 15rem;
   margin-bottom: 12vh;
+}
+
+.input_container {
+  margin: 0 25% 0 25%;
+
+  .form_group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  .form_field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid $gray;
+    outline: 0;
+    font-size: 1rem;
+    color: $red;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:placeholder-shown ~ .form_label {
+      font-size: 1rem;
+      cursor: text;
+      top: 20px;
+    }
+
+    .styles.drop_down_autocomplete {
+      position: relative;
+      z-index: 5000;
+      overflow: hidden;
+      display: block;
+    }
+  }
+
+  .form_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $gray;
+  }
+
+  .form_field:focus {
+    ~ .form_label {
+      position: absolute;
+      top: 0;
+      display: block;
+      transition: 0.2s;
+      font-size: 1rem;
+      color: $primary;
+      font-weight: 700;
+    }
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, $primary, $secondary);
+    border-image-slice: 1;
+  }
+  /* reset input */
+  .form_field {
+    &:required,
+    &:invalid {
+      box-shadow: none;
+    }
+  }
 }
 
 .map_container {
@@ -13,10 +93,37 @@
   height: 50vh;
 }
 
+.locate_container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto 2rem auto;
+  width: 100%;
+
+  .locate_me_pin {
+    height: 25px;
+    width: 25px;
+  }
+
+  .locate_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  span {
+    font-weight: 800;
+    padding-left: 6px;
+  }
+}
+
 @media screen and (max-width: 1170px) {
   .container {
     grid-column: 2/8;
     margin-bottom: 12vh;
+  }
+
+  .map_container {
+    width: 80vw;
   }
 }
 
@@ -25,12 +132,20 @@
     grid-column: 2/6;
     margin-bottom: 10vh;
   }
+
+  .map_container {
+    width: 80vw;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .container {
     grid-column: 1/7;
     margin-bottom: 12vh;
+  }
+
+  .map_container {
+    width: 90vw;
   }
 }
 
