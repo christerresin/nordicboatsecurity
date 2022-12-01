@@ -9,7 +9,7 @@ function NewsUsp({ grid }) {
         <p>
           Tillsammans med GOST utvecklar vi just nu ett larmsystem som spårar
           båten via 4G/LTE-nätet, vi räknar med att kunna lansera detta under
-          hösten 2022! Mer information kommer inom kort!
+          första halvåret 2023! Mer information kommer inom kort!
         </p>
       </div>
     </section>
