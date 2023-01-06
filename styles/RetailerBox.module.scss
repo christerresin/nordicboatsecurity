@@ -1,0 +1,84 @@
+@import 'mixins';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.retailer_box {
+  text-align: center;
+  width: 20rem;
+  height: 20rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 2rem 2rem 0 2rem;
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  @include roundedCorners;
+}
+
+.retailer_box:hover .material_symbols_outlined {
+  color: rgba(255, 255, 255, 1);
+}
+
+.retailer_box:hover {
+  background-color: #bd0000;
+  color: rgba(255, 255, 255, 1);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.retailer_box:active {
+  color: #333333;
+}
+
+.retailer_box:visited {
+  color: #333333;
+}
+
+.retailer_box:link {
+  color: #333333;
+}
+
+.material_symbols_outlined {
+  color: rgba(189, 0, 0, 1);
+  font-size: 48px;
+  padding: 1.5rem 0;
+}
+
+.retailer_box_text {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+
+.red {
+  color: #bd0000;
+}
+
+.divider {
+  max-width: 10rem;
+  border: 1px solid;
+  border-radius: 1px;
+  margin: 0.5rem auto 0.5rem auto;
+}
+
+@media screen and (max-width: 1170px) {
+  .retailer_box {
+    margin: 1rem 1rem 1.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .retailer_box {
+    min-height: 20rem;
+
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+}

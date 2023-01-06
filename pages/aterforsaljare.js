@@ -4,10 +4,13 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import HeaderGrid from '../components/HeaderGrid';
 import Map from '../components/Map';
+import RetailersList from '../components/RetailersList';
 import Top from '../components/Top';
 import styles from '../styles/Home.module.scss';
+import { markersList } from '../markersList';
 
 export default function aterforsaljare() {
+  console.log(markersList);
   return (
     <div className={styles.container}>
       <Head>
@@ -27,7 +30,7 @@ export default function aterforsaljare() {
       />
       <HeaderGrid grid='grid1' />
       <Map grid='grid2' />
-
+      <RetailersList grid='grid3' retailersList={markersList} />
       <Bottom grid='grid4' />
       <Footer grid='grid5' />
     </div>

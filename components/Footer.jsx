@@ -119,7 +119,7 @@ function Footer({ grid }) {
           </a>
         </div>
       </div>
-      <p className={styles.copyright}>&copy; 2022 Nordic Boat Security</p>
+      <p className={styles.copyright}>&copy; 2023 Nordic Boat Security</p>
     </footer>
   );
 }

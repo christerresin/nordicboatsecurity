@@ -1,0 +1,55 @@
+@import 'mixins';
+
+.container {
+  grid-column: 3/13;
+  margin-bottom: 28vh;
+  text-align: center;
+}
+
+.boxes_container {
+  display: inline-grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 26%);
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+}
+
+.red {
+  color: #bd0000;
+}
+
+.divider {
+  max-width: 10rem;
+  border: 1px solid;
+  border-radius: 1px;
+  margin: 2.5rem auto 3.5rem auto;
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    grid-column: 2/8;
+    margin-bottom: 20vh;
+  }
+
+  .boxes_container {
+    grid-template-columns: repeat(2, 35%);
+    gap: 2%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .container {
+    grid-column: 2/6;
+    margin-bottom: 32vh;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  .boxes_container {
+    grid-template-columns: repeat(1, 90%);
+    gap: 1%;
+  }
+}
