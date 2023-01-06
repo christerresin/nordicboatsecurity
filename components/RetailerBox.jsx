@@ -8,6 +8,7 @@ function RetailerBox({ retailer }) {
           <h4>{retailer.companyName}</h4>
           <div className={`${styles.divider}`}></div>
           <p className={styles.retailer_box_text}>{retailer.adress}</p>
+          <p className={styles.retailer_box_text}>{retailer.phone}</p>
         </a>
       </div>
     </>

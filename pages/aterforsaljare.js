@@ -10,7 +10,6 @@ import styles from '../styles/Home.module.scss';
 import { markersList } from '../markersList';
 
 export default function aterforsaljare() {
-  console.log(markersList);
   return (
     <div className={styles.container}>
       <Head>
