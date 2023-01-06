@@ -8,6 +8,7 @@ import RetailersList from '../components/RetailersList';
 import Top from '../components/Top';
 import styles from '../styles/Home.module.scss';
 import { markersList } from '../markersList';
+import DisplayPicker from '../components/DisplayPicker';
 
 export default function aterforsaljare() {
   return (
