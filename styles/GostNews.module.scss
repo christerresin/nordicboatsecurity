@@ -1,0 +1,134 @@
+@import 'mixins';
+
+.container {
+  position: relative;
+  grid-column: 3/13;
+  min-height: 15rem;
+  margin-bottom: 12vh;
+}
+
+.usp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.text {
+  width: 100%;
+  padding-right: 2rem;
+
+  h2 {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  p {
+    width: 100%;
+    padding-top: 1rem;
+    font-style: italic;
+  }
+
+  h4 {
+    padding-top: 1rem;
+    font-style: normal;
+  }
+}
+
+.image_container {
+  width: 100%;
+  text-align: center;
+  padding-left: 2rem;
+  animation: fadeIn 1s;
+
+  .image {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    grid-column: 2/8;
+    margin-bottom: 12vh;
+  }
+
+  .usp {
+    margin-top: 4vh;
+    width: 85%;
+  }
+
+  .usp h2 {
+    margin-top: 3rem;
+    width: 100%;
+  }
+
+  .image_container {
+    .image {
+      width: 85%;
+    }
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .container {
+    grid-column: 2/6;
+    margin-bottom: 10vh;
+  }
+
+  .usp {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .usp h2 {
+    width: 100%;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .text {
+    padding-right: 0;
+  }
+
+  .image_container {
+    width: 70%;
+    margin: 2rem auto 2rem auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    grid-column: 1/7;
+    margin-bottom: 12vh;
+  }
+
+  .usp {
+    width: 80%;
+    margin-top: 10vh;
+  }
+}
+
+@include smartphone {
+  .container {
+    min-height: 45vh;
+  }
+
+  .text {
+    padding-right: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

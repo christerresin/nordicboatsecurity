@@ -151,18 +151,23 @@
     min-width: 17%;
   }
 
+  .hero {
+    grid-column: 1/8;
+  }
+
   .text {
-    width: 70%;
+    width: 90%;
   }
 
   .text h1 {
-    font-size: 4rem;
+    font-size: 6vw;
     font-weight: 700;
-    line-height: 72px;
+    line-height: 7vw;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 1px;
     margin-bottom: 1.5rem;
+    padding: 0 1vw 0 1vw;
   }
 }
 
@@ -177,8 +182,8 @@
   }
 
   .text h1 {
-    font-size: 8vw;
+    font-size: 7vw;
     line-height: 8.5vw;
-    padding: 0 5vw 0 5vw;
+    padding: 0 1vw 0 1vw;
   }
 }

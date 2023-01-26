@@ -18,8 +18,8 @@ function Header() {
       path: '/',
     },
     {
-      title: 'Produkter',
-      path: '/produkter',
+      title: 'GOST',
+      path: '/gost',
     },
     {
       title: 'Tjänster',

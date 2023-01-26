@@ -33,9 +33,8 @@ export default function Home() {
       <Usp grid='grid3' />
       <Products grid='grid4' />
       <Services grid='grid5' />
-      <NewsUsp grid='grid6' />
-      <Bottom grid='grid7' />
-      <Footer grid='grid8' />
+      <Bottom grid='grid6' />
+      <Footer grid='grid7' />
     </div>
   );
 }

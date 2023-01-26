@@ -5,12 +5,13 @@ function Hero() {
   return (
     <section className={`${styles.hero}`}>
       <div className={styles.text}>
-        <h1>Larmsystem som skapar trygghet</h1>
+        <h1>SKRÄDDARSYDDA SÄKERHETS- LÖSNINGAR FÖR DIN BÅT</h1>
         <p>
-          Med marknadens mest avancerade larmsystem levererar vi trygghet och
-          säkerhet till våra kunder. Våra tjänster och produkter anpassas efter
-          båt samt önskemål. Vårt mål är att trygghetssäkra din vardag, oavsett
-          var du är eller vad du gör. Båtlivet skall ge frihet, inte osäkerhet.
+          Nordic Boat Security kan med några av marknadens mest avancerade
+          system erbjuda båtägare skräddarsydda säkerhetslösningar för alla
+          typer av båtar och behov. Allt från inbrottslarm till system-, video-,
+          och professionell övervakning. Vad behöver du? Kontakta oss och
+          berätta!
         </p>
         <Link href='/kontakt'>
           <a className={styles.cta}>KONTAKTA OSS</a>
