@@ -38,13 +38,25 @@ export default function Home() {
       <Hero />
       <IndexGrid grid='grid1' />
       <TextSection content={textContent[0]} grid='grid2' />
-      <TextSectionDark content={textContent[1]} grid='grid3' />
+      <TextSectionDark
+        backgroundImage='/beach_jetski.jpg'
+        content={textContent[1]}
+        grid='grid3'
+      />
       <TextSectionWhiteExtraLarge content={textContent[2]} grid='grid4' />
-      <TextSectionDarkHeaderDivider content={textContent[3]} grid='grid5' />
+      <TextSectionDarkHeaderDivider
+        backgroundImage='/camera.jpg'
+        content={textContent[3]}
+        grid='grid5'
+      />
       <TextSectionWhiteMedium content={textContent[4]} grid='grid6' />
       <Products grid='grid7' />
       <TextSectionSmall content={textContent[5]} grid='grid8' />
-      <TextSectionDarkHeaderDivider content={textContent[7]} grid='grid10' />
+      <TextSectionDarkHeaderDivider
+        backgroundImage='/gost_tracking.jpg'
+        content={textContent[7]}
+        grid='grid10'
+      />
       <TextSectionWhiteMedium content={textContent[8]} grid='grid11' />
       <TextSectionDark content={textContent[9]} grid='grid12' />
       <TextSection content={textContent[10]} grid='grid13' />
