@@ -12,6 +12,13 @@ import Usp from '../components/Usp';
 import styles from '../styles/Home.module.scss';
 import News from '../components/News';
 import IndexGrid from '../components/IndexGrid';
+import TextSection from '../components/TextSection';
+import { textContent } from '../textContent';
+import TextSectionDark from '../components/TextSectionDark';
+import TextSectionWhiteMedium from '../components/TextSectionWhiteMedium';
+import TextSectionDarkHeaderDivider from '../components/TextSectionDarkHeaderDivider';
+import TextSectionWhiteExtraLarge from '../components/TextSectionWhiteExtraLarge';
+import TextSectionWhiteSmall from '../components/TextSectionWhiteSmall';
 
 export default function Home() {
   return (
@@ -29,12 +36,21 @@ export default function Home() {
       <Header />
       <Hero />
       <IndexGrid grid='grid1' />
-      <News grid='grid2' />
-      <Usp grid='grid3' />
-      <Products grid='grid4' />
-      <Services grid='grid5' />
-      <Bottom grid='grid6' />
-      <Footer grid='grid7' />
+      <TextSection content={textContent[0]} grid='grid2' />
+      <TextSectionDark content={textContent[1]} grid='grid3' />
+      <TextSectionWhiteExtraLarge content={textContent[2]} grid='grid4' />
+      <TextSectionDarkHeaderDivider content={textContent[3]} grid='grid5' />
+      <TextSectionWhiteMedium content={textContent[4]} grid='grid6' />
+      <Products grid='grid7' />
+      <TextSectionDarkHeaderDivider content={textContent[5]} grid='grid8' />
+      <TextSectionWhiteSmall content={textContent[6]} grid='grid9' />
+      <TextSectionDarkHeaderDivider content={textContent[7]} grid='grid10' />
+      <TextSectionWhiteMedium content={textContent[8]} grid='grid11' />
+      <TextSectionDark content={textContent[9]} grid='grid12' />
+      <TextSection content={textContent[10]} grid='grid13' />
+      <Services grid='grid14' />
+      <Bottom grid='grid15' />
+      <Footer grid='grid16' />
     </div>
   );
 }
