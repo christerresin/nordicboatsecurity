@@ -35,13 +35,13 @@ export const textContent = [
   },
   {
     header: 'Eller vill du bara veta hur båten mår?',
-    contentSections: [],
-  },
-  {
     contentSections: [
       'En del båtägare känner ingen större oro för just inbrott i båten men är däremot intresserade av att veta hur båten mår. Enligt en undersökning som tidningen Båtliv lät genomföra 2019 så svarade 46% att de använder båten max 20 dagar per säsong, är du en av dem? ',
       'Har båten tagit in vatten efter ett skyfall? Hur mycket ström är kvar i batteriet för länspumpen? Är den alls i drift?! Känns denna oro bekant? Vi har lösningen som ger lugn och ro! Våra produkter ger dig total kontroll över din båt!',
     ],
+  },
+  {
+    contentSections: [],
   },
   {
     header: 'Kontroll var du än är',

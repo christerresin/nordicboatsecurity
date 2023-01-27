@@ -19,6 +19,7 @@ import TextSectionWhiteMedium from '../components/TextSectionWhiteMedium';
 import TextSectionDarkHeaderDivider from '../components/TextSectionDarkHeaderDivider';
 import TextSectionWhiteExtraLarge from '../components/TextSectionWhiteExtraLarge';
 import TextSectionWhiteSmall from '../components/TextSectionWhiteSmall';
+import TextSectionSmall from '../components/TextSectionSmall';
 
 export default function Home() {
   return (
@@ -42,8 +43,7 @@ export default function Home() {
       <TextSectionDarkHeaderDivider content={textContent[3]} grid='grid5' />
       <TextSectionWhiteMedium content={textContent[4]} grid='grid6' />
       <Products grid='grid7' />
-      <TextSectionDarkHeaderDivider content={textContent[5]} grid='grid8' />
-      <TextSectionWhiteSmall content={textContent[6]} grid='grid9' />
+      <TextSectionSmall content={textContent[5]} grid='grid8' />
       <TextSectionDarkHeaderDivider content={textContent[7]} grid='grid10' />
       <TextSectionWhiteMedium content={textContent[8]} grid='grid11' />
       <TextSectionDark content={textContent[9]} grid='grid12' />

@@ -100,7 +100,7 @@
 @media screen and (max-width: 1170px) {
   .products_box_container {
     flex-wrap: wrap;
-    width: 73%;
+    width: 83%;
     margin: 3rem auto 0 auto;
   }
 
@@ -112,8 +112,12 @@
 @media screen and (max-width: 833px) {
   .products_box_container {
     flex-wrap: wrap;
-    width: 73%;
+    width: 100%;
     margin: 0 auto 0 auto;
+  }
+
+  .product_box {
+    margin: 1rem 1rem 3.5rem 1rem;
   }
 }
 
