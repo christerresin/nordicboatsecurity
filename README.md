@@ -35,3 +35,6 @@ function About({ grid }) {
   </section>;
 }
 ```
+
+## Design
+[Figma](https://www.figma.com/file/o8GqWb0nZaU9SDJMGFYWKU/Nordic-Boat-Security---Dark?node-id=0%3A1&t=n6WAroEsYle0RjtF-0)
