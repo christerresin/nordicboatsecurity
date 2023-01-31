@@ -23,7 +23,7 @@ git checkout tic-8-gost
 
 ## About
 
-The layout is based on a page level containing grid system. Each component needs to accept and use a grid prop.
+The layout is based on a page level containing grid system. Each component needs to accept and use a grid prop. The grid rows are defined inside globals.css
 
 ```javascript
 <About grid='grid2' />
