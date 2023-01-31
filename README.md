@@ -1,5 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:
@@ -27,13 +25,12 @@ git checkout tic-8-gost
 
 The layout is based on a page level containing grid system. Each component needs to accept and use a grid prop.
 
-```
+```javascript
 <About grid='grid2' />
 ```
 
-```
+```javascript
 function About({ grid }) {
-  return (
-    <section className={`${styles.container} ${grid}`}>
-    </section>
+  return <section className={`${styles.container} ${grid}`}></section>;
+}
 ```
