@@ -22,3 +22,18 @@ git checkout tic-7-partnerpage
 # or
 git checkout tic-8-gost
 ```
+
+## About
+
+The layout is based on a page level containing grid system. Each component needs to accept and use a grid prop.
+
+```
+<About grid='grid2' />
+```
+
+```
+function About({ grid }) {
+  return (
+    <section className={`${styles.container} ${grid}`}>
+    </section>
+```
