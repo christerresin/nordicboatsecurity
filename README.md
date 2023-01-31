@@ -31,6 +31,7 @@ The layout is based on a page level containing grid system. Each component needs
 
 ```javascript
 function About({ grid }) {
-  return <section className={`${styles.container} ${grid}`}></section>;
+  return <section className={`${styles.container} ${grid}`}>
+  </section>;
 }
 ```
