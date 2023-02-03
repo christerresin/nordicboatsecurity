@@ -25,6 +25,7 @@ import TextOneLeftTwoRight from '../components/TextOneLeftTwoRight';
 import TextTwoLeftOneRight from '../components/TextTwoLeftOneRight';
 import TextThreeLeftThreeRight from '../components/TextThreeLeftThreeRight';
 import TextOneLeftOneRightHeader from '../components/TextOneLeftOneRightHeader';
+import ProductsUnlinked from '../components/ProductsUnlinked';
 
 export default function Home() {
   return (
@@ -55,7 +56,8 @@ export default function Home() {
         grid='grid5'
       />
       <TextOneLeftTwoRight content={indexTextParagraphs[2]} grid='grid6' />
-      <Products grid='grid7' />
+      {/* <Products grid='grid7' /> */}
+      <ProductsUnlinked grid='grid7' />
       <TextOneLeftOneRightHeader
         header='Eller vill du bara veta hur båten mår?'
         content={indexTextParagraphs[3]}
