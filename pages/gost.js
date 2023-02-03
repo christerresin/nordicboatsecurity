@@ -11,7 +11,9 @@ import styles from '../styles/Home.module.scss';
 import { videosList } from '../videosList';
 import { unitsList } from '../unitsList';
 import { accessoriesList } from '../accessoriesList';
+import { gostThreeParagraphs } from '../gostThreeParagraphs';
 import GostNews from '../components/GostNews';
+import TextOneLeftTwoRight from '../components/TextOneLeftTwoRight';
 
 export default function gost() {
   return (
@@ -34,7 +36,7 @@ export default function gost() {
         }
       />
       <HeaderGrid grid='grid1' />
-      <GostNews grid='grid2' />
+      <TextOneLeftTwoRight content={gostThreeParagraphs} grid='grid2' />
       <ProductsList
         header='Styrenhet'
         grid='grid3'
@@ -57,8 +59,9 @@ export default function gost() {
         id='build'
         icon='CrisisAlert'
       />
-      <Bottom grid='grid7' />
-      <Footer grid='grid8' />
+      <GostNews grid='grid7' />
+      <Bottom grid='grid8' />
+      <Footer grid='grid9' />
     </div>
   );
 }

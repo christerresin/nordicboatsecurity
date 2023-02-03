@@ -1,29 +1,29 @@
 @import 'mixins';
 
 .container {
-  height: 800px;
+  height: 750px;
 }
 
 @include widescreen {
   .container {
-    height: 800px;
+    height: 750px;
   }
 }
 
 @include desktop {
   .container {
-    height: 800px;
+    height: 720px;
   }
 }
 
 @include tablet {
   .container {
-    height: 900px;
+    height: 750px;
   }
 }
 
 @include smallscreen {
   .container {
-    height: 1000px;
+    height: 720px;
   }
 }

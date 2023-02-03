@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className={`${styles.hero}`}>
       <div className={styles.text}>
-        <h1>SKRÄDDARSYDDA SÄKERHETS- LÖSNINGAR FÖR DIN BÅT</h1>
+        <h1>SKRÄDDARSYDDA SÄKERHETSLÖSNINGAR FÖR DIN BÅT</h1>
         <p>
           Nordic Boat Security kan med några av marknadens mest avancerade
           system erbjuda båtägare skräddarsydda säkerhetslösningar för alla

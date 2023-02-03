@@ -1,0 +1,113 @@
+@import 'mixins';
+
+.container {
+  position: relative;
+  grid-column: 3/13;
+  margin-bottom: 18vh;
+  margin-top: 6vh;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    text-align: center;
+    width: 70%;
+  }
+}
+
+.usp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+
+.text {
+  text-align: start;
+  width: 50%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+
+  p {
+    width: 100%;
+    padding-top: 1rem;
+  }
+}
+
+.red {
+  color: #bd0000;
+}
+
+.divider {
+  width: 80px;
+  border: 1px solid;
+  border-radius: 1px;
+  margin: 1.5rem 0 1.5rem 0;
+}
+
+@media screen and (max-width: 1170px) {
+  .container {
+    grid-column: 2/8;
+  }
+
+  .usp {
+    margin-top: 4vh;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .container {
+    grid-column: 1/7;
+  }
+
+  .usp {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-top: 1vh;
+  }
+
+  .text {
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    grid-column: 1/7;
+    margin-bottom: 12vh;
+  }
+
+  .usp {
+    width: 80%;
+    margin-top: 1vh;
+  }
+}
+
+@include smartphone {
+  .container {
+    min-height: 45vh;
+  }
+
+  .text {
+    padding-right: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
