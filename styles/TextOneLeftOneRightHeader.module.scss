@@ -55,6 +55,10 @@
     grid-column: 2/8;
   }
 
+  .header h2 {
+    width: 80%;
+  }
+
   .usp {
     margin-top: 4vh;
     width: 85%;
@@ -64,6 +68,12 @@
 @media screen and (max-width: 833px) {
   .container {
     grid-column: 1/7;
+  }
+  .header h2 {
+    width: 100%;
+    margin-top: 10vh;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
 
   .usp {
@@ -85,6 +95,13 @@
   .container {
     grid-column: 1/7;
     margin-bottom: 12vh;
+  }
+
+  .header h2 {
+    width: 100%;
+    margin: 3rem 0 0 0;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
   }
 
   .usp {
