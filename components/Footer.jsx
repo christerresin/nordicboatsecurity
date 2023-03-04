@@ -26,17 +26,17 @@ function Footer({ grid }) {
                 </Link>
               </li>
               <li>
-                <Link href='/produkter#sensorer'>
+                <Link href='/produkter#list'>
                   <a>Sensorer och övervakning</a>
                 </Link>
               </li>
               <li>
-                <Link href='/produkter#video'>
+                <Link href='/produkter#list'>
                   <a>Video i realtid</a>
                 </Link>
               </li>
               <li>
-                <Link href='/produkter'>
+                <Link href='/gost'>
                   <a>Geo-fence</a>
                 </Link>
               </li>

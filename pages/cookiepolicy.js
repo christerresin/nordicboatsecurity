@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Top from '../components/Top';
 import CookieInfo from '../components/CookieInfo';
+import HeaderGrid from '../components/HeaderGrid';
 
 import styles from '../styles/Home.module.scss';
 import CookieInfoList from '../components/CookieInfoList';
@@ -43,6 +44,7 @@ export default function cookiepolicy() {
           'Denna cookiepolicy kommer att förklara hur vår organisation använder cookies när du använder vår webbplats.'
         }
       />
+      <HeaderGrid grid='grid1' />
       {cookieInformation.map((info, index) => (
         <CookieInfo
           key={index}
