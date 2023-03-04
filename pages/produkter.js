@@ -16,8 +16,6 @@ import {
   productsTextContent,
 } from '../productsTextParagraphs';
 import TextTwoLeftOneRightHeader from '../components/TextTwoLeftOneRightHeader';
-import TextSectionDarkHeaderDivider from '../components/TextSectionDarkHeaderDivider';
-import TextOneLeftOneRight from '../components/TextOneLeftOneRight';
 import TextSectionDark from '../components/TextSectionDark';
 import ProductsBoxes from '../components/ProductsBoxes';
 import TextOneLeftOneRightHeaders from '../components/TextOneLeftOneRightHeaders';
