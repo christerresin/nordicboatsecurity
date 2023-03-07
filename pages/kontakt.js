@@ -6,6 +6,7 @@ import Top from '../components/Top';
 import ContactContainer from '../components/ContactContainer';
 import styles from '../styles/Home.module.scss';
 import HeaderGrid from '../components/HeaderGrid';
+import ContactForm from '../components/ContactForm';
 
 export default function kontakt() {
   return (
@@ -28,7 +29,9 @@ export default function kontakt() {
         }
       />
       <HeaderGrid grid='grid1' />
-      <ContactContainer grid='grid7'></ContactContainer>
+      <ContactContainer grid='grid2' />
+      <ContactForm grid='grid3' />
+
       <Bottom grid='grid11' />
       <Footer grid='grid12' />
     </div>
