@@ -37,7 +37,7 @@ function Footer({ grid }) {
               </li>
               <li>
                 <Link href='/gost'>
-                  <a>Geo-fence</a>
+                  <a>GOST</a>
                 </Link>
               </li>
             </ul>
