@@ -12,9 +12,7 @@ function ContactForm({ grid, contact }) {
               encType='multipart/form-data'
             >
               <div className={styles.input_group}>
-                <label htmlFor='name' className={styles.form_label}>
-                  Namn
-                </label>
+                <label htmlFor='name' className={styles.form_label}></label>
                 <input
                   className={styles.form_input}
                   type='text'
@@ -22,9 +20,7 @@ function ContactForm({ grid, contact }) {
                   placeholder='Namn'
                 />
                 <div className={styles.input_group}>
-                  <label htmlFor='email' className={styles.form_label}>
-                    Email
-                  </label>
+                  <label htmlFor='email' className={styles.form_label}></label>
                   <input
                     className={styles.form_input}
                     type='email'
@@ -33,27 +29,13 @@ function ContactForm({ grid, contact }) {
                   />
                 </div>
                 <div className={styles.input_group}>
-                  <label htmlFor='number' className={styles.form_label}>
-                    Telefonnummer
-                  </label>
+                  <label htmlFor='number' className={styles.form_label}></label>
                   <input
                     className={styles.form_input}
                     type='text'
                     name='number'
                     placeholder='Telefonnummer'
                   />
-                </div>
-                <div>
-                  <label htmlFor='message' className={styles.form_label}>
-                    Beskriv båten
-                  </label>
-                  <textarea
-                    rows='6'
-                    name='message'
-                    id='message'
-                    className={styles.form_input}
-                    placeholder='(Modell, storlek, motor etc.) eller utveckla ditt ärende här.'
-                  ></textarea>
                 </div>
 
                 <div className={styles.input_radio_wrapper}>
@@ -69,7 +51,7 @@ function ContactForm({ grid, contact }) {
                       >
                         <input
                           className={styles.input_radio}
-                          type='radio'
+                          type='checkbox'
                           name='inbrottslarm'
                           id='inbrottslarm'
                         />
@@ -84,7 +66,7 @@ function ContactForm({ grid, contact }) {
                       <label className={styles.radio_label} htmlFor='video'>
                         <input
                           className={styles.input_radio}
-                          type='radio'
+                          type='checkbox'
                           name='video'
                           id='video'
                         />
@@ -99,7 +81,7 @@ function ContactForm({ grid, contact }) {
                       <label className={styles.radio_label} htmlFor='system'>
                         <input
                           className={styles.input_radio}
-                          type='radio'
+                          type='checkbox'
                           name='system'
                           id='system'
                         />
@@ -114,7 +96,7 @@ function ContactForm({ grid, contact }) {
                       <label className={styles.radio_label} htmlFor='tracker'>
                         <input
                           className={styles.input_radio}
-                          type='radio'
+                          type='checkbox'
                           name='tracker'
                           id='tracker'
                         />
@@ -129,7 +111,7 @@ function ContactForm({ grid, contact }) {
                       <label className={styles.radio_label} htmlFor='connected'>
                         <input
                           className={styles.input_radio}
-                          type='radio'
+                          type='checkbox'
                           name='connected'
                           id='connected'
                         />
@@ -138,6 +120,20 @@ function ContactForm({ grid, contact }) {
                       </label>
                     </div>
                   </div>
+                </div>
+
+                <div>
+                  <label
+                    htmlFor='message'
+                    className={styles.form_label}
+                  ></label>
+                  <textarea
+                    rows='6'
+                    name='message'
+                    id='message'
+                    className={styles.form_input}
+                    placeholder='Beskriv båten (Modell, storlek, motor etc.) eller utveckla ditt ärende här.'
+                  ></textarea>
                 </div>
 
                 <div className={styles.input_radio_wrapper}>
@@ -150,7 +146,7 @@ function ContactForm({ grid, contact }) {
                       <label className={styles.radio_label} htmlFor='service'>
                         <input
                           className={styles.input_radio}
-                          type='radio'
+                          type='checkbox'
                           name='service'
                           id='service'
                         />
@@ -165,7 +161,7 @@ function ContactForm({ grid, contact }) {
                       <label className={styles.radio_label} htmlFor='transfer'>
                         <input
                           className={styles.input_radio}
-                          type='radio'
+                          type='checkbox'
                           name='transfer'
                           id='transfer'
                         />
@@ -184,7 +180,7 @@ function ContactForm({ grid, contact }) {
                       >
                         <input
                           className={styles.input_radio}
-                          type='radio'
+                          type='checkbox'
                           name='reklamation'
                           id='reklamation'
                         />
@@ -199,7 +195,7 @@ function ContactForm({ grid, contact }) {
                       <label className={styles.radio_label} htmlFor='other'>
                         <input
                           className={styles.input_radio}
-                          type='radio'
+                          type='checkbox'
                           name='other'
                           id='other'
                         />
