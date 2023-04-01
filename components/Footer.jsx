@@ -93,8 +93,8 @@ function Footer({ grid }) {
                 </Link>
               </li>
               <li>
-                <Link href='allmannavilkor'>
-                  <a>Allmänna vilkor</a>
+                <Link href='/allmannavillkor'>
+                  <a>Allmänna villkor</a>
                 </Link>
               </li>
             </ul>

@@ -1,6 +1,6 @@
-import styles from '../styles/VilkorSection.module.scss';
+import styles from '../styles/VillkorSection.module.scss';
 
-function VilkorSection({ grid }) {
+function VillkorSection({ grid }) {
   return (
     <section className={`${styles.container} ${grid}`}>
       <div className={styles.content_container}>
@@ -645,4 +645,4 @@ function VilkorSection({ grid }) {
   );
 }
 
-export default VilkorSection;
+export default VillkorSection;
