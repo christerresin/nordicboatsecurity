@@ -63,6 +63,11 @@ function Footer({ grid }) {
                   <a>Rådgivning</a>
                 </Link>
               </li>
+              <li>
+                <Link href='/kontakt'>
+                  <a>Kontakta oss</a>
+                </Link>
+              </li>
             </ul>
             <Link href='/tjanster'>
               <a className={styles.red}>Läs om våra tjänster &gt;</a>
@@ -76,11 +81,7 @@ function Footer({ grid }) {
                   <a>Om Oss</a>
                 </Link>
               </li>
-              <li>
-                <Link href='/kontakt'>
-                  <a>Kontakta oss</a>
-                </Link>
-              </li>
+
               <li>
                 <Link href='/cookiepolicy'>
                   <a>Cookiepolicy</a>
@@ -89,6 +90,11 @@ function Footer({ grid }) {
               <li>
                 <Link href='/integritetspolicy'>
                   <a>Integritetspolicy</a>
+                </Link>
+              </li>
+              <li>
+                <Link href='allmannavilkor'>
+                  <a>Allmänna vilkor</a>
                 </Link>
               </li>
             </ul>
