@@ -13,7 +13,6 @@ import News from '../components/News';
 import IndexGrid from '../components/IndexGrid';
 import TextSection from '../components/TextSection';
 import { textContent } from '../textContent';
-import { indexTextParagraphs } from '../indexTextParagraphs';
 import { indexTextContent } from '../indexTextContent';
 import TextSectionDark from '../components/TextSectionDark';
 import TextSectionWhiteMedium from '../components/TextSectionWhiteMedium';
