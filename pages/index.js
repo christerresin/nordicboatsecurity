@@ -1,5 +1,4 @@
 import Head from 'next/head';
-
 import Bottom from '../components/Bottom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -15,6 +14,7 @@ import IndexGrid from '../components/IndexGrid';
 import TextSection from '../components/TextSection';
 import { textContent } from '../textContent';
 import { indexTextParagraphs } from '../indexTextParagraphs';
+import { indexTextContent } from '../indexTextContent';
 import TextSectionDark from '../components/TextSectionDark';
 import TextSectionWhiteMedium from '../components/TextSectionWhiteMedium';
 import TextSectionDarkHeaderDivider from '../components/TextSectionDarkHeaderDivider';
@@ -43,39 +43,30 @@ export default function Home() {
       <Header />
       <Hero />
       <IndexGrid grid='grid1' />
-      <TextTwoLeftOneRight grid='grid2' content={indexTextParagraphs[0]} />
+      <TextSection grid='grid2' content={textContent[1]} />
       <TextSectionDark
         backgroundImage='/beach_jetski.jpg'
-        content={textContent[1]}
+        content={textContent[3]}
         grid='grid3'
       />
-      <TextThreeLeftThreeRight content={indexTextParagraphs[1]} grid='grid4' />
-      <TextSectionDarkHeaderDivider
+      <ProductsUnlinked grid='grid4' />
+      <TextSectionDark
         backgroundImage='/camera.jpg'
-        content={textContent[3]}
+        content={textContent[10]}
         grid='grid5'
       />
-      <TextOneLeftTwoRight content={indexTextParagraphs[2]} grid='grid6' />
+      <TextSection grid='grid6' content={indexTextContent[3]} />
       {/* <Products grid='grid7' /> */}
-      <ProductsUnlinked grid='grid7' />
-      <TextOneLeftOneRightHeader
-        header='Eller vill du bara veta hur båten mår?'
-        content={indexTextParagraphs[3]}
-        grid='grid8'
-      />
+      {/*}
       <TextSectionDarkHeaderDivider
         backgroundImage='/gost_tracking.jpg'
         content={textContent[7]}
         grid='grid10'
       />
       <TextOneLeftTwoRight content={indexTextParagraphs[4]} grid='grid11' />
-      <TextSectionDark content={textContent[9]} grid='grid12' />
-      <TextOneLeftOneRightHeader
-        header='Vad kostar det?'
-        content={indexTextParagraphs[5]}
-        grid='grid13'
-      />
-      {/* <Services grid='grid14' /> */}
+    */}
+      <TextSectionDark content={textContent[9]} grid='grid7' />
+      <Services grid='grid8' />
       <Bottom grid='grid15' />
       <Footer grid='grid16' />
     </div>

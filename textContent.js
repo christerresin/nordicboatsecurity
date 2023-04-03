@@ -10,7 +10,7 @@ export const textContent = [
   {
     header: 'Söker du en spårsändare / GPS-tracker?',
     contentSections: [
-      'Många båtägare med utombordsmotor väljer att installera en liten spårsändare i motorn och vattenskoterägare väljer följaktligen att installera en i sin vattenskoter. Du kanske även har hört att båtgrannen fick rabatterat pris på båtförsäkringen tack vare spårsändaren? Det stämmer!',
+      'Är du på jakt efter en smidig spårsändare att gömma i motorn, vattenskotern eller komplettera ditt båtlarm? Vi säljer spårsändare som ger sin position både via GPS och 4G/LTE. De flesta försäkringsbolag erbjuder dessutom rabatt på båtförsäkringen om du har en spårsändare installerad! ',
     ],
   },
   {
@@ -24,7 +24,9 @@ export const textContent = [
   },
   {
     header: 'Eller söker du kanske efter ett inbrottslarm?',
-    contentSections: [],
+    contentSections: [
+      'Vi erbjuder trådlösa och trådbundna inbrottslarm. Grunden är alltid en huvudenhet, sen är det båtens utformning och ditt behov som sätter gränserna. Magnetkontakter, rörelsesensorer och sirener är några av de mest köpta sensorerna. Vad behöver du till ditt båtlarm?',
+    ],
   },
   {
     contentSections: [
@@ -58,14 +60,13 @@ export const textContent = [
   {
     header: 'Westra Security, ett extra lager av säkerhet',
     contentSections: [
-      'Slutligen kan vi genom vår samarbetspartner Westra Security erbjuda möjlighet till uppkoppling mot deras larmcentral, via en abonnemangstjänst får du ytterligare ett lager av säkerhet för din båt! Givetvis finns det även möjlighet till väktarutryckning!',
+      'Genom vår samarbetspartner Westra Security kan vi erbjuda uppkoppling mot deras larmcentral via en abonnemangstjänst. Givetvis finns det även möjlighet till väktarutryckning vilket du bestämmer via en åtgärdslista. Detta ger dig ytterligare ett lager av säkerhet för din båt och en trygghet när du lämnar båten.',
     ],
   },
   {
-    header: 'Vad kostar det?',
+    header: 'Kameraövervakning',
     contentSections: [
-      'Så hur lyckades vi? Stämmer något av ovanstående in på anledningen till ditt besök här idag? Det är möjligt att vi hade fel, men vi kanske skapade en viss fundering och en nyfikenhet hos dig? Kanske vore det inte så dumt med någon form av säkerhetslösning för båten?',
-      'Vad kostar inbrottslarmet och övervakningen? Ni visar inga priser om det? Nej det stämmer att vi inte publicerar priserna på de system som vi erbjuder, vi vill nämligen veta mer om dig och din båt först och tillsammans hitta en skräddarsydd lösning som passar ditt behov!',
+      'Håll ett extra öga på båten i realtid, spela in ovälkomna gäster, inbrottstjuvar och använd samma kameror när du angör en brygga. Vi erbjuder flera varianter av kameror, från traditionella övervakningskameror till inbyggnadskameror och kan integrera en kameralösning till ditt båtlarm.',
     ],
   },
 ];

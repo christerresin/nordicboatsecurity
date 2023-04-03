@@ -7,11 +7,11 @@ function Hero() {
       <div className={styles.text}>
         <h1>SKRÄDDARSYDDA SÄKERHETSLÖSNINGAR FÖR DIN BÅT</h1>
         <p>
-          Nordic Boat Security kan med några av marknadens mest avancerade
-          system erbjuda båtägare skräddarsydda säkerhetslösningar för alla
-          typer av båtar och behov. Allt från inbrottslarm till system-, video-,
-          och professionell övervakning. Vad behöver du? Kontakta oss och
-          berätta!
+          Nordic Boat Security (NBS) har det mesta inom säkerhetslösningar till
+          din båt! Vi erbjuder allt från spårsändare, inbrottslarm och
+          videoövervakning till uppkoppling mot larmcentral med
+          väktarutryckning. Osäker på vad du behöver till ditt båtlarm? Kontakta
+          oss så hjälper vi dig!
         </p>
         <Link href='/kontakt'>
           <a className={styles.cta}>KONTAKTA OSS</a>

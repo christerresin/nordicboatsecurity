@@ -10,12 +10,6 @@ function Services({ grid }) {
     <section className={`${styles.container} ${styles.reveal} ${grid}`}>
       <div className={styles.header}>
         <h2>Våra tjänster</h2>
-        <p>
-          Via vårt partnerbolag Westra Security kan vi erbjuda övervakning via
-          larmcentral med väktarutryckning! Westra Security kan även påkalla
-          blåljusutryckning om olyckan kan ockulärt verifieras annars skickas
-          väktare ut för kontroll!
-        </p>
       </div>
       <div className={styles.box_container}>
         {servicesList.map((service) => (

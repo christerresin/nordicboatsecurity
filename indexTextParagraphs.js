@@ -18,8 +18,8 @@ export const indexTextParagraphs = [
     'Låter det som något du letar efter? Men du kanske även funderar på hur det är med bevisbördan? Övervakningskameror med inspelning är svaret! Givetvis tillhandahåller vi även detta i vår produktportfölj! Vi har videokameror som levererar bildkvalité från 2 megapixlar upp till 12 megapixlar!',
   ],
   [
-    'En del båtägare känner ingen större oro för just inbrott i båten men är däremot intresserade av att veta hur båten mår. Enligt en undersökning som tidningen Båtliv lät genomföra 2019 så svarade 46% att de använder båten max 20 dagar per säsong, är du en av dem?',
-    'Har båten tagit in vatten efter ett skyfall? Hur mycket ström är kvar i batteriet för länspumpen? Är den alls i drift?! Känns denna oro bekant? Vi har lösningen som ger lugn och ro! Våra produkter ger dig total kontroll över din båt!',
+    'Högvatten-, temperatur- och spänningssensorer är några av de enheter som övervakar din båt dygnet runt. Larmsystemet skickar notifiering vid förändringar även när båtlarmet är avaktiverat.',
+    'Håll ett extra öga på båten i realtid, spela in ovälkomna gäster, inbrottstjuvar och använd samma kameror när du angör en brygga. Vi erbjuder flera varianter av kameror, från traditionella övervakningskameror till inbyggnadskameror och kan integrera en kameralösning till ditt båtlarm.',
   ],
   [
     'Genom applikationer får du total kontroll på din båt, det är du som avgör hur mycket du vill kunna ha kontroll över! En spårsändare ger dig ökad chans att återfå en stulen båtmotor men den ger dig även koll på om tonåringen endast tog den där korta svängen med vännerna som utlovat…',
