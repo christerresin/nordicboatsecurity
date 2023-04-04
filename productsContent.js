@@ -11,7 +11,7 @@ export const productsContent = [
   {
     header: 'Webshop',
     contentSections: [
-      'Våran webshop är under uppbyggnad men du är välkommen att kontakta oss (infoga länk) för prisförfrågan',
+      'Våran webshop är under uppbyggnad men du är välkommen att kontakta oss för prisförfrågan',
     ],
   },
   {
