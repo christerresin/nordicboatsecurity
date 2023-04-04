@@ -17,6 +17,8 @@ function ProductsBoxes({ grid }) {
             imgAlt={product.imgAlt}
             content={product.content}
             key={product.header}
+            logo1={product.logo[0]}
+            logo2={product.logo[1]}
           />
         ))}
       </div>

@@ -1,7 +1,7 @@
 .container {
   position: relative;
   grid-column: 4/12;
-  min-height: 20rem;
+  min-height: 30rem;
   margin-bottom: 2rem;
 }
 
@@ -19,6 +19,10 @@
   h2 {
     width: 70%;
   }
+
+  p {
+    padding-bottom: 2rem;
+  }
 }
 
 .red {
@@ -35,6 +39,7 @@
 @media screen and (max-width: 1170px) {
   .container {
     grid-column: 1/8;
+    min-height: 38rem;
   }
 
   .usp h2 {
@@ -47,12 +52,26 @@
   .container {
     grid-column: 2/6;
     margin-top: 1rem;
+    min-height: 45rem;
   }
 
   .usp h2 {
     width: 100%;
     margin: 0;
     font-size: 2rem;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    min-height: 60rem;
+  }
+
+  .usp h2 {
+    width: 100%;
+    margin: 0;
+    font-size: 1.3rem;
     line-height: 3rem;
   }
 }

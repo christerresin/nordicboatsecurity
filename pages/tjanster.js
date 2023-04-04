@@ -11,6 +11,7 @@ import GostUsp from '../components/GostUsp';
 import WestraUsp from '../components/WestraUsp';
 import NbsServiceBox from '../components/NbsServiceBox';
 import HeaderGrid from '../components/HeaderGrid';
+import IotSection from '../components/IotSection';
 
 export default function services() {
   return (
@@ -33,14 +34,15 @@ export default function services() {
         }
       />
       <HeaderGrid grid='grid1' />
-      <GostUsp grid='grid2' />
-      <GostServiceBox grid='grid3' />
-      <WestraUsp grid='grid4' />
-      <WestraServiceBox grid='grid5' />
+      <WestraUsp grid='grid2' />
+      <WestraServiceBox grid='grid3' />
+      <GostUsp grid='grid4' />
+      <GostServiceBox grid='grid5' />
       <Usp grid='grid6' />
       <NbsServiceBox grid='grid7' />
-      <Bottom grid='grid8' />
-      <Footer grid='grid9' />
+      <IotSection grid='grid8' />
+      <Bottom grid='grid9' />
+      <Footer grid='grid10' />
     </div>
   );
 }

@@ -21,6 +21,15 @@ export const productsTextContent = [
     ],
   },
   {
+    header: 'Varumärken',
+    contentSections: [
+      'Vi arbetar ständigt med att ta in nya varumärken och leverantörer i vårt produktutbud, vi är stolta över att vara nordisk distributör för GOST - Global Ocean Security Technologies, vilka har funnits på den amerikanska marknaden i över 15 år och har vunnit åtskilliga priser för sina produkter samt erhållit den amerikanska kustbevakningens erkännande.',
+      'Parallellt med GOST erbjuder vi det ukrainska larmsystemet AJAX som med sin smäckra och moderna design gör sig bra på alla typer av båtar. Båda systemen finns i trådlöst och trådbundet utförande.',
+      'I spårsändarsegmentet erbjuder vi SweTrack Lite+, rapporteringsintervallet och precisionen i spårsändaren är oslagbar och ger dig som ägare största möjlighet till kontroll över din enhets position.',
+      'För dig som söker efter angöringskameror eller kompletta videoövervakningssystem erbjuder vi produkter från Avigilon, GOST och HikVision.',
+    ],
+  },
+  {
     header: '',
     contentSections: [],
   },
