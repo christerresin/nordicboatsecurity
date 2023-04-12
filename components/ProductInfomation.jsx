@@ -10,16 +10,12 @@ function ProductInfomation({ grid, props }) {
         <div className={styles.text}>
           <span>{props.category}</span>
           <h2 className={styles.header}>{props.header}</h2>
-          <p className={styles.description}>{props.description}</p>
+          {props.description.map((desc) => (
+            <p className={styles.description} key={desc}>
+              {desc}
+            </p>
+          ))}
           <div className={`${styles.divider} ${styles.red}`}></div>
-          <div className={styles.usp_container}>
-            {props.usps.slice(0, 4).map((usp) => (
-              <div key={usp.title}>
-                <h4>{usp.title}</h4>
-                <p>{usp.content}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </section>

@@ -16,10 +16,10 @@ import {
   productsTextContent,
 } from '../productsTextParagraphs';
 import TextTwoLeftOneRightHeader from '../components/TextTwoLeftOneRightHeader';
+import TextTwoLeftTwoRightHeader from '../components/TextTwoLeftTwoRightHeader';
 import TextSectionDark from '../components/TextSectionDark';
 import ProductsBoxes from '../components/ProductsBoxes';
 import TextOneLeftOneRightHeaders from '../components/TextOneLeftOneRightHeaders';
-import TextOneLeftThreeRightHeader from '../components/TextOneLeftThreeRightHeader';
 import { productsContent } from '../productsContent';
 
 export default function produkter() {
@@ -42,7 +42,7 @@ export default function produkter() {
         }
       />
       <HeaderGrid grid='grid1' />
-      <TextOneLeftThreeRightHeader grid='grid2' content={productsContent[0]} />
+      <TextTwoLeftTwoRightHeader grid='grid2' content={productsContent[0]} />
       <TextSectionDark grid='grid3' content={productsContent[1]} />
       <TextTwoLeftOneRightHeader
         header='Spårsändare'

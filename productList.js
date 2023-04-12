@@ -1,7 +1,7 @@
 export const productList = [
   {
-    productName: 'universal-control-unit',
-    category: 'Enhet',
+    productName: 'centralenhet',
+    category: 'Centralenhet',
     header: 'Universal Control Unit',
     description:
       'GOST Universal Control Unit (UCU) är systemets styrenhet och grundstomme. Här finns möjlighet att koppla upp till 32 trådlösa sensorer. Inne i lådan finns en LCD-display för programmering av systemet samt en 4G-modul och en IP-modul för kommunikation. Styrenheten övervakar båtens batteri och larmar om strömmen blir låg. Styrenheten har eget inbyggt backup-batteri och är byggd i en vattentät låda.',

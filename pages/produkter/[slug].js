@@ -9,7 +9,9 @@ import ProductSpecifications from '../../components/ProductSpecifications';
 import Top from '../../components/Top';
 import HeaderGrid from '../../components/HeaderGrid';
 import { productList } from '../../productList';
+import { listOfProducts } from '../../listOfProducts';
 import styles from '../../styles/Home.module.scss';
+import TextSection from '../../components/TextSection';
 
 export const getStaticPaths = async () => {
   const paths = productList.map((product) => ({
@@ -27,24 +29,19 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = ({ params: { slug } }) => {
-  const data = productList.find((product) => product.productName === slug);
+  const data = listOfProducts.find((item) => item.category === slug);
 
-  const header = data.header;
-  const description = data.description;
-  const usps = data.usps;
-  const images = data.images;
-  const specifications = data.specifications;
+  const products = data.products;
+  const categoryDescription = data.categoryDescription;
   const category = data.category;
+  const header = data.header;
 
   return {
     props: {
-      header: header,
-      description: description,
-      usps: usps,
-      images: images,
-      header: header,
-      specifications: specifications,
+      products: products,
+      categoryDescription: categoryDescription,
       category: category,
+      header: header,
     },
   };
 };
@@ -64,11 +61,27 @@ const Produkt = (props) => {
         }
       />
       <HeaderGrid grid='grid1' />
-      <ProductInfomation grid='grid2' props={props} />
-      <Usp grid='grid3' />
-      <ProductSpecifications grid='grid4' props={props} />
-      <Bottom grid='grid5' />
-      <Footer grid='grid6' />
+      {props.categoryDescription ? (
+        <TextSection grid='grid2' content={props.categoryDescription} />
+      ) : (
+        ''
+      )}
+      {props.products.map((product, index) => (
+        <>
+          <ProductInfomation
+            grid={'grid' + (index * 4 + 4)}
+            props={product}
+            key={index + 'info'}
+          />
+          <ProductSpecifications
+            grid={'grid' + (index * 4 + 5)}
+            props={product}
+            key={index + 'specs'}
+          />
+        </>
+      ))}
+      <Bottom grid='grid15' />
+      <Footer grid='grid16' />
     </div>
   );
 };
