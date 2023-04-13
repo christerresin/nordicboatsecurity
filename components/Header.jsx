@@ -66,8 +66,10 @@ function Header() {
             </li>
           ))}
         </ul>
-        <Link href='/kontakt'>
-          <a className={styles.cta}>KONTAKTA OSS</a>
+        <Link href='https://www.nordicboatsecurity.com/'>
+          <a target='_blank' className={styles.cta}>
+            WEBBSHOP
+          </a>
         </Link>
         <div
           id={styles.burger}
