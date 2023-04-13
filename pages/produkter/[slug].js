@@ -14,13 +14,11 @@ import styles from '../../styles/Home.module.scss';
 import TextSection from '../../components/TextSection';
 
 export const getStaticPaths = async () => {
-  const paths = productList.map((product) => ({
+  const paths = listOfProducts.map((product) => ({
     params: {
-      slug: product.productName,
+      slug: product.category,
     },
   }));
-
-  console.log('paths: ' + paths);
 
   return {
     paths: paths,
@@ -69,19 +67,19 @@ const Produkt = (props) => {
       {props.products.map((product, index) => (
         <>
           <ProductInfomation
-            grid={'grid' + (index * 4 + 4)}
+            grid={'grid' + (index * 4 + 3)}
             props={product}
             key={index + 'info'}
           />
           <ProductSpecifications
-            grid={'grid' + (index * 4 + 5)}
+            grid={'grid' + (index * 4 + 4)}
             props={product}
             key={index + 'specs'}
           />
         </>
       ))}
-      <Bottom grid='grid15' />
-      <Footer grid='grid16' />
+      <Bottom grid='grid26' />
+      <Footer grid='grid27' />
     </div>
   );
 };

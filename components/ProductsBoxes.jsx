@@ -11,15 +11,21 @@ function ProductsBoxes({ grid }) {
       <div className={styles.header}></div>
       <div className={styles.box_container}>
         {productsList.map((product) => (
-          <ProductsBox
-            header={product.header}
-            image={product.image}
-            imgAlt={product.imgAlt}
-            content={product.content}
-            key={product.header}
-            logo1={product.logo[0]}
-            logo2={product.logo[1]}
-          />
+          <>
+            <Link href={product.url}>
+              <a>
+                <ProductsBox
+                  header={product.header}
+                  image={product.image}
+                  imgAlt={product.imgAlt}
+                  content={product.content}
+                  key={product.header}
+                  logo1={product.logo[0]}
+                  logo2={product.logo[1]}
+                />
+              </a>
+            </Link>
+          </>
         ))}
       </div>
     </section>
