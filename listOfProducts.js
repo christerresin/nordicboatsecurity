@@ -1,7 +1,7 @@
 export const listOfProducts = [
   {
     category: 'centralenhet',
-    header: 'Centralenhet',
+    header: 'Central',
     categoryDescription: {
       contentSections: [
         'Oavsett om du vill att ditt båtlarm skall fungera som ett inbrottslarm eller systemövervakning så måste du börja med en centralenhet, själva hjärnan för kommunikation mellan båtlarmet och dig.',
@@ -70,7 +70,7 @@ export const listOfProducts = [
   },
   {
     category: 'magnetkontakt',
-    header: 'Magnetkontakt',
+    header: 'Magnet',
     categoryDescription: {
       contentSections: [
         'Trådlösa magnetkontakter som enkelt kan monteras vid båtens ingångar, dörrar, förpiks- och takluckor. Kontakterna programmeras att antingen genast aktivera en larmsiren (om sådan installerats) eller fördröja aktiveringen och istället initiera en nedräkning så du hinner avaktivera larmet om du helt enkelt glömt att göra det.',
