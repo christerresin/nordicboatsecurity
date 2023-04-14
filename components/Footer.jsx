@@ -36,7 +36,7 @@ function Footer({ grid }) {
                 </Link>
               </li>
               <li>
-                <Link href='https://www.nordicboatsecurity.com/'>
+                <Link href='https://www.nordicboatsecurity.com/webbshop/'>
                   <a target='_blank'>Webbshop</a>
                 </Link>
               </li>

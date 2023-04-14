@@ -66,7 +66,7 @@ function Header() {
             </li>
           ))}
         </ul>
-        <Link href='https://www.nordicboatsecurity.com/'>
+        <Link href='https://www.nordicboatsecurity.com/webbshop/'>
           <a target='_blank' className={styles.cta}>
             WEBBSHOP
           </a>

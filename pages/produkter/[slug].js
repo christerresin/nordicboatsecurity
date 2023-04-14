@@ -59,11 +59,7 @@ const Produkt = (props) => {
         }
       />
       <HeaderGrid grid='grid1' />
-      {props.categoryDescription ? (
-        <TextSection grid='grid2' content={props.categoryDescription} />
-      ) : (
-        ''
-      )}
+
       {props.products.map((product, index) => (
         <>
           <ProductInfomation
@@ -71,13 +67,22 @@ const Produkt = (props) => {
             props={product}
             key={index + 'info'}
           />
-          <ProductSpecifications
-            grid={'grid' + (index * 4 + 4)}
-            props={product}
-            key={index + 'specs'}
-          />
+          {product.specifications.length > 0 ? (
+            <ProductSpecifications
+              grid={'grid' + (index * 4 + 4)}
+              props={product}
+              key={index + 'specs'}
+            />
+          ) : (
+            ''
+          )}
         </>
       ))}
+      {props.categoryDescription ? (
+        <TextSection grid='grid25' content={props.categoryDescription} />
+      ) : (
+        ''
+      )}
       <Bottom grid='grid26' />
       <Footer grid='grid27' />
     </div>
