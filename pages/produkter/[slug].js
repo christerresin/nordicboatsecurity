@@ -63,13 +63,13 @@ const Produkt = (props) => {
       {props.products.map((product, index) => (
         <>
           <ProductInfomation
-            grid={'grid' + (index * 4 + 3)}
+            grid={'grid' + (index * 4 + 2)}
             props={product}
             key={index + 'info'}
           />
           {product.specifications.length > 0 ? (
             <ProductSpecifications
-              grid={'grid' + (index * 4 + 4)}
+              grid={'grid' + (index * 4 + 3)}
               props={product}
               key={index + 'specs'}
             />
