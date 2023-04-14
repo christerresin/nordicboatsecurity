@@ -173,7 +173,7 @@ export const listOfProducts = [
     },
     products: [
       {
-        header: 'AJAX MotionProtect',
+        header: 'AJAX Motion Protect',
         description: [
           'MotionProtect använder både PIR-sensor och mikrovågssensor och har ett detektionsavstånd på upp till 12 meter, detektionsvinklarna är 88,5°-horisontellt och 80°-vertikalt. ',
           'MotionProtect är designad för att minimera falsklarm genom att ignorera rörelser i gardiner, ljusflimmer och reflektioner. ',
@@ -188,7 +188,7 @@ export const listOfProducts = [
         images: ['/mpp1.webp'],
       },
       {
-        header: 'AJAX CombiProtect',
+        header: 'AJAX Combi Protect',
         description: [
           'CombiProtect kombinerar PIR-sensor och glaskrossdetektor i ett. CombiProtect har samma rörelsedetektionsområde som MotionProtect och reagerar på glaskross inom nio meter.',
           'Enheten har en inbyggd termometer. Drivs med ett CR123A-batteri med en livslängd på upp till fem år.',
@@ -202,7 +202,7 @@ export const listOfProducts = [
         images: ['/combiprotect1.webp'],
       },
       {
-        header: 'AJAX MotionCam',
+        header: 'AJAX Motion Cam',
         description: [
           'MotionCam kombinerar en temperaturanpassande PIR-sensor med stillbildskamera, du får bilderna skickade till appen så att du enkelt kan verifiera personen ombord. Inbyggd IR-ljuskälla möjliggör bildtagning nattetid eller övriga tillfällen med nedsatt ljusstyrka.',
           'Enheten har en inbyggd termometer. Drivs med två stycken CR123A-batterier med en livslängd på upp till fyra år.',

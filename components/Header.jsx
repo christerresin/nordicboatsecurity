@@ -18,6 +18,10 @@ function Header() {
       path: '/',
     },
     {
+      title: 'Webbshop',
+      path: 'https://www.nordicboatsecurity.com/webbshop/',
+    },
+    {
       title: 'Produkter',
       path: '/produkter',
     },
