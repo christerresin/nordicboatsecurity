@@ -1,4 +1,5 @@
 import styles from '../styles/TextSectionDark.module.scss';
+import Link from 'next/link';
 
 function TextSectionDark({ grid, content, backgroundImage }) {
   return (
@@ -26,6 +27,13 @@ function TextSectionDark({ grid, content, backgroundImage }) {
           {content.contentSections.map((text) => (
             <p key={text}>{text}</p>
           ))}
+          {content.linkUrl ? (
+            <Link href={content.linkUrl}>
+              <a>Klicka här för att komma till vår webbshop!</a>
+            </Link>
+          ) : (
+            ''
+          )}
         </div>
       </div>
     </section>
